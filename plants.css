@@ -2,6 +2,10 @@ body{
     background-color: rgb(178, 218, 181) !important;
 }
 
+.construction_site{
+    padding: 2%;
+}
+
 .container{
     background-color:  rgb(178, 218, 181);
     padding: 15px;
