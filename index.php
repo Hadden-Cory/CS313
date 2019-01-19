@@ -9,7 +9,7 @@
     <script src="plants.js"></script>
 </head>
 <body>
-<?php include("includes/header.php");?>
+<?php include("header.php");?>
     <section>
         <div class="container">
             <div class="row">
