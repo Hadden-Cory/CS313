@@ -1,5 +1,4 @@
 <html>
- 
 <head>   
     <title>Cory CS313 Portfolio</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
@@ -9,9 +8,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script src="plants.js"></script>
 </head>
-
 <body>
-<?php include("includes/header.html"); ?>
+<?php include("includes/header.php");?>
     <section>
         <div class="container">
             <div class="row">
@@ -176,5 +174,4 @@
             </div>
     </section>
 </body>
-
 </html>
