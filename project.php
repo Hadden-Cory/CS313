@@ -10,7 +10,7 @@
 </head>
 <body>
 <?php include("header.php");?>
-<div>
+<div class="construction_site">
     <h1>Under Construction</h1>
     <p>Sorry this page will be availible soon!</p>
     <p>Please enjoy this nice jazz music while you wait:</p>
