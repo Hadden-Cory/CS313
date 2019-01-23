@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-
+<?php include("header.php");?>
 Name: <?php echo $_POST["user-name"]; ?><br>
 Email address: <a href="mailto:<?php echo $_POST["email"]; ?>"><?php echo $_POST["email"]; ?></a> <br>
 You are currently a <?php echo $_POST["major"]; ?> major <br>

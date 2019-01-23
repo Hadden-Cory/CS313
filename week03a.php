@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+<?php include("header.php");?>
     <form id="form" name="form" action="week03b.php" method="POST">
         User Name:<br>        
         <input type="text" id="user-name" name="user-name"><br>
