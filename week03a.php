@@ -15,11 +15,11 @@
 <body>
 <?php include("header.php");?>
 <div id="simple_form">
-    <h1>Simple Form Processing</h1>
-    <form id="form" name="form" action="week03b.php" method="POST">
-    <h2>What is your name?</h2><br>        
+    <h1>Simple Form Processing</h1> <hr>
+    <form id="form" name="form" action="week03b.php" method="POST"><br> 
+    <h2>What is your name?</h2>       
         <input type="text" id="user-name" name="user-name"><br>
-        <h2>What is your email address?</h2><br>        
+        <h2>What is your email address?</h2>        
         <input type="text" id="email" name="email"><br> 
         <br> 
         <h2>What is your major?</h2>
@@ -29,8 +29,8 @@
            echo "<input type=\"radio\" id=\"CS\" name=\"major\" value=".$m. ">".$m."<br>"; 
         }
         ?><br>
-        <h2>Do you have any additional comments?</h2> 
-        <input type="textarea" name="comment" id="comment"><br>
+        <h2>Do you have any additional comments?</h2><br> 
+        <input type="textarea" name="comment" id="comment">
         <h2>Which continents have you visited?</h2><br> 
         <input type="checkbox" name="continent[]" id="north-america" value="NA">North America<br>
         <input type="checkbox" name="continent[]" id="south-america" value="SA">South America<br>
@@ -38,7 +38,7 @@
         <input type="checkbox" name="continent[]" id="asia" value="AA">Asia<br>
         <input type="checkbox" name="continent[]" id="australia" value="AU">Australia<br>
         <input type="checkbox" name="continent[]" id="africa" value="AF">Africa<br>
-        <input type="checkbox" name="continent[]" id="Antarctica" value="AN">Antarctica<br>
+        <input type="checkbox" name="continent[]" id="Antarctica" value="AN">Antarctica<br><hr>
         <input type="submit" name="submit" id="submit" value="Submit"><br>
     </form>
     </div>
