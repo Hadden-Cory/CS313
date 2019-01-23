@@ -15,6 +15,7 @@
 <body>
 <?php include("header.php");?>
 <div class="row">
+<div class="col-lg-12">
     <h1>Simple Form Processing</h1><hr>
     <form id="form" name="form" action="week03b.php" method="POST"> 
     <h2>What is your name?</h2>       
@@ -30,7 +31,7 @@
         }
         ?><br>
         <h2>Do you have any additional comments?</h2>
-        <input type="textarea" name="comment" id="comment"><br>  
+        <input type="textarea" name="comment" id="comment"><br><br>  
         <h2>Which continents have you visited?</h2>
         <input type="checkbox" name="continent[]" id="north-america" value="NA">North America<br>
         <input type="checkbox" name="continent[]" id="south-america" value="SA">South America<br>
@@ -41,6 +42,7 @@
         <input type="checkbox" name="continent[]" id="Antarctica" value="AN">Antarctica<br><hr>
         <input type="submit" name="submit" id="submit" value="Submit"><br>
     </form>
+    </div>
     </div>
 </body>
 </html>
