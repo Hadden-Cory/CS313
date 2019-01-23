@@ -13,7 +13,7 @@
 <div class="construction_site">
     <h1>Under Construction</h1>
     <p>Sorry this page will be availible soon!</p>
-    <p>To view the team02 week 03 assignment <a href="week03a.php">click here</a><</P>
+    <p>To view the team02 week 03 assignment <a href="week03a.php">click here</a></P>
     <p>Please enjoy this nice jazz music while you wait:</p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/3SakCDX_fGA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
