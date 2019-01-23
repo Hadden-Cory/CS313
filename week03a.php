@@ -29,8 +29,8 @@
         }
         ?><br>
         <h2>Do you have any additional comments?</h2>
-        <input type="textarea" name="comment" id="comment">
-        <h2>Which continents have you visited?</h2><br><br>  
+        <input type="textarea" name="comment" id="comment"><br>  
+        <h2>Which continents have you visited?</h2>
         <input type="checkbox" name="continent[]" id="north-america" value="NA">North America<br>
         <input type="checkbox" name="continent[]" id="south-america" value="SA">South America<br>
         <input type="checkbox" name="continent[]" id="europe" value="EU">Europe<br>
