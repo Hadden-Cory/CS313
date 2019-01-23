@@ -14,13 +14,14 @@
 </head>
 <body>
 <?php include("header.php");?>
-<div id="simple_form">
+<div class="row">
     <h1>Simple Form Processing</h1><hr>
     <form id="form" name="form" action="week03b.php" method="POST"> 
     <h2>What is your name?</h2>       
         <input type="text" id="user-name" name="user-name"><br><br>
         <h2>What is your email address?</h2>        
-        <input type="text" id="email" name="email"><br><br> 
+        <input type="text" id="email" name="email">
+
         <h2>What is your major?</h2>
         <?php
             $majors = array("Computer Science", "Web Design and Development", "Computer information Technology", "Computer Engineering");
