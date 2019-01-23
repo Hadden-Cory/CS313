@@ -15,9 +15,9 @@
 <body>
 <?php include("header.php");?>
 <div class="row">
-<div class="col-lg-2">
+<div class="col-lg-1">
 </div>
-<div class="col-lg-10">
+<div class="col-lg-11">
     <h1>Simple Form Processing</h1><hr>
     <form id="form" name="form" action="week03b.php" method="POST"> 
     <h2>What is your name?</h2>       
