@@ -14,20 +14,24 @@
 </head>
 <body>
 <?php include("header.php");?>
+<div id="simple_form">
+    <h1>Simple Form Processing</h1>
     <form id="form" name="form" action="week03b.php" method="POST">
-        User Name:<br>        
+    <h2>What is your name?</h2><br>        
         <input type="text" id="user-name" name="user-name"><br>
-        Email:<br>        
-        <input type="text" id="email" name="email"><br>
+        <h2>What is your email address?</h2><br>        
+        <input type="text" id="email" name="email"><br> 
+        <br> 
+        <h2>What is your major?</h2>
         <?php
             $majors = array("Computer Science", "Web Design and Development", "Computer information Technology", "Computer Engineering");
-            
-        
         foreach($majors as $m) {   
            echo "<input type=\"radio\" id=\"CS\" name=\"major\" value=".$m. ">".$m."<br>"; 
         }
-        ?>  
+        ?><br>
+        <h2>Do you have any additional comments?</h2> 
         <input type="textarea" name="comment" id="comment"><br>
+        <h2>Which continents have you visited?</h2><br> 
         <input type="checkbox" name="continent[]" id="north-america" value="NA">North America<br>
         <input type="checkbox" name="continent[]" id="south-america" value="SA">South America<br>
         <input type="checkbox" name="continent[]" id="europe" value="EU">Europe<br>
@@ -37,5 +41,6 @@
         <input type="checkbox" name="continent[]" id="Antarctica" value="AN">Antarctica<br>
         <input type="submit" name="submit" id="submit" value="Submit"><br>
     </form>
+    </div>
 </body>
 </html>
