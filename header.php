@@ -6,7 +6,7 @@
                     <a class="nav-link" href="project.php">Project Page</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.php">Current Project</a>
+                    <a class="nav-link" href="week03a.php">Current Project</a>
                 </li>
             </ul>
         </nav>
