@@ -21,7 +21,8 @@
 </div>
 <div class="row">
 <form>
-<div class="col-md-4">
+<div class="col-md-4 card">
+<h3><a href="">Gummy Bear Tree Seeds</a></h3> 
 <img src="/week03ponder/GummyBear.jpg" alt="Gummy Bears">
 </div>
 <div class="col-md-4">
