@@ -1,6 +1,9 @@
 body{
     background-color: rgb(145, 133, 119);
-    padding: 5%;
+}
+
+section{
+    padding: 2%;
 }
 
 row{
