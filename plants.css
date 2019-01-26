@@ -27,7 +27,7 @@ body, section, .container, .div, .cardFlip, .front, .back, .flipping{
     height: 100%;
 }
 
-.cardRow{
+.row.cardRow{
     height: 50%;
 }
 
