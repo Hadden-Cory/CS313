@@ -19,3 +19,8 @@ section{
     -moz-box-shadow: 10px 10px 48px -15px rgba(0,0,0,0.78);
     box-shadow: 10px 10px 48px -15px rgba(0,0,0,0.78);  
 }
+
+img{
+    width: 80%;
+    height: 50%;
+}
