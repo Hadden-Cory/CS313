@@ -12,5 +12,6 @@
 </head>
 <body>
 <?php include("/header.php");?>
+<h1>Hi</h1>
 </body>
 </html>
