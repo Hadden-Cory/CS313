@@ -11,7 +11,7 @@
     <script src="scam.js"></script>
 </head>
 <body>
-<?php include("../header.php");?>
+<?php include("header.php");?>
 <h1>Hi</h1>
 </body>
 </html>
