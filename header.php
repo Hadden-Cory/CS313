@@ -6,7 +6,7 @@
                     <a class="nav-link" href="project.php">Project Page</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="\week03ponder\totallyNotAScam.php">Current Project</a>
+                    <a class="nav-link" href="totallyNotAScam.php">Current Project</a>
                 </li>
             </ul>
         </nav>
