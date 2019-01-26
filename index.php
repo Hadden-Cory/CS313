@@ -13,7 +13,7 @@
     <section>
         <div class="container">
             <h1>Look at These Amzing Plants</h1>
-            <div class="row">
+            <div class="row cardRow">
                 <div class="col-sm-6 col-lg-4">
                     <div class="cardFlip">
                         <div class="flipping">
@@ -93,7 +93,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row cardRow">
                 <div class="col-sm-6 col-lg-4">
                     <div class="cardFlip">
                         <div class="flipping">
