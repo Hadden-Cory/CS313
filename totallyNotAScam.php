@@ -22,7 +22,7 @@
 <div class="row">
 <form>
 <div class="col-md-4">
-<img href="/wee03ponder/GummyBear.jpg" alt="Gummy Bears">
+<img href="/week03ponder/GummyBear.jpg" alt="Gummy Bears">
 </div>
 <div class="col-md-4">
 </div>
