@@ -13,7 +13,7 @@
 <body> 
 <?php include("header.php");?>
 <Section>
-<div class="row">
+<div class="row h-25">
   <div class="col-md-12">
     <h1>Welcome to Totally Not A Scam Internet Wonders</h1>
     <p>We have many amazing wonderments which you like very much, I think. You not get this anywhere else on internet or in shops or in grocery stores. We only have. Everything is half off for you, first customer.</p>
