@@ -25,7 +25,6 @@ if(!empty($_POST['continent'])) {
     foreach($_POST['continent'] as $key => $value) {
         echo $continentsMap[$value]."</br>";
     }
-}
-?>
+}?>
 </body>
 </html>
