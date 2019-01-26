@@ -19,6 +19,18 @@
     <p>We have many amazing wonderments which you like very much, I think. You not get this anywhere else on internet or in shops or in grocery stores. We only have. Everything is half off for you, first customer.</p>
   </div>
 </div>
+<div class="row">
+<form>
+<div class="col-md-4">
+<img href="/wee03ponder/GummyBear.jpg" alt="Gummy Bears">
+</div>
+<div class="col-md-4">
+</div>
+<div class="col-md-4">
+</div>
+
+</form>
+</div>
 </Section>
 </body>
 </html>
