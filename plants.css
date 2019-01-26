@@ -20,10 +20,10 @@ section{
 }
 
 .row{
-    height: 50%;
+    height: 100%;
 }
 
-body, section, .container, .col-sm-6, .cardFlip, .front, .back, .flipping{
+body, section, .container, .div, .cardFlip, .front, .back, .flipping{
     height: 100%;
 }
 
