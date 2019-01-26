@@ -11,7 +11,14 @@
     <script src="scam.js"></script>
 </head>
 <body>
-<?php include("header.php");?>
-<h1>Hi</h1>
+<?php include("header.php"); ?>
+<Section>
+<div>
+<h1>Welcome to Totally Not A Scam Internet Wonders</h1>
+</div>
+<div>
+<p>We have many amazing wonderments which you like very much, I think. You not get this anywhere else on internet or in shops or in grocery stores. We only have. Everything is half off for you, first customer.</p>
+</div>
+</Section>
 </body>
 </html>
