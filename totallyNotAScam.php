@@ -14,16 +14,16 @@
 <?php include("header.php"); ?>
 <Section>
 <div class="row">
-<div claas="col-md-1">
-<div class="col-md-11">
-<h1>Welcome to Totally Not A Scam Internet Wonders</h1>
+  <div class="col-md-1"></div>
+  <div class="col-md-11">
+    <h1>Welcome to Totally Not A Scam Internet Wonders</h1>
+  </div>
 </div>
-</div>
-<div claas="col-md-1">
-<div class="col-md-11">
-<p>We have many amazing wonderments which you like very much, I think. You not get this anywhere else on internet or in shops or in grocery stores. We only have. Everything is half off for you, first customer.</p>
-</div>
-</div>
+<div class="row">
+  <div class="col-md-1"></div>
+  <div class="col-md-11">
+    <p>We have many amazing wonderments which you like very much, I think. You not get this anywhere else on internet or in shops or in grocery stores. We only have. Everything is half off for you, first customer.</p>
+  </div>
 </div>
 </Section>
 </body>
