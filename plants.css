@@ -15,6 +15,10 @@ h1{
     padding: 15px;
 }
 
+section{
+    padding: 2%;
+}
+
 .row{
     height: 50%;
 }
