@@ -32,15 +32,15 @@
             <a href="">
                 <div class="card item">
                     <div class="card-body text-center">
-                        <h3 class="card-text">Gummy Bear Tree Seeds</h3>
+                        <h3 class="card-title">Gummy Bear Tree Seeds</h3>
                     </div>
-                    <img class="card-img-top" src="/week03ponder/GummyBear.jpg" alt="Gummy Bears">
+                    <img class="card-img-top" src="/week03ponder/gummyBear.jpg" alt="Gummy Bears">
                 </div>
             </a>
             <a href="">
                 <div class="card item">
                     <div class="card-body text-center">
-                        <h3 class="card-text">Cookie Computer Chip</h3>
+                        <h3 class="card-title"> Cookie Computer Chip</h3>
                     </div>
                     <img class="card-img-top" src="/week03ponder/cookies.jpg" alt="Cookie">
                 </div>
@@ -48,9 +48,9 @@
             <a href="">
                 <div class="card item">
                     <div class="card-body text-center">
-                        <h3 class="card-text">Skittle Pill</h3>
+                        <h3 class="card-title">Skittle Pill</h3>
                     </div>
-                    <img class="card-img-top" src="/week03ponder/skittles.jpeg" alt="Skittles">
+                    <img class="card-img-top" src="/week03ponder/skittles.jpg" alt="Skittles">
                 </div>
             </a>
             <!-- <a class="col-md-3 card" href="">
