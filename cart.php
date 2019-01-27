@@ -74,7 +74,7 @@ session_start();
                                 <h3><?php echo $_SESSION["cookies"]; ?> Cookies Chips</h3>
                             </div>
                             <div class="col-3">
-                            <?php
+                                <?php
                                 genDrop($_SESSION["cookies"], "cookies");
                                 ?>
                             </div>
@@ -85,9 +85,10 @@ session_start();
                         <div class="row">
                             <div class="col-6">
                                 <h3>
-                                    <?php echo $_SESSION["skittles"];
+                                    <?php 
+                                    echo $_SESSION["skittles"];
                                     ?>
-                                Skittle Pills</h3>
+                                    Skittle Pills</h3>
                             </div>
                             <div class="col-3">
                                 <?php
