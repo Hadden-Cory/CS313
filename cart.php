@@ -74,6 +74,9 @@ session_start();
                                 <h3><?php echo $_SESSION["cookies"]; ?> Cookies Chips</h3>
                             </div>
                             <div class="col-3">
+                            <?php
+                                genDrop($_SESSION["cookies"], "cookies");
+                                ?>
                             </div>
                             <div class="col-3">
                                 <button type="submit" class="btn-lg btn-info">Remove</button>
