@@ -43,7 +43,9 @@ session_start();
                                         <option value="2">2</option>
                                     </select><br>
                                     <button type="submit" class="btn-lg btn-info">Order</button>
-
+                                    <?php 
+                                    $_SESSION['cookies'] = $_SESSION['cookies'] + $_POST['cookieQuantity'];
+                                    ?>
                                     <a href="cart.php"><button class="btn-lg btn-info">View Cart</button></a>
                                 </div>
                             </form>
@@ -54,7 +56,6 @@ session_start();
             </div>
         </div>
     </Section>
-    <?php include("cartwidget.php"); ?>
 </body>
 
 </html>
