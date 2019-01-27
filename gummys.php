@@ -32,7 +32,17 @@
             </div>
             <div class="col-4">
                 <div class="jumbotron">
-                    <h1>Stuff<h2>
+                    <h1>Order Now<h2>
+                            <form action="cart.php" method="post">
+                                <div class="form-group">
+                                    How Many <select name="quantity" class="form-control" id="quantity">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                </div>
+                                <button type="submit" class="btn btn-default">Order</button>
+                            </form>
                 </div>
             </div>
             <div class="col-4">
