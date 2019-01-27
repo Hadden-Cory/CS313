@@ -15,9 +15,9 @@
 <body>
     <?php include("header.php"); ?>
     <Section>
-        <div class="card-deck">
+        <div class="card-deck h-25">
             <div class="card">
-                <div class="card-body">
+                <div class="card-body text-center">
                     <div class="card-text">
                         <h1 class="card-title">Welcome to Totally Not A Scam Internet Wonders</h1>
                         <p class="card-text">We have many amazing wonderments which you like very much, I think. You not get this anywhere
@@ -28,7 +28,7 @@
                 </div>
             </div>
         </div>
-        <div class="card-columns h-25">
+        <div class="card-columns">
             <a href="">
                 <div class="card item">
                     <div class="card-body text-center">
