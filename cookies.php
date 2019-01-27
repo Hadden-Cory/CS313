@@ -37,23 +37,16 @@ session_start();
                     <h1>Order Now<h1><br>
                             <form action="" method="post">
                                 <div class="form-group">
-                                    <select placeholder="How Many" name="cookieQuantity" class="form-control"
+                                    <select placeholder="How Many?" name="cookieQuantity" class="form-control"
                                         id="quantity">
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                     </select><br>
                                     <button type="submit" class="btn-lg btn-info">Order</button>
-                                    <?php 
-                                    if (!isset($_SESSION["cookies"])) {
-                                        $_SESSION['cookies'] = 0;
-                                    } else {
-                                        $_SESSION['cookies'] = $_SESSION['cookies'] + $_POST['cookieQuantity'];
-                                    }
-                                    ?>
+
                                     <a href="cart.php"><button class="btn-lg btn-info">View Cart</button></a>
                                 </div>
                             </form>
-
                 </div>
             </div>
             <div class="col-4">
