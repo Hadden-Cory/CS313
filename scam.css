@@ -1,24 +1,27 @@
-body{
+body {
     background-color: rgb(145, 133, 119);
 }
 
-section{
+section {
     padding: 2%;
 }
 
-.itemCard{
+.itemCard {
     margin: 2%;
     padding: 1%;
-    color: rgb(63, 118, 138);
+    height: 300px;
+    width: 300px;
     background-color: rgb(205, 245, 253);
     border-radius: 10px;
     -webkit-box-shadow: 10px 10px 48px -15px rgba(0,0,0,0.78);
     -moz-box-shadow: 10px 10px 48px -15px rgba(0,0,0,0.78);
-    box-shadow: 10px 10px 48px -15px rgba(0,0,0,0.78);  
+    box-shadow: 10px 10px 48px -15px rgba(0,0,0,0.78);
     text-align: center;
 }
 
-img{
+img {
     padding: 2%;
-    border-radius: 10px;
+    border-radius: 15px;
+    width: 320px;
+    height: 229px;
 }
