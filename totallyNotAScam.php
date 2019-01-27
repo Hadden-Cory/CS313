@@ -24,15 +24,15 @@
             </div>
         </div>
         <div class="row h-25">
-            <a class="col-sm-3 itemCard" href="">
+            <a class="col-md-3 itemCard" href="">
                 <h3>Gummy Bear Tree Seeds</h3>
                 <img src="/week03ponder/GummyBear.jpg" alt="Gummy Bears">
             </a>
-            <a class="col-sm-3 itemCard" href="">
+            <a class="col-md-3 itemCard" href="">
                 <h3>Gummy Bear Tree Seeds</h3>
                 <img src="/week03ponder/GummyBear.jpg" alt="Gummy Bears">
             </a>
-            <a class="col-sm-3 itemCard" href="">
+            <a class="col-md-3 itemCard" href="">
                 <h3>Gummy Bear Tree Seeds</h3>
                 <img src="/week03ponder/GummyBear.jpg" alt="Gummy Bears">
             </a>
