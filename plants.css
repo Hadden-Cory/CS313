@@ -19,10 +19,6 @@ section{
     padding: 2%;
 }
 
-.row{
-    height: 100%;
-}
-
 body, section, .container, .col-sm-6, .cardFlip, .front, .back, .flipping{
     height: 100%;
 }
