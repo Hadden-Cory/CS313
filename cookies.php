@@ -44,7 +44,6 @@ session_start();
                                     </select><br>
                                     <button type="submit" class="btn-lg btn-info">Order</button>
                                     <?php 
-                                    require_once("session_start.php");
                                     if (!isset($_SESSION["cookies"])) {
                                         $_SESSION['cookies'] = 0;
                                     } else {
