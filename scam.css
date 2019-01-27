@@ -19,5 +19,6 @@ section{
 }
 
 img{
-    width: 45px;
+    width: 120px;
+    border-radius: 10px;
 }
