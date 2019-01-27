@@ -23,8 +23,8 @@
                     customer.</p>
             </div>
         </div>
-        <div class="row">
-            <a class="col-sm-3 h-25 itemCard" href="">
+        <div class="row h-25">
+            <a class="col-sm-3 itemCard" href="">
                 <h3>Gummy Bear Tree Seeds</h3>
                 <img src="/week03ponder/GummyBear.jpg" alt="Gummy Bears">
             </a>
