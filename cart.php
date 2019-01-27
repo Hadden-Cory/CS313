@@ -84,7 +84,7 @@ session_start();
                                 <div class="col-6">
                                     <h3>
                                         <?php echo $_SESSION["skittles"];
-                                    ?>
+                                    ?></h3>
                                         Skittle Pills</h3>
                                 </div>
                                 <div class="col-3">
