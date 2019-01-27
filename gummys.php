@@ -11,14 +11,18 @@
     <script src="plants.js"></script>
     <script src="scam.js"></script>
 </head>
+
 <body>
     <?php include("header.php"); ?>
     <Section>
         <div class="jumbotron">
             <h1>Authentic Gummy Bear Tree Seeds</h1>
-            <p>Shippment include 20 seeds for authentic gummybear tree. You plant in vessel and water many days. And also it grows a tree that is very big and also full of candy bears.</p>
+            <p>Shippment include 20 seeds for authentic gummy bear tree. You plant in vessel and water many days. And
+                also it grows a tree that is very big and also full of candy bears.</p>
+            <img src="/week03ponder/seeds.jpg" class="float-left">
+            <img src=/week03ponder/gummy.jpg" class="float-right">
         </div>
-        </Section>
+    </Section>
 </body>
 
 </html>
