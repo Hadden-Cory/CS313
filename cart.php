@@ -38,6 +38,7 @@ session_start();
         for ($i = 0; $i <= $sessionData; $i++) {
             echo "<option value='" . $i . "'>" . $i . "</option>";
         }
+        echo "</select>";
     }
     ?>
     <Section>
