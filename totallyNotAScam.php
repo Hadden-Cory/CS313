@@ -32,7 +32,7 @@
             <a href="">
                 <div class="card item">
                     <div class="card-body text-center">
-                        <h3 class="card-title">Gummy Bear Tree Seeds</h3>
+                        <h3 class="card-title">Gummy Seeds</h3>
                     </div>
                     <img class="card-img-top" src="/week03ponder/gummybear.jpg" alt="Gummy Bears">
                 </div>
@@ -40,7 +40,7 @@
             <a href="">
                 <div class="card item">
                     <div class="card-body text-center">
-                        <h3 class="card-title"> Cookie Computer Chip</h3>
+                        <h3 class="card-title"> Cookie Chip</h3>
                     </div>
                     <img class="card-img-top" src="/week03ponder/cookies.jpg" alt="Cookie">
                 </div>
