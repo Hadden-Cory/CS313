@@ -44,8 +44,11 @@ session_start();
                                     </select><br>
                                     <button type="submit" class="btn-lg btn-info">Order</button>
                                     <?php 
-                                    $_SESSION['cookies'] = $_SESSION['cookies'] + $_POST['cookieQuantity'];
-                                    ?>
+                                    if ($_SESSION['cookies'] > 2) {
+                                        $_SESSION['cookies'] = 0;
+                                    } else {
+                                        $_SESSION['cookies'] = $_SESSION['cookies'] + $_POST['cookieQuantity'];
+                                    } ?>
                                     <a href="cart.php">view cart</a>
                                 </div>
                             </form>

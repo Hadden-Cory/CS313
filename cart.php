@@ -37,14 +37,35 @@ session_start();
             </div>
             <div class="col-4">
                 <div class="jumbotron">
-                    <h3><?php echo $_SESSION["gummys"]; ?> Gummy Seed Packs</h3>
-                    <h3><?php echo $_SESSION["cookies"]; ?> Cookies Chips</h3>
-                    <h3><?php echo $_SESSION["skittle"]; ?> Skittle Pills</h3>
+                    <form action="" method="post">
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h3><?php echo $_SESSION["cookies"];?> Cookies Chips</h3>
+                                </div>
+                                <div class="col-3">
+                                    Remove <select name="cookieQuantity" class="form-control"
+                                        id="quantity">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                    </select><br>
+                                </div>
+                                <div class="col-3">
+                                <button type="submit" class="btn-lg btn-info">remove</button>
+                                </div>
+                            </div>
+                    </form>
+
+
                 </div>
+                <h3><?php echo $_SESSION["gummys"]; ?> Gummy Seed Packs</h3>
+                <h3><?php echo $_SESSION["cookies"]; ?> Cookies Chips</h3>
+                <h3><?php echo $_SESSION["skittle"]; ?> Skittle Pills</h3>
             </div>
-            <div class="col-4">
-                <img src="/week03ponder/money.jpeg" class="img-fluid img-thumbnail mx-auto d-block" alt="Gummy Bears">
-            </div>
+        </div>
+        <div class="col-4">
+            <img src="/week03ponder/money.jpeg" class="img-fluid img-thumbnail mx-auto d-block" alt="Gummy Bears">
+        </div>
         </div>
     </Section>
 </body>
