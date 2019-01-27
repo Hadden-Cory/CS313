@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <html><head>
     <title>TotallyNotAScam.com-Cookies</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
@@ -9,7 +12,6 @@
     <script src="plants.js"></script>
     <script src="scam.js"></script>
 </head>
-
 <body>
     <?php include("header.php"); ?>
     <Section>
@@ -18,7 +20,6 @@
                 <div class="jumbotron">
                     <h1>High Tech computer Chip that Makes Cookies</h1><br>
                     <p>This is high tech very expensive cookie making computer chip. It works really really good. You love the cookies. Easy to plug in to computer, and also very cheap for you. Two left only. Must buy quickly.</p>
-
                 </div>
             </div>
         </div>
