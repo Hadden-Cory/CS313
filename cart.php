@@ -39,7 +39,7 @@ print_r($_SESSION);
             </div>
             <div class="col-4">
                 <div class="jumbotron">
-                    <h3><?php echo $_Session["gummys"]; ?> Gummy Seed Packs</h3>
+                    <h3><?php echo $_SESSION["gummys"]; ?> Gummy Seed Packs</h3>
                     <h3><?php echo $_POST["cookies"]; ?> Cookies Chips</h3>
                     <h3><?php echo $_POST["skittle"]; ?> Skittle Pills</h3>
                 </div>
