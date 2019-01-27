@@ -24,24 +24,18 @@
             </div>
         </div>
         <div class="row">
-                <a href="">
-                    <div class="col-sm-3 itemCard">
-                        <h3>Gummy Bear Tree Seeds</h3>
-                        <img src="/week03ponder/GummyBear.jpg" alt="Gummy Bears">
-                    </div>
-                </a>
-                <a href="">
-                    <div class="col-sm-3 itemCard">
-                        <h3>Gummy Bear Tree Seeds</h3>
-                        <img src="/week03ponder/GummyBear.jpg" alt="Gummy Bears">
-                    </div>
-                </a>
-                <a href="">
-                    <div class="col-sm-3 itemCard">
-                        <h3>Gummy Bear Tree Seeds</h3>
-                        <img src="/week03ponder/GummyBear.jpg" alt="Gummy Bears">
-                    </div>
-                </a>
+            <a class="col-sm-3 itemCard" href="">
+                <h3>Gummy Bear Tree Seeds</h3>
+                <img src="/week03ponder/GummyBear.jpg" alt="Gummy Bears">
+            </a>
+            <a class="col-sm-3 itemCard" href="">
+                <h3>Gummy Bear Tree Seeds</h3>
+                <img src="/week03ponder/GummyBear.jpg" alt="Gummy Bears">
+            </a>
+            <a class="col-sm-3 itemCard" href="">
+                <h3>Gummy Bear Tree Seeds</h3>
+                <img src="/week03ponder/GummyBear.jpg" alt="Gummy Bears">
+            </a>
         </div>
     </Section>
 </body>
