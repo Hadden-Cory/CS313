@@ -21,19 +21,18 @@
 </div>
 <div class="row">
 <form>
-<a href=""><div class="col-sm-4 h-50 itemCard">
+<a href=""><div class="col-sm-4 h-50 w-25 itemCard">
 <h3>Gummy Bear Tree Seeds</h3> 
 <img src="/week03ponder/GummyBear.jpg" alt="Gummy Bears">
 </div></a>
-<a href=""><div class="col-sm-4 h-50 itemCard">
+<a href=""><div class="col-sm-4 h-50 w-25 itemCard">
 <h3>Gummy Bear Tree Seeds</h3> 
 <img src="/week03ponder/GummyBear.jpg" alt="Gummy Bears">
 </div></a>
-<a href=""><div class="col-sm-4 h-50 itemCard">
+<a href=""><div class="col-sm-4 h-50 w-25 itemCard">
 <h3>Gummy Bear Tree Seeds</h3> 
 <img src="/week03ponder/GummyBear.jpg" alt="Gummy Bears">
 </div></a>
-
 </form>
 </div>
 </Section>
