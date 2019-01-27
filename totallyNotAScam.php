@@ -15,7 +15,7 @@
 <body>
     <?php include("header.php"); ?>
     <Section>
-        <div class=".jumbotron">
+        <div class="jumbotron">
             <h1>Welcome to Totally Not A Scam Internet Wonders</h1>
             <p>We have many amazing wonderments which you like very much, I think. You not get this anywhere
                 else on
