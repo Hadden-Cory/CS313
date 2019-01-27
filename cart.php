@@ -28,7 +28,9 @@
             </div>
             <div class="col-4">
                 <div class="jumbotron">
-                    <p>Gummy Seed Packs<?php echo $_POST["quantity"]; ?></p>
+                    <p><?php echo $_POST["quantity"]; ?> Gummy Seed Packs</p>
+                    <p><?php echo $_POST["quantity"]; ?> Cookies Chips</p>
+                    <p><?php echo $_POST["quantity"]; ?> Skittle Pills</p>
                 </div>
             </div>
             <div class="col-4">
