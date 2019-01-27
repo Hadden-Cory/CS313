@@ -1,5 +1,5 @@
 <html><head>
-    <title>TotallyNotAScam.com-Gummys</title>
+    <title>TotallyNotAScam.com-Cart</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="plants.css">
     <link rel="stylesheet" type="text/css" href="scam.css">
@@ -16,10 +16,8 @@
         <div class="row">
             <div class="col-12">
                 <div class="jumbotron">
-                    <h1>Authentic Gummy Bear Tree Seeds</h1><br>
-                    <p>Shippment include 20 seeds for authentic gummy bear tree. You plant in vessel and water many
-                        days. And
-                        also it grows a tree that is very big and also full of candy bears.</p>
+                    <h1>Cart</h1><br>
+                    <p><?php echo $_POST["quantity"]; ?></p>
 
                 </div>
             </div>
@@ -50,7 +48,6 @@
             </div>
         </div>
     </Section>
-    <?php include("cartwidget.php"); ?>
 </body>
 
 </html>
