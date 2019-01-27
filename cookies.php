@@ -37,22 +37,24 @@ session_start();
                     <h1>Order Now<h1><br>
                             <form action="" method="post">
                                 <div class="form-group">
-                                    How Many<select name="cookieQuantity" class="form-control" id="quantity">
+                                    <select placeholder="How Many" name="cookieQuantity" class="form-control"
+                                        id="quantity">
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                     </select><br>
                                     <button type="submit" class="btn-lg btn-info">Order</button>
-                                    <a href="cart.php" ><button class="btn-lg btn-info">View Cart</button></a>
+                                    <?php 
+                                    require_once("session_start.php");
+                                    if (!isset($_SESSION["cookies"])) {
+                                        $_SESSION['cookies'] = 0;
+                                    } else {
+                                        $_SESSION['cookies'] = $_SESSION['cookies'] + $_POST['cookieQuantity'];
+                                    }
+                                    ?>
+                                    <a href="cart.php"><button class="btn-lg btn-info">View Cart</button></a>
                                 </div>
                             </form>
-                            <?php 
-                            require_once("session_start.php");
-                                if (!isset($_SESSION["cookies"])){
-                                    $_SESSION['cookies'] = 0;
-                                } else {
-                                    $_SESSION['cookies'] = $_SESSION['cookies'] + $_POST['cookieQuantity'];
-                                }                                
-                            ?>
+
                 </div>
             </div>
             <div class="col-4">
