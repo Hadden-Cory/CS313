@@ -40,8 +40,8 @@
                                         <option value="2">2</option>
                                         <option value="3">3</option>
                                         <option value="4">4</option>
+                                        <button type="submit" class="btn btn-default">Order</button>
                                 </div>
-                                <button type="submit" class="btn btn-default">Order</button>
                             </form>
                 </div>
             </div>
