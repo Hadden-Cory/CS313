@@ -17,8 +17,12 @@ session_start();
 
 <body>
     <?php
-    $_SESSION["gummys"] = $_POST["gummyQuantity"];
-    $_SESSION["cookies"] = 0;
+    $_SESSION["gummys"] = $_SESSION["gummy"]+$_POST["gummyQuantity"];
+    if ( $_SESSION["cookies"] > 2 ){
+       $_SESSION["cookies"] = 2; 
+    } else {
+        $_SESSION["cookies"] = $_SESSION["cookies"]+$_POST["cookieQuantity"];
+    }
     $_SESSION["skittles"] = 0;
     ?>
     <?php include("header.php"); ?>
@@ -39,8 +43,8 @@ session_start();
             <div class="col-4">
                 <div class="jumbotron">
                     <h3><?php echo $_SESSION["gummys"]; ?> Gummy Seed Packs</h3>
-                    <h3><?php echo $_POST["cookies"]; ?> Cookies Chips</h3>
-                    <h3><?php echo $_POST["skittle"]; ?> Skittle Pills</h3>
+                    <h3><?php echo $_SESSION["cookies"]; ?> Cookies Chips</h3>
+                    <h3><?php echo $_SESSION["skittle"]; ?> Skittle Pills</h3>
                 </div>
             </div>
             <div class="col-4">
