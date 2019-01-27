@@ -17,11 +17,10 @@ session_start();
 
 <body>
     <?php
-$_SESSION["gummys"] = $_POST["gummyQuantity"];
-$_SESSION["cookies"] = 0;
-$_SESSION["skittles"] = 0;
-print_r($_SESSION);
-?>
+    $_SESSION["gummys"] = $_POST["gummyQuantity"];
+    $_SESSION["cookies"] = 0;
+    $_SESSION["skittles"] = 0;
+    ?>
     <?php include("header.php"); ?>
     <Section>
         <div class="row">

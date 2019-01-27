@@ -31,7 +31,7 @@
                     <img class="card-img-top" src="/week03ponder/gummy.jpg" alt="Gummy Bears">
                 </div>
             </a>
-            <a href="">
+            <a href="cookies.php">
                 <div class="card item">
                     <div class="card-body text-center">
                         <h3 class="card-title"> Cookie Chip</h3>
