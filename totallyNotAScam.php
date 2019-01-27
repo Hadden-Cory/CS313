@@ -28,7 +28,7 @@
                 </div>
             </div>
         </div>
-        <div class="card-columns">
+        <div class="card-columns h-25">
             <a href="">
                 <div class="card item">
                     <div class="card-body text-center">
