@@ -21,7 +21,7 @@
                                 <div class="card">
                                     <div class="card-block">
                                         <h3 class="card-title">Rafflesia</h3>
-                                        <img src="flower1.jpg" alt="Flower">
+                                        <img class="plantImg" src="flower1.jpg" alt="Flower">
                                     </div>
                                 </div>
                             </div>
@@ -47,7 +47,7 @@
                                 <div class="card">
                                     <div class="card-block">
                                         <h3 class="card-title">Victoria Amazonica</h3>
-                                        <img class="plantImg src="flower2.jpg" alt="Flower">
+                                        <img class="plantImg" src="flower2.jpg" alt="Flower">
                                     </div>
                                 </div>
                             </div>
@@ -73,7 +73,7 @@
                                 <div class="card">
                                     <div class="card-block">
                                         <h3 class="card-title">Nepenthes</h3>
-                                        <img class="plantImg src="flower3.jpg" alt="Flower">
+                                        <img class="plantImg" src="flower3.jpg" alt="Flower">
                                     </div>
                                 </div>
                             </div>
@@ -101,7 +101,7 @@
                                 <div class="card">
                                     <div class="card-block">
                                         <h3 class="card-title">Zingiber Spectabile</h3>
-                                        <img class="plantImg src="flower4.jpg" alt="Flower">
+                                        <img class="plantImg" src="flower4.jpg" alt="Flower">
                                     </div>
                                 </div>
                             </div>
@@ -127,7 +127,7 @@
                                 <div class="card">
                                     <div class="card-block">
                                         <h3 class="card-title">Puya</h3>
-                                        <img class="plantImg src="flower5.jpg" alt="Flower">
+                                        <img class="plantImg" src="flower5.jpg" alt="Flower">
                                     </div>
                                 </div>
                             </div>
@@ -153,7 +153,7 @@
                                 <div class="card">
                                     <div class="card-block">
                                         <h3 class="card-title">Welwitschia</h3>
-                                        <img class="plantImg src="flower6.jpg" alt="Flower">
+                                        <img class="plantImg" src="flower6.jpg" alt="Flower">
                                     </div>
                                 </div>
                             </div>
