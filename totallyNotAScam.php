@@ -29,7 +29,7 @@
                     <div class="card-body text-center">
                         <h3 class= "card-text">Gummy Bear Tree Seeds</h3>
                     </div>
-                    <img src="/week03ponder/GummyBear.jpg" alt="Gummy Bears">
+                    <img class="card-img-top" src="/week03ponder/GummyBear.jpg" alt="Gummy Bears">
                 </div>
             </a>
             <a href="">
@@ -37,7 +37,7 @@
                     <div class="card-body text-center">
                         <h3 class= "card-text">Gummy Bear Tree Seeds</h3>
                     </div>
-                    <img src="/week03ponder/GummyBear.jpg" alt="Gummy Bears">
+                    <img class="card-img-top" src="/week03ponder/GummyBear.jpg" alt="Gummy Bears">
                 </div>
             </a>
             <a href="">
@@ -45,7 +45,7 @@
                     <div class="card-body text-center">
                         <h3 class= "card-text">Gummy Bear Tree Seeds</h3>
                     </div>
-                    <img src="/week03ponder/GummyBear.jpg" alt="Gummy Bears">
+                    <img class="card-img-top" src="/week03ponder/GummyBear.jpg" alt="Gummy Bears">
                 </div>
             </a>
             <!-- <a class="col-md-3 card" href="">
