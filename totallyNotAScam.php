@@ -23,19 +23,41 @@
                     customer.</p>
             </div>
         </div>
-        <div class="row h-25">
-            <a class="col-md-3 itemCard" href="">
+        <div class="card-columns">
+            <a href="">
+                <div class="card bg-primary">
+                    <div class="card-body text-center">
+                        <h3 class= "card-text">Gummy Bear Tree Seeds</h3>
+                    </div>
+                    <img src="/week03ponder/GummyBear.jpg" alt="Gummy Bears">
+                </div>
+            </a>
+            <a href="">
+                <div class="card bg-primary">
+                    <div class="card-body text-center">
+                        <h3 class= "card-text">Gummy Bear Tree Seeds</h3>
+                    </div>
+                    <img src="/week03ponder/GummyBear.jpg" alt="Gummy Bears">
+                </div>
+            </a>
+            <a href="">
+                <div class="card bg-primary">
+                    <div class="card-body text-center">
+                        <h3 class= "card-text">Gummy Bear Tree Seeds</h3>
+                    </div>
+                    <img src="/week03ponder/GummyBear.jpg" alt="Gummy Bears">
+                </div>
+            </a>
+            <!-- <a class="col-md-3 card" href="">
                 <h3>Gummy Bear Tree Seeds</h3>
                 <img src="/week03ponder/GummyBear.jpg" alt="Gummy Bears">
             </a>
-            <a class="col-md-3 itemCard" href="">
+            <a class="col-md-3 card" href="">
                 <h3>Gummy Bear Tree Seeds</h3>
                 <img src="/week03ponder/GummyBear.jpg" alt="Gummy Bears">
-            </a>
-            <a class="col-md-3 itemCard" href="">
-                <h3>Gummy Bear Tree Seeds</h3>
-                <img src="/week03ponder/GummyBear.jpg" alt="Gummy Bears">
-            </a>
+            </a> -->
+
+
         </div>
     </Section>
 </body>
