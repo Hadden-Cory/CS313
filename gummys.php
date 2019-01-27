@@ -19,8 +19,11 @@
             <h1>Authentic Gummy Bear Tree Seeds</h1>
             <p>Shippment include 20 seeds for authentic gummy bear tree. You plant in vessel and water many days. And
                 also it grows a tree that is very big and also full of candy bears.</p>
-            <img src="/week03ponder/seeds.jpg" class="float-left">
-            <img src=/week03ponder/gummy.jpg" class="float-right">
+
+        </div>
+            <img src="/week03ponder/seeds.jpg" class="thumbnail float-left" alt="Seeds">
+            <img src="/week03ponder/gummy.jpg" class="thumbnail float-right" alt="Gummy Bears">
+        <div class="jumbotron">
         </div>
     </Section>
 </body>
