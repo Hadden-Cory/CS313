@@ -16,14 +16,14 @@
     <?php include("header.php"); ?>
     <Section>
         <div class="jumbotron">
-            <h1>Welcome to Totally Not A Scam Internet Wonders</h1>
+            <h1>Welcome to Totally Not A Scam Wonderments For Internet</h1>
             <p>We have many amazing wonderments which you like very much, I think. You not get this anywhere
                 else on
                 internet or in shops or in grocery stores. We only have. Everything is half off for you,
                 first customer.</p>
         </div>
         <div class="card-columns">
-            <a href="">
+            <a href="gummys.php">
                 <div class="card item">
                     <div class="card-body text-center">
                         <h3 class="card-title">Gummy Seeds</h3>
