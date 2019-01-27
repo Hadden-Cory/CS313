@@ -17,10 +17,9 @@ session_start();
 
 <body>
     <?php
+    
     $_SESSION["gummys"] = 4;
-    $_SESSION["cookies"] = 3;
     $_SESSION["skittles"] = 2;
-
     include("header.php");
 
     function removal($sessionData, $removal)
