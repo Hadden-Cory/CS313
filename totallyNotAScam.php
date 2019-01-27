@@ -25,10 +25,14 @@
 <h3>Gummy Bear Tree Seeds</h3> 
 <img src="/week03ponder/GummyBear.jpg" alt="Gummy Bears">
 </div></a>
-<div class="col-md-4">
-</div>
-<div class="col-md-4">
-</div>
+<a href=""><div class="col-md-4 h-50 w-20 itemCard">
+<h3>Gummy Bear Tree Seeds</h3> 
+<img src="/week03ponder/GummyBear.jpg" alt="Gummy Bears">
+</div></a>
+<a href=""><div class="col-md-4 h-50 w-20 itemCard">
+<h3>Gummy Bear Tree Seeds</h3> 
+<img src="/week03ponder/GummyBear.jpg" alt="Gummy Bears">
+</div></a>
 
 </form>
 </div>
