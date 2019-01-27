@@ -19,9 +19,9 @@ session_start();
     <?php
     $_SESSION["gummys"] = 4;
     $_SESSION["skittles"] = 2;
-    ?>
-    <?php include("header.php"); ?>
-    <?php
+
+    include("header.php"); 
+
     function removal($sessionData, $removal)
     {
         if ($removal > $sessionData) {
@@ -54,7 +54,6 @@ session_start();
             </div>
             <div class="col-4">
                 <div class="jumbotron">
-                    <form action="" method="post">
                         <div class="form-group">
                             <div class="row">
                                 <div class="col-6">
@@ -71,7 +70,7 @@ session_start();
                             </div>
                             <div class="row">
                                 <div class="col-6">
-                                    <h3><?php echo $_SESSION["cookies"]; ?> Cookies Chips</h3>
+                                    <h3><?php echo $_SESSION["cookies"];?> Cookies Chips</h3>
                                 </div>
                                 <div class="col-3">
 
@@ -83,19 +82,21 @@ session_start();
                             </div>
                             <div class="row">
                                 <div class="col-6">
-                                    <h3><?php echo $_SESSION["skittles"];?> Skittle Pills</h3>
+                                    <h3>
+                                        <?php echo $_SESSION["skittles"];
+                                    ?>
+                                        Skittle Pills</h3>
                                 </div>
                                 <div class="col-3">
                                     <?php
                                 genDrop($_SESSION["skittles"], "skittles");
-                                ?><br>
+                                ?>
+                                    <br>
                                 </div>
                                 <div class="col-3">
-                                    <button type="submit" class="btn-lg btn-info">Remove</button>
+                                <button type="submit" class="btn-lg btn-info">Remove</button>
                                 </div>
                             </div>
-
-                    </form>
                 </div>
 
             </div>
