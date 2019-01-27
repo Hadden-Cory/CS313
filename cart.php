@@ -18,6 +18,7 @@ session_start();
 <body>
     <?php
     $_SESSION["gummys"] = 4;
+    $_SESSION["cookies"] = 2;
     $_SESSION["skittles"] = 2;
 
     include("header.php"); 
