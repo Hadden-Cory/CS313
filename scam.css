@@ -6,7 +6,7 @@ section {
     padding: 2%;
 }
 
-.ncard {
+.card.item {
     margin: 2%;
     padding: 1%;
     height: 300px;

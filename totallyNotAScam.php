@@ -30,7 +30,7 @@
         </div>
         <div class="card-columns">
             <a href="">
-                <div class="card">
+                <div class="card item">
                     <div class="card-body text-center">
                         <h3 class="card-text">Gummy Bear Tree Seeds</h3>
                     </div>
@@ -38,7 +38,7 @@
                 </div>
             </a>
             <a href="">
-                <div class="card">
+                <div class="card item">
                     <div class="card-body text-center">
                         <h3 class="card-text">Cookie Computer Chip</h3>
                     </div>
@@ -46,7 +46,7 @@
                 </div>
             </a>
             <a href="">
-                <div class="card">
+                <div class="card item">
                     <div class="card-body text-center">
                         <h3 class="card-text">Skittle Pill</h3>
                     </div>
