@@ -17,10 +17,29 @@ session_start();
 
 <body>
     <?php
-    $_SESSION["gummys"] = $_SESSION["gummy"] + $_POST["gummyQuantity"];
-    $_SESSION["skittles"] = 0;
+    $_SESSION["gummys"] = 4;
+    $_SESSION["skittles"] = 2;
     ?>
     <?php include("header.php"); ?>
+    <?php
+    function removal($sessionData, $removal)
+    {
+        if ($removal > $sessionData) {
+            $sessionData = 0;
+        } else {
+            $sessionData = $sessionData - $removal;
+        }
+    }
+
+    function genDrop($sessionData, $name)
+    {
+        echo "<select name='" . $name . "Removal' class=\"form-control\">";
+        for ($i = 0; $i < $sessionData; $i++) {
+            $sessionData = 0;
+            echo "<option value='" . $i . "'>" . $i . "</option>";
+        }
+    }
+    ?>
     <Section>
         <div class="row">
             <div class="col-12">
@@ -42,10 +61,9 @@ session_start();
                                     <h3><?php echo $_SESSION["gummys"]; ?> Gummy Seeds</h3>
                                 </div>
                                 <div class="col-3">
-                                    <select name="gummyRemove" class="form-control">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                    </select><br>
+                                    <?php
+                                    genDrop($_SESSION["gummys"], "gummy");
+                                    ?><br>
                                 </div>
                                 <div class="col-3">
                                     <button type="submit" class="btn-lg btn-info">Remove</button>
@@ -56,9 +74,7 @@ session_start();
                                     <h3><?php echo $_SESSION["cookies"]; ?> Cookies Chips</h3>
                                 </div>
                                 <div class="col-3">
-                                    <select name="cookieRemove" class="form-control">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
+
                                     </select><br>
                                 </div>
                                 <div class="col-3">
@@ -67,20 +83,21 @@ session_start();
                             </div>
                             <div class="row">
                                 <div class="col-6">
-                                    <h3><?php echo $_SESSION["skittles"]; ?> Skittle Pills</h3>
+                                    <h3><?php echo $_SESSION["skittles"];?> Skittle Pills</h3>
                                 </div>
                                 <div class="col-3">
-                                    <select name="skittleRemove" class="form-control">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                    </select><br>
+                                    <?php
+                                genDrop($_SESSION["skittles"], "skittles");
+                                ?><br>
                                 </div>
                                 <div class="col-3">
                                     <button type="submit" class="btn-lg btn-info">Remove</button>
                                 </div>
                             </div>
+
                     </form>
                 </div>
+
             </div>
         </div>
         <div class="col-4">
