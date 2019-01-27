@@ -15,7 +15,7 @@
 <body>
     <?php include("header.php"); ?>
     <Section>
-        <div class="row">
+        <div class="card-deck">
             <div class="card">
                 <h1>Welcome to Totally Not A Scam Internet Wonders</h1>
                 <p>We have many amazing wonderments which you like very much, I think. You not get this anywhere else on
@@ -23,7 +23,7 @@
                     customer.</p>
             </div>
         </div>
-        <div class="card-columns">
+        <div class="card-deck">
             <a href="">
                 <div class="card">
                     <div class="card-body text-center">
