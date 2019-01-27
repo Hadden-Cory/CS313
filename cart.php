@@ -18,8 +18,8 @@ session_start();
 <body>
     <?php
 $_SESSION["gummys"] = $_POST["gummyQuantity"];
-$_SESSION["cookies"] = $_POST["gummyQuantity"];
-$_SESSION["skittles"] = $_POST["gummyQuantity"];
+$_SESSION["cookies"] = 0;
+$_SESSION["skittles"] = 0;
 print_r($_SESSION);
 ?>
     <?php include("header.php"); ?>
