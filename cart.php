@@ -34,9 +34,8 @@ session_start();
 
     function genDrop($sessionData, $name)
     {
-        print($sessionData);
         echo $sessionData . "<select name='" . $name . "Removal' class='form-control'>";
-        for ($i = 0; $i < $sessionData; $i++) {
+        for ($i = 0; $i <= $sessionData; $i++) {
             echo "<option value='" . $i . "'>" . $i . "</option>";
         }
     }
@@ -74,8 +73,6 @@ session_start();
                                 <h3><?php echo $_SESSION["cookies"]; ?> Cookies Chips</h3>
                             </div>
                             <div class="col-3">
-
-                                </select><br>
                             </div>
                             <div class="col-3">
                                 <button type="submit" class="btn-lg btn-info">Remove</button>
