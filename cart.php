@@ -63,7 +63,7 @@ session_start();
                             <div class="col-3">
                                 <?php
                                 genDrop($_SESSION["gummys"], "gummy");
-                                ?><br>
+                                ?>
                             </div>
                             <div class="col-3">
                                 <button type="submit" class="btn-lg btn-info">Remove</button>
@@ -90,7 +90,6 @@ session_start();
                                 <?php
                                 genDrop($_SESSION["skittles"], "skittles");
                                 ?>
-                                <br>
                             </div>
                             <div class="col-3">
                                 <button type="submit" class="btn-lg btn-info">Remove</button>
