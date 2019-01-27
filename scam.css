@@ -11,11 +11,6 @@ section {
 }
 
 .card.item {
-     margin: 2%;
-    /*padding: 1%;
-    width: 350px;
-    width: 386px;
-    height: 345; */
     background-color: rgb(205, 245, 253);
     border-radius: 10px;
     -webkit-box-shadow: 10px 10px 48px -15px rgba(0,0,0,0.78);
