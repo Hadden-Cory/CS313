@@ -15,23 +15,33 @@
 <body>
     <?php include("header.php"); ?>
     <Section>
-        <div class="jumbotron">
-            <h1>Authentic Gummy Bear Tree Seeds</h1>
-            <p>Shippment include 20 seeds for authentic gummy bear tree. You plant in vessel and water many days. And
-                also it grows a tree that is very big and also full of candy bears.</p>
+        <div class="row">
+            <div class="col-12">
+                <div class="jumbotron">
+                    <h1>Authentic Gummy Bear Tree Seeds</h1>
+                    <p>Shippment include 20 seeds for authentic gummy bear tree. You plant in vessel and water many
+                        days. And
+                        also it grows a tree that is very big and also full of candy bears.</p>
 
+                </div>
+            </div>
         </div>
         <div class="row">
             <div class="col-6">
-                <img src="/week03ponder/seeds.jpg" class="img-fluid img-thumbnail mx-auto d-block"
-                    alt="Seeds">
+                <img src="/week03ponder/seeds.jpg" class="img-fluid img-thumbnail mx-auto d-block" alt="Seeds">
             </div>
             <div class="col-6">
-                <img src="/week03ponder/gummy.jpg" class="img-fluid img-thumbnail mx-auto d-block"
-                    alt="Gummy Bears">
+                <img src="/week03ponder/gummy.jpg" class="img-fluid img-thumbnail mx-auto d-block" alt="Gummy Bears">
             </div>
         </div>
-        <div class="jumbotron">
+
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="jumbotron">
+                    <h1>Stuff<h2>
+                </div>
+            </div>
         </div>
     </Section>
 </body>
