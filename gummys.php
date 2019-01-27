@@ -32,7 +32,7 @@
             </div>
             <div class="col-4">
                 <div class="jumbotron">
-                    <h3>Order Now<h3.><br>
+                    <h3>Order Now<h3><br>
                             <form action="cart.php" method="post">
                                 <div class="form-group">
                                     How Many<select name="quantity" class="form-control" id="quantity">
