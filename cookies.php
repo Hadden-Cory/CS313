@@ -46,7 +46,7 @@ session_start();
                                     <?php 
                                     $_SESSION['cookies'] = $_SESSION['cookies'] + $_POST['cookieQuantity'];
                                     ?>
-                                    <a href="cart.php"><button class="btn-lg btn-info">View Cart</button></a>
+                                    <a href="cart.php">view cart</a>
                                 </div>
                             </form>
                 </div>
