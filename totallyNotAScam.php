@@ -25,7 +25,7 @@
         </div>
         <div class="card-columns">
             <a href="">
-                <div class="card bg-primary">
+                <div class="card">
                     <div class="card-body text-center">
                         <h3 class= "card-text">Gummy Bear Tree Seeds</h3>
                     </div>
