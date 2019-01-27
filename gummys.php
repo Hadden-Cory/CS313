@@ -23,11 +23,11 @@
         </div>
         <div class="row">
             <div class="col-6">
-                <img src="/week03ponder/seeds.jpg" class="img-fluid img-thumbnail float-left mx-auto d-block"
+                <img src="/week03ponder/seeds.jpg" class="img-fluid img-thumbnail mx-auto d-block"
                     alt="Seeds">
             </div>
             <div class="col-6">
-                <img src="/week03ponder/gummy.jpg" class="img-fluid img-thumbnail float-right mx-auto d-block"
+                <img src="/week03ponder/gummy.jpg" class="img-fluid img-thumbnail mx-auto d-block"
                     alt="Gummy Bears">
             </div>
         </div>
