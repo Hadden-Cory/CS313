@@ -15,7 +15,7 @@
 <body>
     <?php include("header.php"); ?>
     <Section>
-        <div class="card-deck">
+        <div class="card-columns">
             <div class="card intro">
                 <div class="card-body text-center">
                     <div class="card-text">
