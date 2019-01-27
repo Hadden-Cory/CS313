@@ -33,7 +33,7 @@
                     <h1>Order Now<h1><br>
                             <form action="cart.php" method="post">
                                 <div class="form-group">
-                                    How Many<select name="quantity" class="form-control" id="quantity">
+                                    How Many<select name="gummyQuantity" class="form-control" id="quantity">
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>

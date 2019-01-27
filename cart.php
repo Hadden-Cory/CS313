@@ -1,4 +1,9 @@
-<html><head>
+<?php
+session_start();
+?>
+<html>
+
+<head>
     <title>TotallyNotAScam.com-Cart</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="plants.css">
@@ -11,6 +16,12 @@
 </head>
 
 <body>
+    <?php
+$_SESSION["gummys"] = $_POST["gummyQuantity"];
+$_SESSION["cookies"] = $_POST["gummyQuantity"];
+$_SESSION["skittles"] = $_POST["gummyQuantity"];
+print_r($_SESSION);
+?>
     <?php include("header.php"); ?>
     <Section>
         <div class="row">
@@ -28,9 +39,9 @@
             </div>
             <div class="col-4">
                 <div class="jumbotron">
-                    <p><?php echo $_POST["quantity"]; ?> Gummy Seed Packs</p>
-                    <p><?php echo $_POST["quantity"]; ?> Cookies Chips</p>
-                    <p><?php echo $_POST["quantity"]; ?> Skittle Pills</p>
+                    <h3><?php echo $_Session["gummys"]; ?> Gummy Seed Packs</h3>
+                    <h3><?php echo $_POST["cookies"]; ?> Cookies Chips</h3>
+                    <h3><?php echo $_POST["skittle"]; ?> Skittle Pills</h3>
                 </div>
             </div>
             <div class="col-4">
