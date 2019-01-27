@@ -6,10 +6,6 @@ section {
     padding: 2%;
 }
 
-.intro{
-    height: 150px;
-}
-
 .card.item {
     background-color: rgb(205, 245, 253);
     border-radius: 10px;
