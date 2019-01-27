@@ -16,7 +16,7 @@
     <?php include("header.php"); ?>
     <Section>
         <div class="row">
-            <div class="col-lg-12 h-25">
+            <div class="card">
                 <h1>Welcome to Totally Not A Scam Internet Wonders</h1>
                 <p>We have many amazing wonderments which you like very much, I think. You not get this anywhere else on
                     internet or in shops or in grocery stores. We only have. Everything is half off for you, first
@@ -35,17 +35,17 @@
             <a href="">
                 <div class="card">
                     <div class="card-body text-center">
-                        <h3 class= "card-text">Gummy Bear Tree Seeds</h3>
+                        <h3 class= "card-text">Cookie Computer Chip</h3>
                     </div>
-                    <img class="card-img-top" src="/week03ponder/GummyBear.jpg" alt="Gummy Bears">
+                    <img class="card-img-top" src="/week03ponder/cookies.jpg" alt="Gummy Bears">
                 </div>
             </a>
             <a href="">
                 <div class="card">
                     <div class="card-body text-center">
-                        <h3 class= "card-text">Gummy Bear Tree Seeds</h3>
+                        <h3 class= "card-text">Skittle Pill</h3>
                     </div>
-                    <img class="card-img-top" src="/week03ponder/GummyBear.jpg" alt="Gummy Bears">
+                    <img class="card-img-top" src="/week03ponder/skittles.jpeg" alt="Gummy Bears">
                 </div>
             </a>
             <!-- <a class="col-md-3 card" href="">
