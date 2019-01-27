@@ -17,34 +17,22 @@
             <div class="col-12">
                 <div class="jumbotron">
                     <h1>Cart</h1><br>
-                    <p><?php echo $_POST["quantity"]; ?></p>
+
 
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-4">
-                <img src="/week03ponder/seeds.jpg" class="img-fluid img-thumbnail mx-auto d-block" alt="Seeds">
+                <img src="/week03ponder/secure.jpeg" class="img-fluid img-thumbnail mx-auto d-block" alt="Seeds">
             </div>
             <div class="col-4">
                 <div class="jumbotron">
-                    <h1>Order Now<h1><br>
-                            <form action="cart.php" method="post">
-                                <div class="form-group">
-                                    How Many<select name="quantity" class="form-control" id="quantity">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        </select><br>
-                                        <button type="submit" class="btn-lg btn-info">Order</button>
-                                        
-                                </div>
-                            </form>
+                    <p>Gummy Seed Packs<?php echo $_POST["quantity"]; ?></p>
                 </div>
             </div>
             <div class="col-4">
-                <img src="/week03ponder/gummy.jpg" class="img-fluid img-thumbnail mx-auto d-block" alt="Gummy Bears">
+                <img src="/week03ponder/money.jpeg" class="img-fluid img-thumbnail mx-auto d-block" alt="Gummy Bears">
             </div>
         </div>
     </Section>
