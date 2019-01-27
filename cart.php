@@ -34,7 +34,8 @@ session_start();
 
     function genDrop($sessionData, $name)
     {
-        echo $sessionData . "<select name='" . $name . "Removal' class=\"form-control\">";
+        print($sessionData);
+        echo $sessionData . "<select name='" . $name . "Removal' class='form-control'>";
         for ($i = 0; $i < $sessionData; $i++) {
             $sessionData = 0;
             echo "<option value='" . $i . "'>" . $i . "</option>";
