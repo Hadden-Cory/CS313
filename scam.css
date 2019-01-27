@@ -20,3 +20,7 @@ section{
     box-shadow: 10px 10px 48px -15px rgba(0,0,0,0.78);  
     text-align: center;
 }
+
+img{
+    width: 45px;
+}
