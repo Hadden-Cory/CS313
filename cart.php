@@ -56,6 +56,7 @@ session_start();
             <div class="col-4">
                 <div class="jumbotron">
                     <div class="form-group">
+                    <form action="" method="post">
                         <div class="row">
                             <div class="col-6">
                                 <h3><?php echo $_SESSION["gummys"]; ?> Gummy Seeds</h3>
@@ -69,6 +70,8 @@ session_start();
                                 <button type="submit" class="btn-lg btn-info">Remove</button>
                             </div>
                         </div>
+                        </form>
+                        <form action="" method="post">
                         <div class="row">
                             <div class="col-6">
                                 <h3><?php echo $_SESSION["cookies"]; ?> Cookies Chips</h3>
@@ -82,6 +85,8 @@ session_start();
                                 <button type="submit" class="btn-lg btn-info">Remove</button>
                             </div>
                         </div>
+                        </form>
+                        <form action="" method="post">
                         <div class="row">
                             <div class="col-6">
                                 <h3>
@@ -99,8 +104,11 @@ session_start();
                                 <button type="submit" class="btn-lg btn-info">Remove</button>
                             </div>
                         </div>
+                        </form>
+                        <?php removal($_SESSION['gummys'], $_POST['gummyRemoval']);
+                         removal($_SESSION['gummys'], $_POST['gummyRemoval']);
+                         removal($_SESSION['gummys'], $_POST['gummyRemoval']);?>
                     </div>
-
                 </div>
             </div>
             <div class="col-4">
