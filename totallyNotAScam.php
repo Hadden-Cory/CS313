@@ -34,7 +34,7 @@
                     <div class="card-body text-center">
                         <h3 class="card-title">Gummy Seeds</h3>
                     </div>
-                    <img class="card-img-top" src="/week03ponder/gummybear.jpg" alt="Gummy Bears">
+                    <img class="card-img-top" src="/week03ponder/gummyBear.jpg" alt="Gummy Bears">
                 </div>
             </a>
             <a href="">
