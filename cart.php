@@ -21,7 +21,7 @@ session_start();
     $_SESSION["cookies"] = 3;
     $_SESSION["skittles"] = 2;
 
-    include("header.php"); 
+    include("header.php");
 
     function removal($sessionData, $removal)
     {
@@ -34,7 +34,7 @@ session_start();
 
     function genDrop($sessionData, $name)
     {
-        echo $sessionData."<select name='" . $name . "Removal' class=\"form-control\">";
+        echo $sessionData . "<select name='" . $name . "Removal' class=\"form-control\">";
         for ($i = 0; $i < $sessionData; $i++) {
             $sessionData = 0;
             echo "<option value='" . $i . "'>" . $i . "</option>";
@@ -55,56 +55,56 @@ session_start();
             </div>
             <div class="col-4">
                 <div class="jumbotron">
-                        <div class="form-group">
-                            <div class="row">
-                                <div class="col-6">
-                                    <h3><?php echo $_SESSION["gummys"]; ?> Gummy Seeds</h3>
-                                </div>
-                                <div class="col-3">
-                                    <?php
-                                    genDrop($_SESSION["gummys"], "gummy");
-                                    ?><br>
-                                </div>
-                                <div class="col-3">
-                                    <button type="submit" class="btn-lg btn-info">Remove</button>
-                                </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-6">
+                                <h3><?php echo $_SESSION["gummys"]; ?> Gummy Seeds</h3>
                             </div>
-                            <div class="row">
-                                <div class="col-6">
-                                    <h3><?php echo $_SESSION["cookies"];?> Cookies Chips</h3>
-                                </div>
-                                <div class="col-3">
+                            <div class="col-3">
+                                <?php
+                                genDrop($_SESSION["gummys"], "gummy");
+                                ?><br>
+                            </div>
+                            <div class="col-3">
+                                <button type="submit" class="btn-lg btn-info">Remove</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <h3><?php echo $_SESSION["cookies"]; ?> Cookies Chips</h3>
+                            </div>
+                            <div class="col-3">
 
-                                    </select><br>
-                                </div>
-                                <div class="col-3">
-                                    <button type="submit" class="btn-lg btn-info">Remove</button>
-                                </div>
+                                </select><br>
                             </div>
-                            <div class="row">
-                                <div class="col-6">
-                                    <h3>
-                                        <?php echo $_SESSION["skittles"];
+                            <div class="col-3">
+                                <button type="submit" class="btn-lg btn-info">Remove</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <h3>
+                                    <?php echo $_SESSION["skittles"];
                                     ?></h3>
-                                        Skittle Pills</h3>
-                                </div>
-                                <div class="col-3">
-                                    <?php
+                                Skittle Pills</h3>
+                            </div>
+                            <div class="col-3">
+                                <?php
                                 genDrop($_SESSION["skittles"], "skittles");
                                 ?>
-                                    <br>
-                                </div>
-                                <div class="col-3">
-                                <button type="submit" class="btn-lg btn-info">Remove</button>
-                                </div>
+                                <br>
                             </div>
-                </div>
+                            <div class="col-3">
+                                <button type="submit" class="btn-lg btn-info">Remove</button>
+                            </div>
+                        </div>
+                    </div>
 
+                </div>
             </div>
-        </div>
-        <div class="col-4">
-            <img src="/week03ponder/money.jpeg" class="img-fluid img-thumbnail mx-auto d-block" alt="Gummy Bears">
-        </div>
+            <div class="col-4">
+                <img src="/week03ponder/money.jpeg" class="img-fluid img-thumbnail mx-auto d-block" alt="Gummy Bears">
+            </div>
         </div>
     </Section>
 </body>
