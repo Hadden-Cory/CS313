@@ -21,8 +21,8 @@
                 also it grows a tree that is very big and also full of candy bears.</p>
 
         </div>
-            <img src="/week03ponder/seeds.jpg" class="img-fluid thumbnail float-left mx-auto d-block" alt="Seeds">
-            <img src="/week03ponder/gummy.jpg" class="img-fluid thumbnail float-right mx-auto d-block" alt="Gummy Bears">
+            <img src="/week03ponder/seeds.jpg" class="img-fluid img-thumbnail float-left mx-auto d-block" alt="Seeds">
+            <img src="/week03ponder/gummy.jpg" class="img-fluid img-thumbnail float-right mx-auto d-block" alt="Gummy Bears">
         <div class="jumbotron">
         </div>
     </Section>
