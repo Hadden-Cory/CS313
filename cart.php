@@ -17,7 +17,7 @@ session_start();
 
 <body>
     <?php
-    $_SESSION["gummys"] = $_SESSION["gummy"]+$_POST["gummyQuantity"];
+    $_SESSION["gummys"] = $_SESSION["gummy"] + $_POST["gummyQuantity"];
     $_SESSION["skittles"] = 0;
     ?>
     <?php include("header.php"); ?>
@@ -26,8 +26,6 @@ session_start();
             <div class="col-12">
                 <div class="jumbotron">
                     <h1>Cart</h1><br>
-
-
                 </div>
             </div>
         </div>
@@ -41,26 +39,48 @@ session_start();
                         <div class="form-group">
                             <div class="row">
                                 <div class="col-6">
-                                    <h3><?php echo $_SESSION["cookies"];?> Cookies Chips</h3>
+                                    <h3><?php echo $_SESSION["gummys"]; ?> Gummy Seeds</h3>
                                 </div>
                                 <div class="col-3">
-                                    Remove <select name="cookieQuantity" class="form-control"
-                                        id="quantity">
+                                    <select name="gummyRemove" class="form-control">
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                     </select><br>
                                 </div>
                                 <div class="col-3">
-                                <button type="submit" class="btn-lg btn-info">remove</button>
+                                    <button type="submit" class="btn-lg btn-info">Remove</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <h3><?php echo $_SESSION["cookies"]; ?> Cookies Chips</h3>
+                                </div>
+                                <div class="col-3">
+                                    <select name="cookieRemove" class="form-control">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                    </select><br>
+                                </div>
+                                <div class="col-3">
+                                    <button type="submit" class="btn-lg btn-info">Remove</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <h3><?php echo $_SESSION["skittles"]; ?> Skittle Pills</h3>
+                                </div>
+                                <div class="col-3">
+                                    <select name="skittleRemove" class="form-control">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                    </select><br>
+                                </div>
+                                <div class="col-3">
+                                    <button type="submit" class="btn-lg btn-info">Remove</button>
                                 </div>
                             </div>
                     </form>
-
-
                 </div>
-                <h3><?php echo $_SESSION["gummys"]; ?> Gummy Seed Packs</h3>
-                <h3><?php echo $_SESSION["cookies"]; ?> Cookies Chips</h3>
-                <h3><?php echo $_SESSION["skittle"]; ?> Skittle Pills</h3>
             </div>
         </div>
         <div class="col-4">
