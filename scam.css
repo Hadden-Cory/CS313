@@ -6,6 +6,10 @@ section {
     padding: 2%;
 }
 
+.intro{
+    height: 200px;
+}
+
 .card.item {
     /* margin: 2%;
     padding: 1%;
