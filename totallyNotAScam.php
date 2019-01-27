@@ -15,8 +15,8 @@
 <body>
     <?php include("header.php"); ?>
     <Section>
-        <div class="card-deck intro">
-            <div class="card">
+        <div class="card-deck">
+            <div class="card intro">
                 <div class="card-body text-center">
                     <div class="card-text">
                         <h1 class="card-title">Welcome to Totally Not A Scam Internet Wonders</h1>
