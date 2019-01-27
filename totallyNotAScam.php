@@ -19,8 +19,8 @@
             <div class="card">
                 <div class="card-body">
                     <div class="card-text">
-                        <h1>Welcome to Totally Not A Scam Internet Wonders</h1>
-                        <p>We have many amazing wonderments which you like very much, I think. You not get this anywhere
+                        <h1 class="card-title">Welcome to Totally Not A Scam Internet Wonders</h1>
+                        <p class="card-text">We have many amazing wonderments which you like very much, I think. You not get this anywhere
                             else on
                             internet or in shops or in grocery stores. We only have. Everything is half off for you,
                             first customer.</p>
