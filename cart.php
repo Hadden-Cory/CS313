@@ -18,11 +18,6 @@ session_start();
 <body>
     <?php
     $_SESSION["gummys"] = $_SESSION["gummy"]+$_POST["gummyQuantity"];
-    if ( $_SESSION["cookies"] > 2 ){
-       $_SESSION["cookies"] = 2; 
-    } else {
-        $_SESSION["cookies"] = $_SESSION["cookies"]+$_POST["cookieQuantity"];
-    }
     $_SESSION["skittles"] = 0;
     ?>
     <?php include("header.php"); ?>

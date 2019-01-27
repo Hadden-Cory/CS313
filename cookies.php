@@ -1,7 +1,9 @@
 <?php
 session_start();
 ?>
-<html><head>
+<html>
+
+<head>
     <title>TotallyNotAScam.com-Cookies</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="plants.css">
@@ -12,6 +14,7 @@ session_start();
     <script src="plants.js"></script>
     <script src="scam.js"></script>
 </head>
+
 <body>
     <?php include("header.php"); ?>
     <Section>
@@ -19,7 +22,9 @@ session_start();
             <div class="col-12">
                 <div class="jumbotron">
                     <h1>High Tech computer Chip that Makes Cookies</h1><br>
-                    <p>This is high tech very expensive cookie making computer chip. It works really really good. You love the cookies. Easy to plug in to computer, and also very cheap for you. Two left only. Must buy quickly.</p>
+                    <p>This is high tech very expensive cookie making computer chip. It works really really good. You
+                        love the cookies. Easy to plug in to computer, and also very cheap for you. Two left only. Must
+                        buy quickly.</p>
                 </div>
             </div>
         </div>
@@ -30,16 +35,24 @@ session_start();
             <div class="col-4">
                 <div class="jumbotron">
                     <h1>Order Now<h1><br>
-                            <form action="cart.php" method="post">
+                            <form action="" method="post">
                                 <div class="form-group">
                                     How Many<select name="cookieQuantity" class="form-control" id="quantity">
                                         <option value="1">1</option>
                                         <option value="2">2</option>
-                                        </select><br>
-                                        <button type="submit" class="btn-lg btn-info">Order</button>
-                                        
+                                    </select><br>
+                                    <button type="submit" class="btn-lg btn-info">Order</button>
+                                    <a href="cart.php" ><button class="btn-lg btn-info">View Cart</button></a>
                                 </div>
                             </form>
+                            <?php 
+                            require_once("session_start.php");
+                                if (!isset($_SESSION["cookies"])){
+                                    $_SESSION['cookies'] = 0;
+                                } else {
+                                    $_SESSION['cookies'] = $_SESSION['cookies'] + $_POST['cookieQuantity'];
+                                }                                
+                            ?>
                 </div>
             </div>
             <div class="col-4">
