@@ -24,13 +24,16 @@ session_start();
 
     function removal($sessionData, $removal)
     {
-        echo $sessionDatal;
-        echo $removal;
+        echo "<p>".$sessionData."</p>";
+        echo "<p>".$removal."</p>";
         if ($removal > $sessionData) {
             $sessionData = 0;
         } else {
             $sessionData = $sessionData - $removal;
         }
+
+        echo "<p> After: ".$sessionData."</p>";
+        echo "<p> After: ".$removal."</p>";
     }
 
     function genDrop($sessionData, $name)
