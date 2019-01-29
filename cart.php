@@ -108,9 +108,9 @@ session_start();
                             </div>
                         </form>
                         <?php 
-                        removal($_SESSION['gummys'], $_POST['gummyRemoval']);
-                        removal($_SESSION['cookies'], $_POST['cookiesRemoval']);
-                        removal($_SESSION['skittles'], $_POST['skittlesRemoval']); ?>
+                            removal($_SESSION['gummys'], $_POST['gummyRemoval']);
+                            removal($_SESSION['cookies'], $_POST['cookiesRemoval']);
+                            removal($_SESSION['skittles'], $_POST['skittlesRemoval']);?>
                     </div>
                 </div>
             </div>
