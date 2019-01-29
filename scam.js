@@ -1,3 +1,3 @@
 function refresh (){
-    window.location.reload();
+    setTimeOut(function(){window.location.reload();}, 2000);
 }

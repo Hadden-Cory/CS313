@@ -103,7 +103,7 @@ session_start();
                                     ?>
                                 </div>
                                 <div class="col-3">
-                                    <button type="submit" class="btn-lg btn-info">Remove</button>
+                                    <button type="submit" onclick="refresh()" class="btn-lg btn-info">Remove</button>
                                 </div>
                             </div>
                         </form>
