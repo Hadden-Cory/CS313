@@ -110,7 +110,8 @@ session_start();
                         <?php 
                             removal($_SESSION['gummys'], $_POST['gummyRemoval']);
                             removal($_SESSION['cookies'], $_POST['cookiesRemoval']);
-                            removal($_SESSION['skittles'], $_POST['skittlesRemoval']);?>
+                            removal($_SESSION['skittles'], $_POST['skittlesRemoval']);
+                            header("Location: cart.php");?>
                     </div>
                 </div>
             </div>
