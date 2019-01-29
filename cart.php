@@ -17,15 +17,14 @@ session_start();
 
 <body>
     <?php
-
-    $_SESSION["gummys"] = 4;
-    $_SESSION["skittles"] = 2;
+    $_SESSION["gummys"] = 0;
+    $_SESSION["skittles"] = 0;
     include("header.php");
 
     function removal($sessionData, $removal)
     {
-        echo "<p>".$sessionData."</p>";
-        echo "<p>".$removal."</p>";
+        echo "<p> Data: ".$sessionData."</p>";
+        echo "<p> Removal: ".$removal."</p>";
         if ($removal > $sessionData) {
             $sessionData = 0;
         } else {
@@ -33,7 +32,6 @@ session_start();
         }
 
         echo "<p> After: ".$sessionData."</p>";
-        echo "<p> After: ".$removal."</p>";
     }
 
     function genDrop($sessionData, $name)
