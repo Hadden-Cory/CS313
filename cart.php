@@ -111,7 +111,7 @@ session_start();
                             removal($_SESSION['gummys'], $_POST['gummyRemoval']);
                             removal($_SESSION['cookies'], $_POST['cookiesRemoval']);
                             removal($_SESSION['skittles'], $_POST['skittlesRemoval']);
-                            header("Location: cart.php");?>
+                            header("Refresh: 5; url=cart.php");?>
                     </div>
                 </div>
             </div>
