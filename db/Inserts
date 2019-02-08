@@ -1,0 +1,233 @@
+INSERT INTO
+    Shipper(shipper_name, shipper_passwaord_hash)
+VALUES
+    ('George Foreman', 'Georgo345'),
+    ('Jace Hansen', 'FarmerKid32'),
+    ('Brad Jones', 'BigTruck34'),
+    ('Fred Flintstone', 'YabaDabaDoo123'),
+    ('Michael Geordon', 'Hops&Hoops');
+INSERT INTO
+    Shipment(
+        shipment_start_date,
+        shipment_end_date,
+        Shipper_id_shipper
+    )
+VALUES
+    ('5/18/2019', '5/27/2019', '3'),
+    ('4/12/2019', '4/30/2019', '3'),
+    ('6/12/2019', '6/30/2019', '1'),
+    ('3/12/2019', '5/23/2019', '4'),
+    ('5/17/2019', '5/20/2019', '5'),
+    ('5/13/2019', '5/30/2019', '2'),
+    ('6/12/2019', '6/15/2019', '2'),
+    ('6/12/2019', '6/30/2019', '5'),
+    ('3/12/2019', '5/23/2019', '1');
+INSERT INTO
+    Size(size_weight, size_width, size_height, size_depth)
+VALUES
+    ('1000', '84', '60', '72'),
+    ('850', '60', '60', '60'),
+    ('500', '60', '72', '60'),
+    ('14000', '120', '120', '240'),
+    ('21000', '120', '120', '420'),
+    ('1300', '168', '60', '60'),
+    ('10000', '120', '120', '180'),
+    ('20000', '120', '168', '420'),
+    ('4000', '72', '96', '216'),
+    ('4000', '72', '84', '72'),
+    ('2000', '60', '60', '60'),
+    ('4000', '84', '84', '84'),
+    ('3000', '96', '60', '96'),
+    ('400', '48', '72', '48'),
+    ('500', '72', '96', '72');
+INSERT INTO
+    Item (
+        item_name,
+        item_description,
+        item_spcl_instructs,
+        Size_id_size,
+        Shipment_id_shipment
+    )
+VALUES
+    (
+        'Grills',
+        '300 Geroge foreman grills',
+        'Park right next to the giant george poster',
+        '1',
+        '3'
+    ),
+    (
+        'Broze Gloves',
+        '2 bronze gloves',
+        'Text (827) 1Ge-orge when you get here.',
+        '2',
+        '9'
+    ),
+    (
+        'Spaculas',
+        '900 Enraved Spatulas',
+        '',
+        '3',
+        '3'
+    ),
+    (
+        'load of hay',
+        '10 large bales',
+        '',
+        '4',
+        '6'
+    ),
+    (
+        'load of hay',
+        '15 large bales',
+        '',
+        '5',
+        '7'
+    ),
+    (
+        'Swather Attachment',
+        '9296 Windrower Attatchment',
+        '',
+        '6',
+        '1'
+    ),
+    (
+        'Load of Hay',
+        '20 small bales',
+        '',
+        '7',
+        '1'
+    ),
+    (
+        'Load of Hay',
+        '40 small bales',
+        '',
+        '8',
+        '2'
+    ),
+    (
+        'Small Tractor',
+        '4052R john deere utility tractor',
+        '',
+        '9',
+        '1'
+    ),
+    (
+        'Dino Feed',
+        '',
+        '',
+        '10',
+        '4'
+    ),
+    (
+        'Scap Newspapers',
+        '',
+        '',
+        '11',
+        '4'
+    ),
+    (
+        'Coco Pebbles',
+        '',
+        '',
+        '12',
+        '4'
+    ),
+    (
+        'Bulk Nike Shoes',
+        '2000 Basketball Shoes',
+        '',
+        '13',
+        '5'
+    ),
+    (
+        'Basket Balls',
+        '300 Basketballs',
+        '',
+        '14',
+        '8'
+    ),
+    (
+        'Basket Ball Hoops',
+        '2 basketball hoops',
+        '',
+        '15',
+        '8'
+    );
+INSERT INTO
+    Ship_Loc(
+        ship_loc_is_pickup,
+        ship_loc_city,
+        ship_loc_state,
+        ship_loc_zip,
+        shipment_id_shipment
+    )
+VALUES
+    ('FALSE', 'George Town', 'ID', '56740', '3'),
+    ('FALSE', 'George Town', 'ID', '56740', '9'),
+    ('FALSE', 'Brownsville', 'WY', '45410', '6'),
+    ('FALSE', 'Brownsville', 'WY', '45410', '7'),
+    ('FALSE', 'Atomic City', 'ID', '56753', '1'),
+    ('FALSE', 'Atomic City', 'ID', '56753', '2'),
+    ('FALSE', 'Bedrock', 'CA', '30000', '4'),
+    ('FALSE', 'Chicago', 'IL', '98765', '5'),
+    ('FALSE', 'Chicago', 'IL', '98765', '8'),
+    ('TRUE', 'Denver', 'CO', '65498', '3'),
+    ('TRUE', 'Denver', 'CO', '65498', '9'),
+    ('TRUE', 'Grace', 'ID', '45470', '6'),
+    ('TRUE', 'Grace', 'ID', '45470', '7'),
+    ('TRUE', 'Rigby', 'ID', '57799', '1'),
+    ('TRUE', 'Rigby', 'ID', '57799', '2'),
+    ('TRUE', 'Los Angels', 'CA', '30021', '4'),
+    ('TRUE', 'Gary', 'IN', '42388', '5'),
+    ('TRUE', 'Gary', 'IN', '42389', '8');
+INSERT INTO
+    Bid(
+        bid_contact_number,
+        bid_price,
+        bid_stat_date,
+        bid_end_date,
+        shipment_id_shipment,
+        bid_spcl_instruct
+    )
+VALUES
+    (
+        '8019004565',
+        '1400.00',
+        '6/12/2019',
+        '6/14/2019',
+        '3',
+        ''
+    ),
+    (
+        '2084861900',
+        '1200.00',
+        '5/18/2019',
+        '5/19/2019',
+        '5',
+        ''
+    ),
+    (
+        '2089771675',
+        '600.00',
+        '4/12/2019',
+        '4/12/2019',
+        '2',
+        'Small truck-better tie down offer $50 discount if called by 2/13/19'
+    ),
+    (
+        '7028954512',
+        '3000.00',
+        '6/15/2019',
+        '6/16/2019',
+        '8',
+        ''
+    ),
+    (
+        '5158218910',
+        '1700.00',
+        '3/21/2019',
+        '3/23/2019',
+        '4',
+        'I can be flexible date-wise'
+    );
