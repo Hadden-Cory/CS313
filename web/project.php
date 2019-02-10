@@ -26,7 +26,7 @@
                                     <div class="card">
                                         <div class="card-block">
                                             <h3 class="card-title">TotallyNotAScam.com</h3>
-                                            <img class="plantImg" src="flower1.jpg" alt="Flower">
+                                            <img class="plantImg" src=" " alt="NotAScam Thumbnail">
                                         </div>
                                     </div>
                                 </div>
@@ -66,7 +66,7 @@
                                     <div class="card-block">
                                         <h3 class="card-title">ThereNBack.com</h3>
                                         <p>
-                                        Eggs and Bacon
+                                            Eggs and Bacon
                                         </p>
                                     </div>
                                 </div>
@@ -80,14 +80,20 @@
                             <div class="front">
                                 <div class="card">
                                     <div class="card-block">
-                                        <h1 class="card-title">More Coming Soon!</h1>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <h2 class="card-title">More Coming Soon!</h2>
                                     </div>
                                 </div>
                             </div>
                             <div class="back">
                                 <div class="card">
                                     <div class="card-block">
-                                        <h1 class="card-title">More Coming Soon!</h1>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <h2 class="card-title">More Coming Soon!</h2>
                                     </div>
                                 </div>
                             </div>
