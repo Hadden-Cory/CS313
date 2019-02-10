@@ -50,7 +50,7 @@ session_start();
       <th>Deliver by</th><th>Delivery City</th>
       <th>Delivery State</th><th></th></tr>';
 
-    $i = 0;
+    $i = 0;  
 
     foreach ($db->query('SELECT
     ship.shipment_start_date,
