@@ -15,9 +15,9 @@
 
 echo '<div id="container" class="r>
 <div class="row h-50">
-<div class="col-sm-4 col-lg-4">
+<div class="col-sm-2 col-lg-2">
 </div>
-<div class="col-sm-4 col-lg-4">';
+<div class="col-sm-8 col-lg-8">';
 
 try
 {
@@ -90,7 +90,7 @@ echo '</table>';
 
 ?>
 </div>
-<div class="col-sm-4 col-lg-4">
+<div class="col-sm-2 col-lg-2">
 </div>
 </div>
 </div>
