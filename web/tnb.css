@@ -7,10 +7,11 @@ body{
 }
 
 #mainTable{
-    border: solid;
+   
     color: azure !important;
 }
 
 td, th{
+     border: solid;
     padding: 20px;  
 }
