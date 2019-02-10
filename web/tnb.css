@@ -1,10 +1,7 @@
-body{
+.container{
+    padding: 20px;    
     background-color: rgb(56, 91, 94) !important;
     color: azure;
-}
-
-.container{
-    padding: 20px;
 }
 
 #mainTable{
