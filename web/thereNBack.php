@@ -53,27 +53,34 @@ catch (PDOException $ex)
 // }
 
 echo '<table id=mainTable><tr><th>Pickup As Early As </th>
-      <th>Pickup City</th><th>Pickup State</th></tr>';
+      <th>Pickup City</th><th>Pickup State</th>
+      <th>Deliver by</th><th>Delivery City</th>
+      <th>Delivery State</th></tr>';
 
 foreach ($db->query('SELECT
-shipment.shipment_start_date,
-shipment.shipment_end_date,
-Ship_Loc.ship_loc_is_pickup,
-ship_loc.ship_loc_state,
-ship_Loc.ship_loc_city
+Select
+    ship.shipment_start_date,
+    pfrom.pickup_from_city,
+    pfrom.pickup_from_state, 
+    ship.shipment_end_date,
+    shipto.ship_to_city,
+    shipto.ship_to_state
 from
-shipment
-inner join shipper on shipment.Shipper_id_shipper = Shipper.id_shipper
-inner join ship_loc on shipment.id_shipment = ship_loc.shipment_id_shipment
-where ship_loc.ship_loc_is_pickup is true
+    shipment as ship
+    inner join shipper as shipr on ship.Shipper_id_shipper = shipr.id_shipper
+    inner join ship_to as shipto on ship.id_shipment = shipto.shipment_id_shipment 
+    inner join pickup_from as pfrom on ship.id_shipment = pfrom.shipment_id_shipment 
 order by
-shipment.id_shipment DESC,
-ship_loc_city DESC,
-ship_loc_is_pickup ASC;') as $row)
+    ship.id_shipment DESC,
+    ship_to_city DESC;') as $row)
 {
     echo '<tr><td>'.$row['shipment_start_date'].'</td>';
-    echo '<td>'.$row['ship_loc_city'].'</td>';
-    echo '<td>'.$row['ship_loc_state'].'</td>';
+    echo '<td>'.$row['ship_to_city'].'</td>';
+    echo '<td>'.$row['ship_to_state'].'</td>';
+    echo '<td>'.$row['shipment_start_end'].'</td>';
+    echo '<td>'.$row['pickup_from_city'].'</td>';
+    echo '<td>'.$row['pickup_from_state'].'</td>';
+
     echo '</tr>';
 }
 echo '</table>';

@@ -231,3 +231,25 @@ VALUES
         '4',
         'I can be flexible date-wise'
     );
+
+
+INSERT INTO
+    pickup_from(
+        pickup_from_city,
+        pickup_from_state,
+        pickup_from_zip,
+        shipment_id_shipment
+    )
+VALUES
+    ('Denver', 'CO', '65498', '3'),
+    ('Denver', 'CO', '65498', '9'),
+    ('Grace', 'ID', '45470', '6'),
+    ('Grace', 'ID', '45470', '7'),
+    ('Rigby', 'ID', '57799', '1'),
+    ('Rigby', 'ID', '57799', '2'),
+    ('Los Angels', 'CA', '30021', '4'),
+    ('Gary', 'IN', '42388', '5'),
+    ('Gary', 'IN', '42389', '8');
+
+    Delete from ship_to
+    where id_location > 9;

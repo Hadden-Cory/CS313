@@ -36,4 +36,9 @@ CREATE TABLE Shipment (
     bid_end_date DATE NULL,
     bid_spcl_instruct TEXT NULL,
     Shipment_id_shipment INT NOT NULL REFERENCES Shipment(id_shipment)
-);          
+);CREATE TABLE pickup_from (
+    id_pickup_from SERIAL PRIMARY KEY NOT NULL,
+    pickup_from_city VARCHAR(45) NOT NULL,
+    pickup_from_state VARCHAR(12) NOT NULL,
+    pickup_from_zip INT NOT NULL,
+    Shipment_id_shipment INT NOT NULL REFERENCES Shipment(id_shipment));          
