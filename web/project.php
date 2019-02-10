@@ -34,15 +34,15 @@
                                     <div class="card">
                                         <div class="card-block">
                                             <h3 class="card-title">TotallyNotAScam.com</h3>
-                                          <h4>(Under Construction)</h4>
-                                          <p>TotallyNotAScam.com is a spoofy on a scam site. 
-                                          It is meant to feel like a poorly done pop-up shop 
-                                          in a bazaar or a carnival attrattion that sells items 
-                                          that claim to do great things but are actually worhtless.
-                                          It is meant to a funny.</p>
-                                          <p>The website itself is meant to show case a bootstrap
-                                           layout with php form handling and shopping cart 
-                                           functionality</p> 
+                                            <h4>(Under Construction)</h4>
+                                            <p>TotallyNotAScam.com is a spoofy on a scam site.
+                                                It is meant to feel like a poorly done pop-up shop
+                                                in a bazaar or a carnival attrattion that sells items
+                                                that claim to do great things but are actually worhtless.
+                                                It is meant to a funny.</p>
+                                            <p>The website itself is meant to show case a bootstrap
+                                                layout with php form handling and shopping cart
+                                                functionality</p>
                                         </div>
                                     </div>
                                 </div>
@@ -56,54 +56,38 @@
                             <div class="front">
                                 <div class="card">
                                     <div class="card-block">
-                                        <h3 class="card-title">Victoria Amazonica</h3>
-                                        <img class="plantImg" src="flower2.jpg" alt="Flower">
+                                        <h3 class="card-title">ThereNBack.com</h3>
+                                        <img class="plantImg" src=" " alt="ThereNBack">
                                     </div>
                                 </div>
                             </div>
                             <div class="back">
                                 <div class="card">
                                     <div class="card-block">
-                                        <h3 class="card-title">Victoria Amazonica</h3>
-                                        <ul>
-                                            <li>This Amazon River water lilies can grow leaves up to 9 feet across with
-                                                a
-                                                stem 26 feet long.</li>
-                                            <li>19th century completive gardeners used coal-fired boilers to keep these
-                                                lilies alive and blooming in England’s cooler climate.</li>
-                                            <li>The leaves' vascular structure was the inspiration for the crystal
-                                                palace in
-                                                Hyde Park, London.</li>
-                                        </ul>
+                                        <h3 class="card-title">ThereNBack.com</h3>
+                                        <p>
+                                        Eggs and Bacon
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-sm-6 col-lg-4">
+                <div class="col-sm-6 col-lg-4">
                     <div class="cardFlip">
                         <div class="flipping">
                             <div class="front">
                                 <div class="card">
                                     <div class="card-block">
-                                        <h3 class="card-title">Nepenthes</h3>
-                                        <img class="plantImg" src="flower3.jpg" alt="Flower">
+                                        <h1 class="card-title">More Coming Soon!</h1>
                                     </div>
                                 </div>
                             </div>
                             <div class="back">
                                 <div class="card">
                                     <div class="card-block">
-                                        <h3 class="card-title">Nepenthes</h3>
-                                        <ul>
-                                            <li>These Carnivorous “pitcher plants” drown winged insect in their cup-like
-                                                organs with special bait fluid they produce.</li>
-                                            <li>The largest varieties of these plants can eat rats and lizards.</li>
-                                            <li>They have been nicknamed “monkey cups” because monkeys like to drink
-                                                from
-                                                their pitcher.</li>
-                                        </ul>
+                                        <h1 class="card-title">More Coming Soon!</h1>
                                     </div>
                                 </div>
                             </div>
@@ -111,7 +95,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row cardRow">
+            <!-- <div class="row cardRow">
                 <div class="col-sm-6 col-lg-4">
                     <div class="cardFlip">
                         <div class="flipping">
@@ -195,8 +179,8 @@
                             </div>
                         </div>
                     </div>
-                </div> -->
-            </div>
+                </div>
+            </div> -->
     </section>
 </body>
 
