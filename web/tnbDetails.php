@@ -90,9 +90,9 @@ foreach ($db->query(
     echo '<td>' . $row['item_description'] . '</td>';
     echo '<td>' . $row['item_spcl_instructs'] . '</td>';
     echo '<td>' . $row['size_weight'] . '</td>';
-    echo '<td>' . $row['size_width'] . '</td>';
-    echo '<td>' . $row['size_depth'] . '</td>';
-    echo '<td>' . $row['size_height'] . '</td>';
+    echo '<td>' . $row['size_width']/12 . '</td>';
+    echo '<td>' . $row['size_depth']/12 . '</td>';
+    echo '<td>' . $row['size_height']/12 . '</td>';
     echo '</tr>';
 }
 ?>
