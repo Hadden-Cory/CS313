@@ -35,8 +35,8 @@ catch (PDOException $ex)
 
 echo '<table>';
 foreach ($db->query('SELECT
-shipper.shipper_name, name
-shipment.shipment_start_date, date
+shipper.shipper_name name, 
+shipment.shipment_start_date date,
 shipment.shipment_end_date,
 Ship_Loc.ship_loc_is_pickup,
 ship_loc.ship_loc_state,
