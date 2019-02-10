@@ -65,17 +65,16 @@ from
 shipment
 inner join shipper on shipment.Shipper_id_shipper = Shipper.id_shipper
 inner join ship_loc on shipment.id_shipment = ship_loc.shipment_id_shipment
+where ship_loc.ship_loc_is_pickup is true
 order by
 shipment.id_shipment DESC,
 ship_loc_city DESC,
 ship_loc_is_pickup ASC;') as $row)
 {
-    if('ship_loc_is_pickup'==true){
     echo '<tr><td>'.$row['shipment_start_date'].'</td>';
     echo '<td>'.$row['ship_loc_city'].'</td>';
     echo '<td>'.$row['ship_loc_state'].'</td>';
     echo '</tr>';
-    }
 }
 echo '</table>';
 
