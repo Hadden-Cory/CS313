@@ -34,7 +34,7 @@
                                     <div class="card">
                                         <div class="card-block">
                                             <h3 class="card-title">TotallyNotAScam.com</h3>
-                                          <h4>(under construction)</h4>
+                                          <h4>(Under Construction)</h4>
                                           <p>TotallyNotAScam.com is a spoofy on a scam site. 
                                           It is meant to feel like a poorly done pop-up shop 
                                           in a bazaar or a carnival attrattion that sells items 
@@ -81,7 +81,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-4">
+                <!-- <div class="col-sm-6 col-lg-4">
                     <div class="cardFlip">
                         <div class="flipping">
                             <div class="front">
@@ -195,7 +195,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
     </section>
 </body>
