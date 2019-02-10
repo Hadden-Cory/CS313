@@ -73,7 +73,8 @@ echo '<table id=mainTable><tr><th>Pickup As Early As </th>
       <th>Pickup City</th><th>Pickup State</th>
       <th>Deliver by</th><th>Delivery City</th>
       <th>Delivery State</th><th></th></tr>';
-foreach ($db->query(
+
+      foreach ($db->query(
     'SELECT
     i.item_name,
     i.item_description,
@@ -98,7 +99,6 @@ order by
     echo '<td>'.$row['size_height'].'</td>';
     echo '</tr>';
 }
-echo '<p>'.$_SESSION['selection'].'</p>';
 ?>
 </table>
     </div>
