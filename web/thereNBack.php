@@ -46,7 +46,7 @@ catch (PDOException $ex)
 //   echo 'user: ' . $row['username'] . ' password: ' . $row['password'] . '<br/>';
 // }
 
-echo '<table>';
+echo '<table><tr><td>Shippers</td><td>Pickup As Early As</td></tr>';
 foreach ($db->query('SELECT
 shipper.shipper_name, 
 shipment.shipment_start_date,
@@ -63,8 +63,8 @@ shipment.id_shipment DESC,
 ship_loc_city DESC,
 ship_loc_is_pickup ASC;') as $row)
 {
-  echo '<tr><td>Shippers: '. $row['shipper_name'].'</td>';
-  echo '<td>Start: '. $row['shipment_start_date'].'</td></tr>';
+  echo '<tr><td>'. $row['shipper_name'].'</td>';
+  echo '<td>'. $row['shipment_start_date'].'</td></tr>';
 }
 echo '</table>';
 
