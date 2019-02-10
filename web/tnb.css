@@ -1,8 +1,12 @@
 body{
-    background-color: rgb(178, 218, 181) !important;
+    background-color: rgb(56, 91, 94) !important;
+    color: azure;
+}
+
+.container{
     padding: 20px;
 }
 
-.mainTable{
+#mainTable{
     border: solid;
 }

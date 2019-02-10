@@ -10,6 +10,7 @@
     <script src="plants.js"></script>
 </head>
 <body>
+    <div class="container">
     <?php include("header.php"); 
 
     try
@@ -77,4 +78,5 @@ ship_loc_is_pickup ASC;') as $row)
 echo '</table>';
 
 ?>
+</div>
 <section>
