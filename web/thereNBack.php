@@ -52,7 +52,7 @@ shipper.shipper_name,
 shipment.shipment_start_date,
 shipment.shipment_end_date,
 Ship_Loc.ship_loc_is_pickup,
-ship_loc.ship_loc_state,
+ship_loc.,
 ship_Loc.ship_loc_city
 from
 shipment
@@ -63,8 +63,12 @@ shipment.id_shipment DESC,
 ship_loc_city DESC,
 ship_loc_is_pickup ASC;') as $row)
 {
-  echo '<tr><td>'. $row['shipper_name'].'</td>';
-  echo '<td>'. $row['shipment_start_date'].'</td></tr>';
+    if ($row['ship_loc_is_pickup']){
+    echo '<tr><td>'. $row['shipper_name'].'</td>';
+    echo '<td>'. $row['shipment_start_date'].'</td>';
+    echo '<td>'. $row['ship_loc_state'].'</td>';
+    echo '<td>'. $row['ship_loc_city'].'</td></tr>';
+    }
 }
 echo '</table>';
 
