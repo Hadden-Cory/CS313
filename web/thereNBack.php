@@ -88,7 +88,7 @@ order by
     echo '<td>'.$row['shipment_end_date'].'</td>';
     echo '<td>'.$row['pickup_from_city'].'</td>';
     echo '<td>'.$row['pickup_from_state'].'</td>';
-    echo '<td><button onclick="loadDetailsPage('.$i.')" id=opt'.$i.'>Info</button></td>';
+    echo '<td><a href="tnbDetails.php"><button onclick="loadDetailsPage('.$i.')" id=opt'.$i.'>Info</button></a></td>';
     echo '</tr>';
 }
 echo '</table>';
