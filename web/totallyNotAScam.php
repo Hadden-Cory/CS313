@@ -28,7 +28,7 @@
                     <div class="card-body text-center">
                         <h3 class="card-title">Gummy Seeds</h3>
                     </div>
-                    <img class="card-img-top" src="/week03ponder/gummy.jpg" alt="Gummy Bears">
+                    <img class="card-img-top" src="web/week03ponder/gummy.jpg" alt="Gummy Bears">
                 </div>
             </a>
             <a href="cookies.php">

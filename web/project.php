@@ -25,7 +25,7 @@
                                 <div class="front">
                                     <div class="card">
                                         <div class="card-block">
-                                            <h3 class="card-title">Rafflesia</h3>
+                                            <h3 class="card-title">TotallyNotAScam.com</h3>
                                             <img class="plantImg" src="flower1.jpg" alt="Flower">
                                         </div>
                                     </div>
