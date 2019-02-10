@@ -70,7 +70,7 @@ shipment.id_shipment DESC,
 ship_loc_city DESC,
 ship_loc_is_pickup ASC;') as $row)
 {
-    if(ship_loc_is_pickup){
+    if('ship_loc_is_pickup'==true){
     echo '<tr><td>'.$row['shipment_start_date'].'</td>';
     echo '<td>'.$row['ship_loc_city'].'</td>';
     echo '<td>'.$row['ship_loc_state'].'</td>';
