@@ -51,23 +51,23 @@ echo'<div id="container" class="r>
 <div class="row h-50">
 <div class="col-sm-2 col-lg-2">';
 
-$statement = $db->query('
-SELECT
-    ship.shipment_start_date,
-    pfrom.pickup_from_city,
-    pfrom.pickup_from_state, 
-    ship.shipment_end_date,
-    shipto.ship_to_city,
-    shipto.ship_to_state
-from
-    shipment as ship
-    inner join shipper as shipr on ship.Shipper_id_shipper = shipr.id_shipper
-    inner join ship_to as shipto on ship.id_shipment = shipto.shipment_id_shipment 
-    inner join pickup_from as pfrom on ship.id_shipment = pfrom.shipment_id_shipment 
-where
-    id_shipment = 1;
-');
-$results = $statement->fetchAll(PDO::FETCH_ASSOC);
+// $statement = $db->query('
+// SELECT
+//     ship.shipment_start_date,
+//     pfrom.pickup_from_city,
+//     pfrom.pickup_from_state, 
+//     ship.shipment_end_date,
+//     shipto.ship_to_city,
+//     shipto.ship_to_state
+// from
+//     shipment as ship
+//     inner join shipper as shipr on ship.Shipper_id_shipper = shipr.id_shipper
+//     inner join ship_to as shipto on ship.id_shipment = shipto.shipment_id_shipment 
+//     inner join pickup_from as pfrom on ship.id_shipment = pfrom.shipment_id_shipment 
+// where
+//     id_shipment = 1;
+// ');
+// $results = $statement->fetchAll(PDO::FETCH_ASSOC);
 
 foreach ($db->query(
     'SELECT
