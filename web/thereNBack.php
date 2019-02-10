@@ -3,6 +3,7 @@
     <title>ThereNBack.com</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="plants.css">
+    <link rel="stylesheet" type="text/css" href="tnb.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
@@ -46,7 +47,7 @@ catch (PDOException $ex)
 //   echo 'user: ' . $row['username'] . ' password: ' . $row['password'] . '<br/>';
 // }
 
-echo '<table><tr><td>Shippers</td><td>Pickup As Early As</td><td>Pickup City</td><td>Pickup State</td></tr>';
+echo '<table id=mainTable><tr><td>Shippers   </td><td>Pickup As Early As  </td><td>Pickup City</td><td>Pickup State</td></tr>';
 foreach ($db->query('SELECT
 shipper.shipper_name, 
 shipment.shipment_start_date,

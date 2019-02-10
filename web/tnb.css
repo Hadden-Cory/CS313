@@ -1,0 +1,8 @@
+body{
+    background-color: rgb(178, 218, 181) !important;
+    padding: 20px;
+}
+
+.mainTable{
+    border: solid;
+}
