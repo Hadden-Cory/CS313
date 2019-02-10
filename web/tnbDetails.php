@@ -64,7 +64,13 @@ from
 where
     id_shipment = 1;
 ');
-$results = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+echo '<tr><td>'.$row['shipment_start_date'].'</td>';
+echo '<td>'.$row['ship_to_city'].'</td>';
+echo '<td>'.$row['ship_to_state'].'</td>';
+echo '<td>'.$row['shipment_end_date'].'</td>';
+echo '<td>'.$row['pickup_from_city'].'</td>';
+echo '<td>'.$row['pickup_from_state'].'</td>';
 
     echo '<table id=mainTable><tr><th>Item</th>
       <th>Description</th><th>Special Instructions</th>
