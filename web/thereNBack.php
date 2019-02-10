@@ -58,7 +58,6 @@ echo '<table id=mainTable><tr><th>Pickup As Early As </th>
       <th>Delivery State</th></tr>';
 
 foreach ($db->query('SELECT
-Select
     ship.shipment_start_date,
     pfrom.pickup_from_city,
     pfrom.pickup_from_state, 
