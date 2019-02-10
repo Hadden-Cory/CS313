@@ -58,7 +58,9 @@ catch (PDOException $ex)
 echo '<table id=mainTable><tr><th>Pickup As Early As </th>
       <th>Pickup City</th><th>Pickup State</th>
       <th>Deliver by</th><th>Delivery City</th>
-      <th>Delivery State</th></tr>';
+      <th>Delivery State</th><th></th></tr>';
+
+      $i=0;
 
 foreach ($db->query('SELECT
     ship.shipment_start_date,
@@ -76,13 +78,14 @@ order by
     ship.id_shipment DESC,
     ship_to_city DESC;') as $row)
 {
+    $i++;
     echo '<tr><td>'.$row['shipment_start_date'].'</td>';
     echo '<td>'.$row['ship_to_city'].'</td>';
     echo '<td>'.$row['ship_to_state'].'</td>';
     echo '<td>'.$row['shipment_end_date'].'</td>';
     echo '<td>'.$row['pickup_from_city'].'</td>';
     echo '<td>'.$row['pickup_from_state'].'</td>';
-
+    echo '<td><button>Info</button id=opt'.$i.'></td>';
     echo '</tr>';
 }
 echo '</table>';
