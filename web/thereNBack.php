@@ -15,7 +15,9 @@
 
 echo '<div id="container" class="r>
 <div class="row h-50">
-<div class="col-sm-6 col-lg-4">';
+<div class="col-sm-4 col-lg-4">
+</div>
+<div class="col-sm-4 col-lg-4">';
 
 try
 {
@@ -87,6 +89,8 @@ order by
 echo '</table>';
 
 ?>
+</div>
+<div class="col-sm-4 col-lg-4">
 </div>
 </div>
 </div>
