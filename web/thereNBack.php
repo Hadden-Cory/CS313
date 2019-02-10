@@ -13,7 +13,7 @@
     
 <?php include("header.php"); 
 
-echo '<div id="container">';
+echo '<div id="container" class="center">';
 
 try
 {
