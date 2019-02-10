@@ -52,7 +52,7 @@ catch (PDOException $ex)
 //   echo 'user: ' . $row['username'] . ' password: ' . $row['password'] . '<br/>';
 // }
 
-echo '<table id=mainTable><tr><td>Shippers   </td><td>Pickup As Early As  </td><td>Pickup City</td><td>Pickup State</td></tr>';
+echo '<table id=mainTable><tr><th>Shippers</th><th>Pickup As Early As </th><th>Pickup City</th><th>Pickup State</th></tr>';
 foreach ($db->query('SELECT
 shipper.shipper_name, 
 shipment.shipment_start_date,

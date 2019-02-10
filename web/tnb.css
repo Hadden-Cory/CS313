@@ -10,3 +10,7 @@ body{
     border: solid;
     color: azure !important;
 }
+
+td, th{
+    padding: 20px;  
+}
