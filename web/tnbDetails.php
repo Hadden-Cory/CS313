@@ -48,8 +48,12 @@ session_start();
 <div class="row h-50">
 <div class="col-sm-2 col-lg-2">';
 
-$statement = $db->query('
-SELECT
+echo '<table id=mainTable><tr><th>Pickup As Early As </th>
+      <th>Pickup City</th><th>Pickup State</th>
+      <th>Deliver by</th><th>Delivery City</th>
+      <th>Delivery State</th><th></th></tr>';
+
+foreach ($db->query('SELECT
     ship.shipment_start_date,
     pfrom.pickup_from_city,
     pfrom.pickup_from_state, 
@@ -62,15 +66,18 @@ from
     inner join ship_to as shipto on ship.id_shipment = shipto.shipment_id_shipment 
     inner join pickup_from as pfrom on ship.id_shipment = pfrom.shipment_id_shipment 
 where
-    id_shipment = 1;
-');
+    ship.shipper_id_shipper = 1') as $row){
+        echo '<tr><td>'.$row['shipment_start_date'].'</td>';
+        echo '<td>'.$row['ship_to_city'].'</td>';
+        echo '<td>'.$row['ship_to_state'].'</td>';
+        echo '<td>'.$row['shipment_end_date'].'</td>';
+        echo '<td>'.$row['pickup_from_city'].'</td>';
+        echo '<td>'.$row['pickup_from_state'].'</td>';
+        echo '<td><button>Info</button onclick="loadDetailsPage('.$i.')" id=opt'.$i.'></td>';
+        echo '</tr>';
+    }
+    echo '</table>';
 
-echo '<tr><td>'.$row['shipment_start_date'].'</td>';
-echo '<td>'.$row['ship_to_city'].'</td>';
-echo '<td>'.$row['ship_to_state'].'</td>';
-echo '<td>'.$row['shipment_end_date'].'</td>';
-echo '<td>'.$row['pickup_from_city'].'</td>';
-echo '<td>'.$row['pickup_from_state'].'</td>';
 
     echo '<table id=mainTable><tr><th>Item</th>
       <th>Description</th><th>Special Instructions</th>
