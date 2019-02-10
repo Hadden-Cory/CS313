@@ -76,7 +76,7 @@ order by
     echo '<tr><td>'.$row['shipment_start_date'].'</td>';
     echo '<td>'.$row['ship_to_city'].'</td>';
     echo '<td>'.$row['ship_to_state'].'</td>';
-    echo '<td>'.$row['shipment_start_end'].'</td>';
+    echo '<td>'.$row['shipment_end_date'].'</td>';
     echo '<td>'.$row['pickup_from_city'].'</td>';
     echo '<td>'.$row['pickup_from_state'].'</td>';
 
