@@ -33,14 +33,16 @@
                                 <div class="back">
                                     <div class="card">
                                         <div class="card-block">
-                                            <h3 class="card-title">Rafflesia</h3>
-                                            <ul>
-                                                <li>This is the largest flower in the world! It can grow up to 3 feet
-                                                    across.</li>
-                                                <li>It smells like a dead animal to attract pollinating flies.</li>
-                                                <li>It has no leaves, stem, or roots. It lives inside a host vine as a
-                                                    parasite.</li>
-                                            </ul>
+                                            <h3 class="card-title">TotallyNotAScam.com</h3>
+                                          <h4>(under construction)</h4>
+                                          <p>TotallyNotAScam.com is a spoofy on a scam site. 
+                                          It is meant to feel like a poorly done pop-up shop 
+                                          in a bazaar or a carnival attrattion that sells items 
+                                          that claim to do great things but are actually worhtless.
+                                          It is meant to a funny.</p>
+                                          <p>The website itself is meant to show case a bootstrap
+                                           layout with php form handling and shopping cart 
+                                           functionality</p> 
                                         </div>
                                     </div>
                                 </div>
