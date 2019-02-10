@@ -51,7 +51,7 @@ session_start();
 echo '<table id=mainTable><tr><th>Pickup As Early As </th>
       <th>Pickup City</th><th>Pickup State</th>
       <th>Deliver by</th><th>Delivery City</th>
-      <th>Delivery State</th><th></th></tr>';
+      <th>Delivery State</th></tr>';
 
 foreach ($db->query('SELECT
     ship.shipment_start_date,
@@ -76,8 +76,7 @@ where
         echo '</tr>';
     }
     echo '</table>';
-
-
+    
     echo '<table id=mainTable><tr><th>Item</th>
       <th>Description</th><th>Special Instructions</th>
       <th>Weight</th><th>Width</th>
