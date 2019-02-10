@@ -33,10 +33,23 @@ catch (PDOException $ex)
   die();
 }
 
+
+foreach ($db->query('SELECT username, password FROM note_user') as $row)
+{
+  echo 'user: ' . $row['username'];
+  echo ' password: ' . $row['password'];
+  echo '<br/>';
+
+  $statement = $db->query('SELECT username, password FROM note_user');
+while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+{
+  echo 'user: ' . $row['username'] . ' password: ' . $row['password'] . '<br/>';
+}
+
 echo '<table>';
 foreach ($db->query('SELECT
-shipper.shipper_name name, 
-shipment.shipment_start_date date,
+shipper.shipper_name, 
+shipment.shipment_start_date,
 shipment.shipment_end_date,
 Ship_Loc.ship_loc_is_pickup,
 ship_loc.ship_loc_state,
@@ -50,8 +63,8 @@ shipment.id_shipment DESC,
 ship_loc_city DESC,
 ship_loc_is_pickup ASC;') as $row)
 {
-  echo '<tr><td>Shippers: '. $row['name'].'</td>';
-  echo '<td>Start: '. $row['date'].'</td></tr>';
+  echo '<tr><td>Shippers: '. $row['shipper.shipper_name'].'</td>';
+  echo '<td>Start: '. $row['shipment.shipment_start_date'].'</td></tr>';
 }
 echo '</table>';
 ?>
