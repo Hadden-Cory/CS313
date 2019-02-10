@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <html>
 <head>
     <title>ThereNBack.com</title>
@@ -7,7 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <script src="plants.js"></script>
+    <script src="tnb.js"></script>
 </head>
 <body>
     
@@ -85,10 +88,16 @@ order by
     echo '<td>'.$row['shipment_end_date'].'</td>';
     echo '<td>'.$row['pickup_from_city'].'</td>';
     echo '<td>'.$row['pickup_from_state'].'</td>';
-    echo '<td><button>Info</button id=opt'.$i.'></td>';
+    echo '<td><button>Info</button onclick="loadDetailsPage('.$i.')" id=opt'.$i.'></td>';
     echo '</tr>';
 }
 echo '</table>';
+
+function loadDetailsPage($selection){
+    $_SESSION["selection"]=$selection;
+    header('Location: tnbDetails.php');
+}
+
 
 ?>
 </div>
