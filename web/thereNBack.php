@@ -22,7 +22,6 @@ echo '<div id="container" class="r>
 try
 {
     
-
   $dbUrl = getenv('DATABASE_URL');
 
   $dbOpts = parse_url($dbUrl);
