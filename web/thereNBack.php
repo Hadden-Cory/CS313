@@ -44,7 +44,8 @@ session_start();
         die();
     }
 
-    echo '<table id=mainTable><tr><th>Pickup As Early As </th>
+
+    echo '<br><br><br><table id=mainTable><tr><th>Pickup As Early As </th>
       <th>Pickup City</th><th>Pickup State</th>
       <th>Deliver by</th><th>Delivery City</th>
       <th>Delivery State</th><th></th></tr>';
