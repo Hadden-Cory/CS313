@@ -4,9 +4,9 @@ body{
 
 #container{
     padding: 20px;    
-    color: azure !important;
 }
 
 #mainTable{
     border: solid;
+    color: azure !important;
 }
