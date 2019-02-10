@@ -66,8 +66,13 @@
                                     <div class="card">
                                         <div class="card-block">
                                             <h3 class="card-title">ThereNBack.com</h3>
-                                            <p>In the shipping world large companies run the business of big shipping, carrying hundreds of postal sized boxes or full loads of of wrapped pallets accors the county. If you just need a half a trailor for a few hundred miles there is another option. Small town America has a thriving market of “there and back” drivers who run little loads in their spare time. ThereNBack is a central place for shippers to announce their intentions and drivers to bid for loads. It's the Uber of small shipping.</p>
-<p>This webist demonstrates the use of datbases in PHP.</p>
+                                            <p> If you just need a half a trailor for a few hundred miles there is
+                                                another option. Small town America has a thriving market of
+                                                “there and back” drivers who run little loads in their spare
+                                                time. ThereNBack is a central place for shippers to
+                                                announce their intentions and drivers to bid for loads.
+                                                It's the Uber of small shipping.</p>
+                                            <p>This webist demonstrates the use of datbases in PHP.</p>
 
                                         </div>
                                     </div>
