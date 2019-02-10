@@ -48,14 +48,23 @@ catch (PDOException $ex)
 
 echo '<table>';
 foreach ($db->query('SELECT
+shipper.shipper_name, 
+shipment.shipment_start_date,
+shipment.shipment_end_date,
 Ship_Loc.ship_loc_is_pickup,
 ship_loc.ship_loc_state,
 ship_Loc.ship_loc_city
 from
-ship_loc') as $row)
+shipment
+inner join shipper on shipment.Shipper_id_shipper = Shipper.id_shipper
+inner join ship_loc on shipment.id_shipment = ship_loc.shipment_id_shipment
+order by
+shipment.id_shipment DESC,
+ship_loc_city DESC,
+ship_loc_is_pickup ASC;') as $row)
 {
-  echo '<tr><td>Shippers: '. $row['shipper.shipper_name'].'</td>';
-  echo '<td>Start: '. $row['shipment.shipment_start_date'].'</td></tr>';
+  echo '<tr><td>Shippers: '. $row['shipper_name'].'</td>';
+  echo '<td>Start: '. $row['shipment_start_date'].'</td></tr>';
 }
 echo '</table>';
 
