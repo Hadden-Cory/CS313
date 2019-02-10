@@ -69,6 +69,10 @@ echo'<div id="container" class="r>
 // ');
 // $results = $statement->fetchAll(PDO::FETCH_ASSOC);
 
+echo '<table id=mainTable><tr><th>Pickup As Early As </th>
+      <th>Pickup City</th><th>Pickup State</th>
+      <th>Deliver by</th><th>Delivery City</th>
+      <th>Delivery State</th><th></th></tr>';
 foreach ($db->query(
     'SELECT
     i.item_name,
@@ -96,6 +100,7 @@ order by
 }
 echo '<p>'.$_SESSION['selection'].'</p>';
 ?>
+</table>
     </div>
     <div class="col-sm-2 col-lg-2">
     </div>
