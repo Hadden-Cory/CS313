@@ -83,7 +83,8 @@
                                         <br>
                                         <br>
                                         <br>
-                                        <h2 class="card-title">More Coming Soon!</h2>
+                                        <br>
+                                        <h2 class="card-title">  More Coming Soon!</h2>
                                     </div>
                                 </div>
                             </div>
@@ -93,7 +94,8 @@
                                         <br>
                                         <br>
                                         <br>
-                                        <h2 class="card-title">More Coming Soon!</h2>
+                                        <br>
+                                        <h2 class="card-title">  More Coming Soon!</h2>
                                     </div>
                                 </div>
                             </div>
