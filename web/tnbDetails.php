@@ -18,33 +18,33 @@ session_start();
 
     <?php include("header.php");
 
-echo '<div id="container" class="r>
+    echo '<div id="container" class="r>
 <div class="row h-50">
 <div class="col-sm-2 col-lg-2">
 </div>
 <div class="col-sm-8 col-lg-8">';
 
-try {
+    try {
 
-    $dbUrl = getenv('DATABASE_URL');
+        $dbUrl = getenv('DATABASE_URL');
 
-    $dbOpts = parse_url($dbUrl);
+        $dbOpts = parse_url($dbUrl);
 
-    $dbHost = $dbOpts["host"];
-    $dbPort = $dbOpts["port"];
-    $dbUser = $dbOpts["user"];
-    $dbPassword = $dbOpts["pass"];
-    $dbName = ltrim($dbOpts["path"], '/');
+        $dbHost = $dbOpts["host"];
+        $dbPort = $dbOpts["port"];
+        $dbUser = $dbOpts["user"];
+        $dbPassword = $dbOpts["pass"];
+        $dbName = ltrim($dbOpts["path"], '/');
 
-    $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+        $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
 
-    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (PDOException $ex) {
-    echo 'Error!: ' . $ex->getMessage();
-    die();
-}
+        $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    } catch (PDOException $ex) {
+        echo 'Error!: ' . $ex->getMessage();
+        die();
+    }
 
-echo '<div id="container" class="r>
+    echo '<div id="container" class="r>
 <div class="row h-50">
 <div class="col-sm-2 col-lg-2">';
 
@@ -66,13 +66,13 @@ echo '<div id="container" class="r>
 // ');
 // $results = $statement->fetchAll(PDO::FETCH_ASSOC);
 
-echo '<table id=mainTable><tr><th>Item</th>
+    echo '<table id=mainTable><tr><th>Item</th>
       <th>Description</th><th>Special Instructions</th>
       <th>Weight</th><th>Width</th>
       <th>Depth</th><th>Height</th></tr>';
 
-foreach ($db->query(
-    'SELECT
+    foreach ($db->query(
+        'SELECT
     i.item_name,
     i.item_description,
     i.item_spcl_instructs,
@@ -84,18 +84,18 @@ foreach ($db->query(
     from 
     item as I
     inner join size as s on i.size_id_size = s.id_size
-    where i.shipment_id_shipment = 1;') as $row)
-    {
-    echo '<tr><td>' . $row['item_name'] . '</td>';
-    echo '<td>' . $row['item_description'] . '</td>';
-    echo '<td>' . $row['item_spcl_instructs'] . '</td>';
-    echo '<td>' . $row['size_weight'] . 'lb</td>';
-    echo '<td>' . $row['size_width']/12 .'ft</td>';
-    echo '<td>' . $row['size_depth']/12 . 'ft</td>';
-    echo '<td>' . $row['size_height']/12 . 'ft</td>';
-    echo '</tr>';
-}
-?>
+    where i.shipment_id_shipment = 1;'
+    ) as $row) {
+        echo '<tr><td>' . $row['item_name'] . '</td>';
+        echo '<td>' . $row['item_description'] . '</td>';
+        echo '<td>' . $row['item_spcl_instructs'] . '</td>';
+        echo '<td>' . $row['size_weight'] . 'lb</td>';
+        echo '<td>' . $row['size_width'] / 12 . 'ft ' . $row['size_width'] % 12 . 'in</td>';
+        echo '<td>' . $row['size_depth'] / 12 . 'ft ' . $row['size_depth'] % 12 . 'in</td>';
+        echo '<td>' . $row['size_height'] / 12 . 'ft ' . $row['size_height'] % 12 . 'in</td>';
+        echo '</tr>';
+    }
+    ?>
     </table>
     </div>
     <div class="col-sm-2 col-lg-2">
