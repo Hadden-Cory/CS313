@@ -11,9 +11,11 @@
 </head>
 <body>
     
-    <?php include("header.php"); 
-echo '<div class="container">';
-    try
+<?php include("header.php"); 
+
+echo '<div id="container">';
+
+try
 {
     
 
