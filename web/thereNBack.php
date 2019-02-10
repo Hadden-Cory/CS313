@@ -96,6 +96,7 @@ echo '</table>';
 function loadDetailsPage($selection){
     $_SESSION["selection"]=$selection;
     header('Location: tnbDetails.php');
+    exit();
 }
 
 
