@@ -28,7 +28,7 @@
                     <div class="card-body text-center">
                         <h3 class="card-title">Gummy Seeds</h3>
                     </div>
-                    <img class="card-img-top" src="web/week03ponder/gummy.jpg" alt="Gummy Bears">
+                    <img class="card-img-top" src="gummy.jpg" alt="Gummy Bears">
                 </div>
             </a>
             <a href="cookies.php">
@@ -36,7 +36,7 @@
                     <div class="card-body text-center">
                         <h3 class="card-title"> Cookie Chip</h3>
                     </div>
-                    <img class="card-img-top" src="/week03ponder/cookies.jpg" alt="Cookie">
+                    <img class="card-img-top" src="cookies.jpg" alt="Cookie">
                 </div>
             </a>
             <a href="">
@@ -44,7 +44,7 @@
                     <div class="card-body text-center">
                         <h3 class="card-title">Skittle Pill</h3>
                     </div>
-                    <img class="card-img-top" src="/week03ponder/skittles.jpg" alt="Skittles">
+                    <img class="card-img-top" src="skittles.jpg" alt="Skittles">
                 </div>
             </a>
             <!-- <a class="col-md-3 card" href="">

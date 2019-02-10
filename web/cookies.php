@@ -30,7 +30,7 @@ session_start();
         </div>
         <div class="row">
             <div class="col-4">
-                <img src="/week03ponder/chip.jpg" class="img-fluid img-thumbnail mx-auto d-block" alt="Computer Chip">
+                <img src="chip.jpg" class="img-fluid img-thumbnail mx-auto d-block" alt="Computer Chip">
             </div>
             <div class="col-4">
                 <div class="jumbotron">
@@ -55,7 +55,7 @@ session_start();
                 </div>
             </div>
             <div class="col-4">
-                <img src="/week03ponder/cookies.jpg" class="img-fluid img-thumbnail mx-auto d-block" alt="Cookies">
+                <img src="cookies.jpg" class="img-fluid img-thumbnail mx-auto d-block" alt="Cookies">
             </div>
         </div>
     </Section>

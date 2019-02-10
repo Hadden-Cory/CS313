@@ -53,7 +53,7 @@ session_start();
         </div>
         <div class="row">
             <div class="col-4">
-                <img src="/week03ponder/secure.jpeg" class="img-fluid img-thumbnail mx-auto d-block" alt="Seeds">
+                <img src="secure.jpeg" class="img-fluid img-thumbnail mx-auto d-block" alt="Seeds">
             </div>
             <div class="col-4">
                 <div class="jumbotron">
@@ -116,7 +116,7 @@ session_start();
                 </div>
             </div>
             <div class="col-4">
-                <img src="/week03ponder/money.jpeg" class="img-fluid img-thumbnail mx-auto d-block" alt="Gummy Bears">
+                <img src="money.jpeg" class="img-fluid img-thumbnail mx-auto d-block" alt="Gummy Bears">
             </div>
         </div>
     </Section>
