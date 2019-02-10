@@ -10,11 +10,13 @@
     <script src="plants.js"></script>
 </head>
 <body>
-    <div class="container">
+    
     <?php include("header.php"); 
-
+echo '<div class="container">';
     try
 {
+    
+
   $dbUrl = getenv('DATABASE_URL');
 
   $dbOpts = parse_url($dbUrl);
@@ -65,14 +67,10 @@ shipment.id_shipment DESC,
 ship_loc_city DESC,
 ship_loc_is_pickup ASC;') as $row)
 {
-    echo '<tr><td>'. $row['shipper_name'].'</td>';
-    
-    
-    if ($row['ship_loc_is_pickup']){
+    echo '<tr><td>'. $row['shipper_name'].'</td>';    
     echo '<td>'. $row['shipment_start_date'].'</td>';
     echo '<td>'. $row['ship_loc_state'].'</td>';
     echo '<td>'. $row['ship_loc_city'].'</td>';
-    }
     echo '</tr>';
 }
 echo '</table>';
