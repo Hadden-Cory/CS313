@@ -13,7 +13,9 @@
     
 <?php include("header.php"); 
 
-echo '<div id="container" class="center">';
+echo '<div id="container" class="r>
+<div class="row h-50">
+<div class="col-sm-6 col-lg-4">';
 
 try
 {
@@ -85,5 +87,7 @@ order by
 echo '</table>';
 
 ?>
+</div>
+</div>
 </div>
 <section>
