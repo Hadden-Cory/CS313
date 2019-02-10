@@ -26,7 +26,7 @@
                                     <div class="card">
                                         <div class="card-block">
                                             <h3 class="card-title">TotallyNotAScam.com</h3>
-                                            <img class="plantImg" src="NotAScam.png" alt="NotAScam Thumbnail">
+                                            <img class="plantImg" src="NotAScam.jpg" alt="NotAScam Thumbnail">
                                         </div>
                                     </div>
                                 </div>

@@ -13,7 +13,7 @@
     <section>
         <div class="container">
         <div class="jumbotron">
-            <h1>Look at These Amzing Plants</h1>
+            <h1>Look At These Amzing Plants</h1>
             </div>
             <div class="row h-50">
                 <div class="col-sm-6 col-lg-4">
