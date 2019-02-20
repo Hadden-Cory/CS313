@@ -1,5 +1,6 @@
 <?php
     require 'dbConnect.php';
+    $db = db_get();
 
     try {
         session_start();
