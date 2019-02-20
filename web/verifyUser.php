@@ -5,7 +5,7 @@
    $db = get_db();
     $userName = $_POST["shipper_name"];
     $password = $_POST["shipper_password"];
-    //$passwordHash = password_hash($password, PASSWORD_BCRYPT);
+
     $statement = $db->prepare("SELECT shipper_password_hash FROM shipper WHERE shipper_name = :cleanUsername;");
     $statement->bindValue(":cleanUsername", $userName, PDO::PARAM_STR);
     $statement->execute();
