@@ -13,6 +13,6 @@
     $statement->bindValue(":cleanPasswordHash", $passwordHash, PDO::PARAM_STR);
     $statement->execute();
 
-    header("Location: welcome.php");
+    header("Location: signIn.php");
     exit;
 ?>
