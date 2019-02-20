@@ -6,7 +6,7 @@
     $userName = $_POST["shipper_name"];
     $password = $_POST["shipper_password"];
 
-    $statement = $db->prepare("SELECT shipper_password_hash FROM shipper WHERE shipper_name = :cleanUsername;");
+    $statement = $db->prepare("SELECT shipper_password_hash, id_shipper FROM shipper WHERE shipper_name = :cleanUsername;");
     $statement->bindValue(":cleanUsername", $userName, PDO::PARAM_STR);
     $statement->execute();
 
@@ -18,6 +18,7 @@
     if ($passwdIsVerified) {
         $_SESSION["verified"] = TRUE;
         $_SESSION["username"] = $userName;
+        $_SESSION['id_shipper'] = $row["id_shipper"];
         header("Location: welcome.php");
         exit;   
     }
