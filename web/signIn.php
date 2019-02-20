@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <form action="userInsert.php" method="POST">
+    <form action="verifyUser.php" method="POST">
         <label for="shipper-name">Username</label>
         <input type="text" name="shipper_name">
         <label for="shipper-password">Password</label>
