@@ -15,5 +15,6 @@
 <input type="text" name="shipper_name">
 <label for="shipper-password">Password</label>
 <input type="password" name="shipper_password">
+<input type="submit" name="submit" value="Submit">
 </form>
 </html>
