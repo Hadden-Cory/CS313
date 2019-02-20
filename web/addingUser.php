@@ -10,7 +10,7 @@
     <title>Sign Up</title>
 </head>
 
-<form action="verifyUser.php" method="POST">
+<form action="userInsert.php" method="POST">
 <label for="shipper-name">Username</label>
 <input type="text" name="shipper_name">
 <label for="shipper-password">Password</label>
