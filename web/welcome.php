@@ -5,11 +5,11 @@
         session_start();
         $id_shipper = isset($_SESSION['id_shipper']) ? intval($_SESSION['id_shipper']) : 0;
 
-        if ($id_shipper == 0 || $_SERVER["REQUEST_METHOD"] == "POST") {
+        /*if ($id_shipper == 0 || $_SERVER["REQUEST_METHOD"] == "POST") {
             session_destroy();
             header("Location: signIn.php");
             die();
-        }
+        }*/
 
         $shipper_query = $db->prepare('SELECT shipper_name FROM shipper WHERE id_shipper = :id_shipper;');
         $shipper_query->execute(array('id_shipper' => $id_shipper));
