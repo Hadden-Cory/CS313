@@ -19,7 +19,7 @@
         $_SESSION["verified"] = TRUE;
         $_SESSION["username"] = $userName;
         header("Location: welcome.php");
-        exit;
+        exit;   
     }
     else {
         $_SESSION["verified"] = FALSE;
