@@ -11,8 +11,8 @@
             die();
         }*/
 
-        $shipper_query = $db->prepare('SELECT shipper_name FROM shipper WHERE id_shipper = :id_shipper;');
-        $shipper_query->execute(array('id_shipper' => $id_shipper));
+        $shipper_query = $db->prepare('SELECT shipper_name FROM shipper WHERE id_shipper = :id_shipper');
+        $shipper_query->execute(array(':id_shipper' => $id_shipper));
         $shipper = $shipper_query->fetch();
 
         $shipper_name = $shipper['shipper_name'];
