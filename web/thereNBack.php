@@ -69,21 +69,14 @@ $db = get_db();
                                                     echo '<td>' . $row['ship_to_state'] . '</td>';
                                                     echo '<td>' . $row['shipment_end_date'] . '</td>';
                                                     echo '<td>' . $row['pickup_from_city'] . '</td>';
-                                                    echo '<td>' . $row['pickup_from_state'] . '</td>';?>
-                                                   <td> <button onclick="doThings()"><?php echo $rowCount; ?></button> </td>
-                                                   <?php
-                                                    // echo '<td> <button onclick="doThings()">'.$row['id_shipment'].'</button><form name="opt' . $rowCount . '" action="tnbDetails.php" " method="POST">
-                                                    //              <input type="text" class="collapse" name="shippmentId" value="'.$row['id_shipment'].'">
-                                                    //              <input type="submit" onclick="post" value="Load Info">
-                                                    //       </td>';
+                                                    echo '<td>' . $row['pickup_from_state'] . '</td>';
+                                                    echo '<td> <button onclick="doThings()">'.$row['id_shipment'].'</button><form name="opt' . $rowCount . '" action="tnbDetails.php" " method="POST">
+                                                                 <input type="text" class="collapse" name="shippmentId" value="'.$row['id_shipment'].'">
+                                                                 <input type="submit" onclick="post" value="Load Info">
+                                                          </td>';
                                                           
                                                     echo "<td>".$row['id_shipment']."</td>";
                                                     echo '</tr>';
-
-                                                    function doThings(){
-                                                        //  var value = document.getElementById().value;
-                                                          alert(value);
-                                                      }
                     }
                     echo '</table>'; //Make the table stop 
  ?>
