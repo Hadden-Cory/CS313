@@ -1,4 +1,4 @@
-function doThings(id){
-    var value = document.getElementById(id).value;
+function doThings(){
+  //  var value = document.getElementById().value;
     alert(value);
 }
