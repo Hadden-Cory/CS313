@@ -43,7 +43,7 @@ $db = get_db();
                                 <?php
 
                                 $selectionId =  $_POST["shippmentId"];
-                                echo $selectionID;
+                                echo $selectionId;
 
                                 // We're building two tables by querying the database for general shipment information and inserting it into HTML tables 
                                 // Delivery Info Query
@@ -60,7 +60,7 @@ $db = get_db();
                                                                 inner join ship_to as shipto on ship.id_shipment = shipto.shipment_id_shipment 
                                                                 inner join pickup_from as pfrom on ship.id_shipment = pfrom.shipment_id_shipment 
                                                         where
-                                                            ship.shipper_id_shipper = 3") as $selectionId) {
+                                                            ship.shipper_id_shipper = $selectionId") as $row) {
                                                             //Loop though each row and make us a html table!
                                                             echo '<tr><td>' . $row['shipment_start_date'] . '</td>';
                                                             echo '<td>' . $row['ship_to_city'] . '</td>';
