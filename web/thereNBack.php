@@ -79,6 +79,11 @@ $db = get_db();
                                                           
                                                     echo "<td>".$row['id_shipment']."</td>";
                                                     echo '</tr>';
+
+                                                    function doThings(){
+                                                        //  var value = document.getElementById().value;
+                                                          alert(value);
+                                                      }
                     }
                     echo '</table>'; //Make the table stop 
  ?>
