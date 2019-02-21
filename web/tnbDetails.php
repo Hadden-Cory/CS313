@@ -19,9 +19,10 @@ $db = get_db();
 <body>
 
     <?php include("header.php"); ?>
-    <a href="thereNBack.php">Back</a>
+    
     <div id="container" class="center">
         <div class="row h-50">
+        <a href="thereNBack.php">Back</a>
             <div class="col-sm-2 col-lg-2">
             </div>
             <div class="col-sm-8 col-lg-8">
@@ -58,7 +59,7 @@ $db = get_db();
                                                                 inner join ship_to as shipto on ship.id_shipment = shipto.shipment_id_shipment 
                                                                 inner join pickup_from as pfrom on ship.id_shipment = pfrom.shipment_id_shipment 
                                                         where
-                                                            ship.shipper_id_shipper = \'$selectionID\'') as $row) {
+                                                            ship.shipper_id_shipper = $selectionID') as $row) {
                                                             //Loop though each row and make us a html table!
                                                             echo '<tr><td>' . $row['shipment_start_date'] . '</td>';
                                                             echo '<td>' . $row['ship_to_city'] . '</td>';
