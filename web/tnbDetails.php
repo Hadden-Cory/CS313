@@ -49,7 +49,7 @@ $db = get_db();
                                 // Delivery Info Query
                                 foreach ($db->query("SELECT
                                                             ship.shipment_start_date,
-                                                            ship.id_shipper,
+                                                            ship.id_shipment,
                                                             pfrom.pickup_from_city,
                                                             pfrom.pickup_from_state, 
                                                             ship.shipment_end_date,
