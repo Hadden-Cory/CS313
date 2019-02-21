@@ -62,6 +62,7 @@ $db = get_db();
                                                 {
                                                     //Loop though each row and make us a html table!
                                                     $rowCount++;
+                                                    
                                                     array_push($shipId, $row['id_shipment']);
                                                     echo '<tr><td>' . $row['shipment_start_date'] . '</td>';
                                                     echo '<td>' . $row['ship_to_city'] . '</td>';
@@ -69,7 +70,7 @@ $db = get_db();
                                                     echo '<td>' . $row['shipment_end_date'] . '</td>';
                                                     echo '<td>' . $row['pickup_from_city'] . '</td>';
                                                     echo '<td>' . $row['pickup_from_state'] . '</td>';?>
-                                                   <td> <button onclick="doThings()">'.$row['id_shipment'].'</button>
+                                                   <td> <button onclick="doThings()"><?php echo $rowCount; ?></button>
                                                    <?php
                                                     // echo '<td> <button onclick="doThings()">'.$row['id_shipment'].'</button><form name="opt' . $rowCount . '" action="tnbDetails.php" " method="POST">
                                                     //              <input type="text" class="collapse" name="shippmentId" value="'.$row['id_shipment'].'">
