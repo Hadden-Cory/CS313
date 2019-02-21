@@ -71,7 +71,7 @@ $db = get_db();
                                                                  <input type="text" class="collapse" name="shippmentId" value="'.$btnValue.'">
                                                                  <input type="submit" value="Load Info">
                                                           </td>';
-                                                    echo "<td>$rowCount</td>";
+                                                    echo "<td>$btnValue</td>";
                                                     echo '</tr>';
                     }
                     echo '</table>'; //Make the table stop 
