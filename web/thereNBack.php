@@ -67,7 +67,7 @@ $db = get_db();
                                                     echo '<td>' . $row['shipment_end_date'] . '</td>';
                                                     echo '<td>' . $row['pickup_from_city'] . '</td>';
                                                     echo '<td>' . $row['pickup_from_state'] . '</td>';
-                                                    echo '<td><a href="tnbDetails.php"><button onclick="loadDetailsPage(' . $rowCount. ')" id=opt' . $rowCount . '>Info</button></a></td>';
+                                                    echo '<td><a href="tnbDetails.php"><button onclick="loadDetailsPage(5)" id=opt' . $rowCount . '>Info</button></a></td>';
                                                     echo '</tr>';
                     }
                     echo '</table>'; //Make the table stop 
