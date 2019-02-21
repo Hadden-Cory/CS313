@@ -43,6 +43,7 @@ $db = get_db();
                                 <?php
 
                                 $selectionID =  $_SESSION["selectionID"];
+                                echo $selectionID;
 
                                 // We're building two tables by querying the database for general shipment information and inserting it into HTML tables 
                                 // Delivery Info Query
