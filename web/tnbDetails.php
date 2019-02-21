@@ -46,7 +46,7 @@ $db = get_db();
 
                                 // We're building two tables by querying the database for general shipment information and inserting it into HTML tables 
                                 // Delivery Info Query
-                                foreach ($db->query('SELECT
+                                foreach ($db->query("SELECT
                                                             ship.shipment_start_date,
                                                             pfrom.pickup_from_city,
                                                             pfrom.pickup_from_state, 
@@ -59,7 +59,7 @@ $db = get_db();
                                                                 inner join ship_to as shipto on ship.id_shipment = shipto.shipment_id_shipment 
                                                                 inner join pickup_from as pfrom on ship.id_shipment = pfrom.shipment_id_shipment 
                                                         where
-                                                            ship.shipper_id_shipper = $selectionID') as $row) {
+                                                            ship.shipper_id_shipper = $selectionID") as $row) {
                                                             //Loop though each row and make us a html table!
                                                             echo '<tr><td>' . $row['shipment_start_date'] . '</td>';
                                                             echo '<td>' . $row['ship_to_city'] . '</td>';
@@ -76,7 +76,7 @@ $db = get_db();
                                             <th>Depth</th><th>Height</th></tr>';
                                 //Item Query
                                 foreach ($db->query(
-                                    'SELECT
+                                    "SELECT
                                             i.item_name,
                                             i.item_description,
                                             i.item_spcl_instructs,
@@ -88,7 +88,7 @@ $db = get_db();
                                     from 
                                      item as I
                                         inner join size as s on i.size_id_size = s.id_size
-                                        where i.shipment_id_shipment = 1;'
+                                        where i.shipment_id_shipment = $selectionID;"
                                 ) as $row) {
                                     //Loop though each row and make us a html table!
                                     echo '<tr><td>' . $row['item_name'] . '</td>';
