@@ -68,7 +68,7 @@ $db = get_db();
                                                     echo '<td>' . $row['pickup_from_city'] . '</td>';
                                                     echo '<td>' . $row['pickup_from_state'] . '</td>';?>
                                                     <td><form name="opt' . $rowCount . '" action="tnbDetails.php" method="POST">
-                                                                 <input type="text" class="collapse" name="shippmentId" value="<?php echo $row['id_shipment']?>.'">
+                                                                 <input type="text" class="collapse" name="shippmentId" value="<?php echo $row['id_shipment'];?>">
                                                                  <input type="submit" value="Load Info">
                                                           </td>';<?php
                                                     echo "<td>".$row['id_shipment']."</td>";
