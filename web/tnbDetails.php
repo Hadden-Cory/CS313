@@ -19,6 +19,7 @@ $db = get_db();
 <body>
 
     <?php include("header.php"); ?>
+    <a href="thereNBack.php">Back</a>
     <div id="container" class="center">
         <div class="row h-50">
             <div class="col-sm-2 col-lg-2">
@@ -27,6 +28,8 @@ $db = get_db();
                 <div id="container" class="center">
                     <div class="row h-50">
                         <div class="col-sm-2 col-lg-2">
+                         <!-- We will be building this table for several lines. The first group is the headings, 
+                              followed by a large query and finished with a loop through all the query results-->
                             <table id="mainTable">
                                 <tr>
                                     <th>Pickup As Early As </th>
@@ -37,6 +40,8 @@ $db = get_db();
                                     <th>Delivery State</th>
                                 </tr>
                                 <?php
+                                //We're building two tables by querying the database for general shipment information and inserting it into HTML tables 
+                                // Delivery Info Query
                                 foreach ($db->query('SELECT
                                                             ship.shipment_start_date,
                                                             pfrom.pickup_from_city,
@@ -44,28 +49,28 @@ $db = get_db();
                                                             ship.shipment_end_date,
                                                             shipto.ship_to_city,
                                                             shipto.ship_to_state
-                                from
-                                    shipment as ship
-                                        inner join shipper as shipr on ship.Shipper_id_shipper = shipr.id_shipper
-                                        inner join ship_to as shipto on ship.id_shipment = shipto.shipment_id_shipment 
-                                        inner join pickup_from as pfrom on ship.id_shipment = pfrom.shipment_id_shipment 
-                                where
-                                    ship.shipper_id_shipper = 1') as $row) {
-                                    echo '<tr><td>' . $row['shipment_start_date'] . '</td>';
-                                    echo '<td>' . $row['ship_to_city'] . '</td>';
-                                    echo '<td>' . $row['ship_to_state'] . '</td>';
-                                    echo '<td>' . $row['shipment_end_date'] . '</td>';
-                                    echo '<td>' . $row['pickup_from_city'] . '</td>';
-                                    echo '<td>' . $row['pickup_from_state'] . '</td>';
-                                    echo '</tr>';
+                                                        from
+                                                            shipment as ship
+                                                                inner join shipper as shipr on ship.Shipper_id_shipper = shipr.id_shipper
+                                                                inner join ship_to as shipto on ship.id_shipment = shipto.shipment_id_shipment 
+                                                                inner join pickup_from as pfrom on ship.id_shipment = pfrom.shipment_id_shipment 
+                                                        where
+                                                            ship.shipper_id_shipper = 1') as $row) {
+                                                            //Loop though each row and make us a html table!
+                                                            echo '<tr><td>' . $row['shipment_start_date'] . '</td>';
+                                                            echo '<td>' . $row['ship_to_city'] . '</td>';
+                                                            echo '<td>' . $row['ship_to_state'] . '</td>';
+                                                            echo '<td>' . $row['shipment_end_date'] . '</td>';
+                                                            echo '<td>' . $row['pickup_from_city'] . '</td>';
+                                                            echo '<td>' . $row['pickup_from_state'] . '</td>';
+                                                            echo '</tr>';
                                 }
                                 echo '</table>';
-
                                 echo '<table id=mainTable><tr><th>Item</th>
                                             <th>Description</th><th>Special Instructions</th>
                                             <th>Weight</th><th>Width</th>
                                             <th>Depth</th><th>Height</th></tr>';
-
+                                //Item Query
                                 foreach ($db->query(
                                     'SELECT
                                             i.item_name,
@@ -81,6 +86,7 @@ $db = get_db();
                                         inner join size as s on i.size_id_size = s.id_size
                                         where i.shipment_id_shipment = 1;'
                                 ) as $row) {
+                                    //Loop though each row and make us a html table!
                                     echo '<tr><td>' . $row['item_name'] . '</td>';
                                     echo '<td>' . $row['item_description'] . '</td>';
                                     echo '<td>' . $row['item_spcl_instructs'] . '</td>';
