@@ -40,6 +40,9 @@ $db = get_db();
                                     <th>Delivery State</th>
                                 </tr>
                                 <?php
+
+                                $selectionID = 3;
+
                                 //We're building two tables by querying the database for general shipment information and inserting it into HTML tables 
                                 // Delivery Info Query
                                 foreach ($db->query('SELECT
@@ -55,7 +58,7 @@ $db = get_db();
                                                                 inner join ship_to as shipto on ship.id_shipment = shipto.shipment_id_shipment 
                                                                 inner join pickup_from as pfrom on ship.id_shipment = pfrom.shipment_id_shipment 
                                                         where
-                                                            ship.shipper_id_shipper = 1') as $row) {
+                                                            ship.shipper_id_shipper = \'$selectionID\'') as $row) {
                                                             //Loop though each row and make us a html table!
                                                             echo '<tr><td>' . $row['shipment_start_date'] . '</td>';
                                                             echo '<td>' . $row['ship_to_city'] . '</td>';
