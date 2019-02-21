@@ -69,10 +69,11 @@ $db = get_db();
                                                     echo '<td>' . $row['shipment_end_date'] . '</td>';
                                                     echo '<td>' . $row['pickup_from_city'] . '</td>';
                                                     echo '<td>' . $row['pickup_from_state'] . '</td>';
-                                                    echo '<td><form name="opt' . $rowCount . '" action="tnbDetails.php" " method="POST">
-                                                                 <input type="text" class="collapse" name="shippmentId" value="'.$shipId[$row['id_shipment']].'">
+                                                    echo '<td> <button onclick="post(this)">'.$row['id_shipment'].'</button><form name="opt' . $rowCount . '" action="tnbDetails.php" " method="POST">
+                                                                 <input type="text" class="collapse" name="shippmentId" value="'.$row['id_shipment'].'">
                                                                  <input type="submit" onclick="post" value="Load Info">
                                                           </td>';
+                                                          
                                                     echo "<td>".$row['id_shipment']."</td>";
                                                     echo '</tr>';
                     }
