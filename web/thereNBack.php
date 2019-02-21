@@ -42,7 +42,7 @@ $db = get_db();
                     function loadDetailsPage($selection)
                     {
                         $_SESSION["selectionID"] = $selection;
-                        echo "<script type='text/javascript'>alert('$selection');</script>";
+                        echo "<script type='text/javascript'>alert($selection);</script>";
                         // header('Location: tnbDetails.php');
                         // exit();
                     }
