@@ -42,7 +42,7 @@ $db = get_db();
                                 </tr>
                                 <?php
 
-                                $selectionID =  $_SESSION["selectionID"];
+                                $selectionID =  $_POSt["shippmentId"];
                                 echo $selectionID;
 
                                 // We're building two tables by querying the database for general shipment information and inserting it into HTML tables 
@@ -89,7 +89,7 @@ $db = get_db();
                                     from 
                                      item as I
                                         inner join size as s on i.size_id_size = s.id_size
-                                        where i.shipment_id_shipment = 3;"
+                                        where i.shipment_id_shipment = $selectionId;"
                                 ) as $row) {
                                     //Loop though each row and make us a html table!
                                     echo '<tr><td>' . $row['item_name'] . '</td>';
