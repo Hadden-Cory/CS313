@@ -89,7 +89,7 @@ $db = get_db();
                                     from 
                                      item as I
                                         inner join size as s on i.size_id_size = s.id_size
-                                        where i.shipment_id_shipment = $selectionId;"
+                                        where i.shipment_id_shipment = '$selectionId';"
                                 ) as $row) {
                                     //Loop though each row and make us a html table!
                                     echo '<tr><td>' . $row['item_name'] . '</td>';
