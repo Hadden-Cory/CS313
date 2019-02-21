@@ -76,7 +76,7 @@ $db = get_db();
                                                     echo '<td>' . $row['shipment_end_date'] . '</td>';
                                                     echo '<td>' . $row['pickup_from_city'] . '</td>';
                                                     echo '<td>' . $row['pickup_from_state'] . '</td>';
-                                                    echo '<td><form name="opt' . $rowCount . '" action="tnbDetails.php"method="POST"<td><input type="submit" value="Learn More"></td>';
+                                                    echo '<td><form name="opt' . $rowCount . '" action="tnbDetails.php"method="POST"<td><input type="submit" value="Load Info"></td>';
                                                     echo '</tr>';
                     }
                     echo '</table>'; //Make the table stop 
