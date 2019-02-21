@@ -42,9 +42,9 @@ $db = get_db();
                                 </tr>
                                 <?php
 
-                                $selectionID = 3;
+                                $selectionID = 1;
 
-                                //We're building two tables by querying the database for general shipment information and inserting it into HTML tables 
+                                // We're building two tables by querying the database for general shipment information and inserting it into HTML tables 
                                 // Delivery Info Query
                                 foreach ($db->query('SELECT
                                                             ship.shipment_start_date,
