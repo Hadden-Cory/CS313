@@ -61,17 +61,16 @@ $db = get_db();
                                                 {
                                                     //Loop though each row and make us a html table!
                                                     $rowCount++;
-                                                  
                                                     echo '<tr><td>' . $row['shipment_start_date'] . '</td>';
                                                     echo '<td>' . $row['ship_to_city'] . '</td>';
                                                     echo '<td>' . $row['ship_to_state'] . '</td>';
                                                     echo '<td>' . $row['shipment_end_date'] . '</td>';
                                                     echo '<td>' . $row['pickup_from_city'] . '</td>';
-                                                    echo '<td>' . $row['pickup_from_state'] . '</td>';
-                                                     echo '<td><form name="opt' . $rowCount . '" action="tnbDetails.php" method="POST">
-                                                                 <input type="text" class="collapse" name="shippmentId" value="'.$row['id_shipment'].'">
+                                                    echo '<td>' . $row['pickup_from_state'] . '</td>';?>
+                                                    <td><form name="opt' . $rowCount . '" action="tnbDetails.php" method="POST">
+                                                                 <input type="text" class="collapse" name="shippmentId" value="<?php echo $row['id_shipment']?>.'">
                                                                  <input type="submit" value="Load Info">
-                                                          </td>';
+                                                          </td>';<?php
                                                     echo "<td>".$row['id_shipment']."</td>";
                                                     echo '</tr>';
                     }
