@@ -38,7 +38,16 @@ $db = get_db();
                     </tr>
                     
                     <?php 
-                    
+                    //This takes us to the detail page for that shipment.
+                    function loadDetailsPage($selection)
+                    {
+                        $_SESSION["selectionID"] = $selection;
+                        echo "<script type='text/javascript'>alert('$selection');</script>";
+                        // header('Location: tnbDetails.php');
+                        // exit();
+                    }
+                   
+
                     $rowCount = 0;  
                     
                     //We're building a table by querying the database for general shipment information and inserting it into a HTML table 
@@ -71,16 +80,9 @@ $db = get_db();
                                                     echo '</tr>';
                     }
                     echo '</table>'; //Make the table stop 
+ ?>
+                    
 
-                    //This takes us to the detail page for that shipment.
-                    function loadDetailsPage($selection)
-                    {
-                        $_SESSION["selectionID"] = $selection;
-                        echo "<script type='text/javascript'>alert('$selection');</script>";
-                        // header('Location: tnbDetails.php');
-                        // exit();
-                    }
-                    ?>
             </div>
             <div class="col-sm-2 col-lg-2">
             </div>
