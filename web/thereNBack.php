@@ -22,8 +22,8 @@ $db = get_db();
     <div id="container" class="center">
         <div class="row h-50">
             <div class="col-sm-2 col-lg-2">
-            <a href="shipmentForm.php"><button>Enter A Shipment</button></a><br>
-            <a href="shipmentForm.php"><button>Edit Your Shipments</button></a>
+            <a href="shipmentForm.php"><button>Enter A Shipment</button></a><br><br>
+            <a href="construction.php"><button>Edit Your Shipments</button></a>
             </div>
             <div class="col-sm-8 col-lg-8"><br><br><br>
                  <!-- We will be building this table for several lines. The first group is the headings, 
