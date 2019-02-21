@@ -40,3 +40,4 @@ Rename to Ship_to;
 
 ALTER TABLE Ship_to
 RENAME COLUMN id_location TO id_ship_to;
+
