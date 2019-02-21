@@ -73,8 +73,9 @@
         <!-- End of Drop Down -->
         <label for="pickUpCity">Pick Up City</label>
         <input type="text" name="pickUpCity">
-        <input type="date" name="pickUpDate">
         <label for="pickUpDate">Earliest Availible Pick Up Date</label>
+        <input type="date" name="pickUpDate"><br>
+        
 
         <!-- End of Pick Up, Begin Drop Off -->
         <label for="DropOffState">Drop Off State</label>
