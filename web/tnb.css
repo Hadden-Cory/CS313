@@ -15,3 +15,7 @@ td, th{
      border: solid;
     padding: 20px;  
 }
+
+.collaspe{
+    visibility: collapse;
+}

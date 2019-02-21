@@ -38,16 +38,6 @@ $db = get_db();
                     </tr>
                     
                     <?php 
-                    //This takes us to the detail page for that shipment.
-                    function loadDetailsPage($selection)
-                    {
-                        $_SESSION["selectionID"] = $selection;
-                        echo "<script type='text/javascript'>alert($selection);</script>";
-                        // header('Location: tnbDetails.php');
-                        // exit();
-                    }
-                   
-
                     $rowCount = 0;  
                     
                     //We're building a table by querying the database for general shipment information and inserting it into a HTML table 
@@ -76,7 +66,10 @@ $db = get_db();
                                                     echo '<td>' . $row['shipment_end_date'] . '</td>';
                                                     echo '<td>' . $row['pickup_from_city'] . '</td>';
                                                     echo '<td>' . $row['pickup_from_state'] . '</td>';
-                                                    echo '<td><form name="opt' . $rowCount . '" action="tnbDetails.php"method="POST"<td><input type="submit" value="Load Info"></td>';
+                                                    echo '<td><form name="opt' . $rowCount . '" action="tnbDetails.php" method="POST">
+                                                                 <input type="text" name="shippmentId" value="'.$rowCount.'">
+                                                                 <input type="submit" value="Load Info">
+                                                          </td>';
                                                     echo '</tr>';
                     }
                     echo '</table>'; //Make the table stop 
