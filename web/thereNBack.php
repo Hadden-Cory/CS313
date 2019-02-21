@@ -75,7 +75,7 @@ $db = get_db();
                     //This takes us to the detail page for that shipment.
                     function loadDetailsPage($selection)
                     {
-                        $_SESSION["selection"] = $selection;
+                        $_SESSION["selectionID"] = $selection;
                         header('Location: tnbDetails.php');
                         exit();
                     }
