@@ -136,10 +136,9 @@
         </select>
         <label for="DropOffCity">Drop Off City</label>
         <input type="text" name="DropOffCity">
-        <input type="date" name="DropOffDate">
-        <input type="submit" name="submit" value="Submit">
         <label for="DropOffDate">Latest Possible Drop Off Date</label>
-        <br>
+        <input type="date" name="DropOffDate">
+        <br> <input type="submit" name="submit" value="Submit">
 
 
     </form>
