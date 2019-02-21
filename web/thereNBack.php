@@ -70,7 +70,7 @@ $db = get_db();
                                                     echo '<td>' . $row['shipment_end_date'] . '</td>';
                                                     echo '<td>' . $row['pickup_from_city'] . '</td>';
                                                     echo '<td>' . $row['pickup_from_state'] . '</td>';?>
-                                                   <td> <button onclick="doThings()"><?php echo $rowCount; ?></button>
+                                                   <td> <button onclick="doThings()"><?php echo $rowCount; ?></button> </td>
                                                    <?php
                                                     // echo '<td> <button onclick="doThings()">'.$row['id_shipment'].'</button><form name="opt' . $rowCount . '" action="tnbDetails.php" " method="POST">
                                                     //              <input type="text" class="collapse" name="shippmentId" value="'.$row['id_shipment'].'">
