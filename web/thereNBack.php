@@ -77,8 +77,8 @@ $db = get_db();
                     {
                         $_SESSION["selectionID"] = $selection;
                         echo "<script type='text/javascript'>alert('$selection');</script>";
-                        header('Location: tnbDetails.php');
-                        exit();
+                        // header('Location: tnbDetails.php');
+                        // exit();
                     }
                     ?>
             </div>
