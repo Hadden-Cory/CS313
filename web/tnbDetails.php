@@ -42,7 +42,7 @@ $db = get_db();
                                 </tr>
                                 <?php
 
-                                $selectionID =  $_POSt["shippmentId"];
+                                $selectionID =  $_POST["shippmentId"];
                                 echo $selectionID;
 
                                 // We're building two tables by querying the database for general shipment information and inserting it into HTML tables 
