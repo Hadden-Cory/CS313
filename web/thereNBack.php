@@ -44,6 +44,7 @@ $db = get_db();
                     //Query
                     foreach ($db->query('SELECT
                                             ship.shipment_start_date,
+                                            ship.id_shipment,
                                             pfrom.pickup_from_city,
                                             pfrom.pickup_from_state, 
                                             ship.shipment_end_date,
@@ -60,19 +61,18 @@ $db = get_db();
                                                 {
                                                     //Loop though each row and make us a html table!
                                                     $rowCount++;
-                                                    $btnValue = $rowCount;
-                                                    
+                                                  
                                                     echo '<tr><td>' . $row['shipment_start_date'] . '</td>';
                                                     echo '<td>' . $row['ship_to_city'] . '</td>';
                                                     echo '<td>' . $row['ship_to_state'] . '</td>';
                                                     echo '<td>' . $row['shipment_end_date'] . '</td>';
                                                     echo '<td>' . $row['pickup_from_city'] . '</td>';
                                                     echo '<td>' . $row['pickup_from_state'] . '</td>';
-                                                    echo '<td><form name="opt' . $rowCount . '" action="tnbDetails.php" method="POST">
-                                                                 <input type="text" class="collapse" name="shippmentId" value="'.$row.'.0">
+                                                     echo '<td><form name="opt' . $rowCount . '" action="tnbDetails.php" method="POST">
+                                                                 <input type="text" class="collapse" name="shippmentId" value="'.$row['id_shipment'].'.0">
                                                                  <input type="submit" value="Load Info">
                                                           </td>';
-                                                    echo "<td>$btnValue</td>";
+                                                    echo "<td>".$row['id_shipment']."</td>";
                                                     echo '</tr>';
                     }
                     echo '</table>'; //Make the table stop 
