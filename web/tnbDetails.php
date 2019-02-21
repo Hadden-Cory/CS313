@@ -61,7 +61,7 @@ $db = get_db();
                                                                 inner join ship_to as shipto on ship.id_shipment = shipto.shipment_id_shipment 
                                                                 inner join pickup_from as pfrom on ship.id_shipment = pfrom.shipment_id_shipment 
                                                         where
-                                                             = $selectionId") as $row) {
+                                                        ship.id_shipment = '$selectionId'") as $row) {
                                                             //Loop though each row and make us a html table!
                                                             echo '<tr><td>' . $row['shipment_start_date'] . '</td>';
                                                             echo '<td>' . $row['ship_to_city'] . '</td>';
