@@ -19,41 +19,19 @@ session_start();
     <?php include("header.php");
 
     echo '<div id="container" class="r>
-<div class="row h-50">
-<div class="col-sm-2 col-lg-2">
-</div>
-<div class="col-sm-8 col-lg-8">';
+            <div class="row h-50">
+            <div class="col-sm-2 col-lg-2">
+            </div>
+            <div class="col-sm-8 col-lg-8">
+            <div id="container" class="r>
+            <div class="row h-50">
+            <div class="col-sm-2 col-lg-2">
+            <table id=mainTable><tr><th>Pickup As Early As </th>
+            <th>Pickup City</th><th>Pickup State</th>
+            <th>Deliver by</th><th>Delivery City</th>
+            <th>Delivery State</th></tr>';
 
-    try {
-
-        $dbUrl = getenv('DATABASE_URL');
-
-        $dbOpts = parse_url($dbUrl);
-
-        $dbHost = $dbOpts["host"];
-        $dbPort = $dbOpts["port"];
-        $dbUser = $dbOpts["user"];
-        $dbPassword = $dbOpts["pass"];
-        $dbName = ltrim($dbOpts["path"], '/');
-
-        $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-
-        $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    } catch (PDOException $ex) {
-        echo 'Error!: ' . $ex->getMessage();
-        die();
-    }
-
-    echo '<div id="container" class="r>
-<div class="row h-50">
-<div class="col-sm-2 col-lg-2">';
-
-echo '<table id=mainTable><tr><th>Pickup As Early As </th>
-      <th>Pickup City</th><th>Pickup State</th>
-      <th>Deliver by</th><th>Delivery City</th>
-      <th>Delivery State</th></tr>';
-
-foreach ($db->query('SELECT
+    foreach ($db->query('SELECT
     ship.shipment_start_date,
     pfrom.pickup_from_city,
     pfrom.pickup_from_state, 
@@ -66,17 +44,17 @@ from
     inner join ship_to as shipto on ship.id_shipment = shipto.shipment_id_shipment 
     inner join pickup_from as pfrom on ship.id_shipment = pfrom.shipment_id_shipment 
 where
-    ship.shipper_id_shipper = 1') as $row){
-        echo '<tr><td>'.$row['shipment_start_date'].'</td>';
-        echo '<td>'.$row['ship_to_city'].'</td>';
-        echo '<td>'.$row['ship_to_state'].'</td>';
-        echo '<td>'.$row['shipment_end_date'].'</td>';
-        echo '<td>'.$row['pickup_from_city'].'</td>';
-        echo '<td>'.$row['pickup_from_state'].'</td>';
+    ship.shipper_id_shipper = 1') as $row) {
+        echo '<tr><td>' . $row['shipment_start_date'] . '</td>';
+        echo '<td>' . $row['ship_to_city'] . '</td>';
+        echo '<td>' . $row['ship_to_state'] . '</td>';
+        echo '<td>' . $row['shipment_end_date'] . '</td>';
+        echo '<td>' . $row['pickup_from_city'] . '</td>';
+        echo '<td>' . $row['pickup_from_state'] . '</td>';
         echo '</tr>';
     }
     echo '</table>';
-    
+
     echo '<table id=mainTable><tr><th>Item</th>
       <th>Description</th><th>Special Instructions</th>
       <th>Weight</th><th>Width</th>

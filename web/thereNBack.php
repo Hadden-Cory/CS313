@@ -24,30 +24,8 @@ $db = get_db();
 <div class="row h-50">
 <div class="col-sm-2 col-lg-2">
 </div>
-<div class="col-sm-8 col-lg-8">';
-
-    // try {
-
-    //     $dbUrl = getenv('DATABASE_URL');
-
-    //     $dbOpts = parse_url($dbUrl);
-
-    //     $dbHost = $dbOpts["host"];
-    //     $dbPort = $dbOpts["port"];
-    //     $dbUser = $dbOpts["user"];
-    //     $dbPassword = $dbOpts["pass"];
-    //     $dbName = ltrim($dbOpts["path"], '/');
-
-    //     $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword, "");
-
-    //     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    // } catch (PDOException $ex) {
-    //     echo 'Error!: ' . $ex->getMessage();
-    //     die();
-    // }
-
-
-    echo '<br><br><br><table id=mainTable><tr><th>Pickup As Early As </th>
+<div class="col-sm-8 col-lg-8"><br><br><br><table id=mainTable>
+      <tr><th>Pickup As Early As </th>
       <th>Pickup City</th><th>Pickup State</th>
       <th>Deliver by</th><th>Delivery City</th>
       <th>Delivery State</th><th></th></tr>';
