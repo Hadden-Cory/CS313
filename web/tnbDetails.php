@@ -49,6 +49,7 @@ $db = get_db();
                                 // Delivery Info Query
                                 foreach ($db->query("SELECT
                                                             ship.shipment_start_date,
+                                                            ship.id_shipper,
                                                             pfrom.pickup_from_city,
                                                             pfrom.pickup_from_state, 
                                                             ship.shipment_end_date,
@@ -60,7 +61,7 @@ $db = get_db();
                                                                 inner join ship_to as shipto on ship.id_shipment = shipto.shipment_id_shipment 
                                                                 inner join pickup_from as pfrom on ship.id_shipment = pfrom.shipment_id_shipment 
                                                         where
-                                                            ship.shipper_id_shipper = $selectionId") as $row) {
+                                                             = $selectionId") as $row) {
                                                             //Loop though each row and make us a html table!
                                                             echo '<tr><td>' . $row['shipment_start_date'] . '</td>';
                                                             echo '<td>' . $row['ship_to_city'] . '</td>';
