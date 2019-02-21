@@ -17,5 +17,5 @@ td, th{
 }
 
 .collaspe{
-    visibility: collapse;
+    visibility: hidden;
 }
