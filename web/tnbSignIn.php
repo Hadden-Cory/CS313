@@ -30,7 +30,7 @@
             echo "<p id='signInError' class='text-danger'>Login Failed: password or username were incorrect.</p>";
             } ?>
     </form>
-    <p>Not a member? Sign up <a href="tnbAddingUser.php">here</a></p>
+    <p>Not a member? Sign up <a href="tnbSignUP.php">here</a></p>
 </body>
 </html>
   
