@@ -41,11 +41,11 @@ session_start();
       {
         echo "<tr><td>" . $_SESSION['itemNames'][$item]. "</td>";
         echo "<td>" . $_SESSION['itemDescriptions'][$item]. "</td>";
-        echo "<td>" . $_SESSION['itemWeights'][$value]. "</td>";
-        echo "<td>" . $_SESSION['itemWidths'][$value] . "</td>";
-        echo "<td>" . $_SESSION['itemHeights'][$value] . "</td>";
-        echo "<td>" . $_SESSION['itemDepths'][$value] . "</td>";
-        echo "<td>" . $_SESSION['itemspecialInstructs'][$value] . "</td></tr>";
+        echo "<td>" . $_SESSION['itemWeights'][$item]. "</td>";
+        echo "<td>" . $_SESSION['itemWidths'][$item] . "</td>";
+        echo "<td>" . $_SESSION['itemHeights'][$item] . "</td>";
+        echo "<td>" . $_SESSION['itemDepths'][$item] . "</td>";
+        echo "<td>" . $_SESSION['itemspecialInstructs'][$item] . "</td></tr>";
      } 
       echo "</table>";
 
