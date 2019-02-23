@@ -1,5 +1,5 @@
 <?php
-start_session();
+session_start();
  require "dbConnect.php";
 //Shared credit for the login systems belongs to Sebastian Calle,
 //Sheldon Smith, and Stefano Nicotra. We (and by "we" I
