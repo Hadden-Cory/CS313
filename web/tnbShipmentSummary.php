@@ -39,6 +39,7 @@ session_start();
 
       // foreach ($_SESSION['itemNames'] as $item=>$value)
       // {
+        echo $_SESSION['itemIndex'];
         echo "<td>" . $_SESSION['itemNames'][$_SESSION['itemIndex']]. "</td>";
         // echo "<td>" . $_SESSION['itemDescriptions'][$value]. "</td>";
         // echo "<td>" . $_SESSION['itemWeights'][$value]. "</td>";
