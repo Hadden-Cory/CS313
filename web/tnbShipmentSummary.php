@@ -37,16 +37,16 @@ session_start();
             <th>Weight</th><th>Width</th>
             <th>Depth</th><th>Height</th></tr><tr>';
 
-      foreach ($_SESSION['itemNames'] as $item=>$value)
-      {
-        echo "<td>" . $value. "</td>";
-        echo "<td>" . $_SESSION['itemDescriptions'][$value]. "</td>";
-        echo "<td>" . $_SESSION['itemWeights'][$value]. "</td>";
-        echo "<td>" . $_SESSION['itemWidths'][$value] . "</td>";
-        echo "<td>" . $_SESSION['itemHeights'][$value] . "</td>";
-        echo "<td>" . $_SESSION['itemDepths'][$value] . "</td>";
-        echo "<td>" . $_SESSION['itemSpclInstructs'][$value] . "</td></tr>";
-      } 
+      // foreach ($_SESSION['itemNames'] as $item=>$value)
+      // {
+        echo "<td>" . $_SESSION['itemNames'][$_SESSION['itemIndex']]. "</td>";
+        // echo "<td>" . $_SESSION['itemDescriptions'][$value]. "</td>";
+        // echo "<td>" . $_SESSION['itemWeights'][$value]. "</td>";
+        // echo "<td>" . $_SESSION['itemWidths'][$value] . "</td>";
+        // echo "<td>" . $_SESSION['itemHeights'][$value] . "</td>";
+        // echo "<td>" . $_SESSION['itemDepths'][$value] . "</td>";
+        // echo "<td>" . $_SESSION['itemSpclInstructs'][$value] . "</td></tr>";
+     // } 
       echo "</table>";
 
     

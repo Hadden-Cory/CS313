@@ -9,7 +9,8 @@ $_SESSION['itemWeights'] = array();
 $_SESSION['itemWidths'] = array();
 $_SESSION['itemHeights'] = array();
 $_SESSION['itemDepths'] = array();
-$_SESSION['itemSpclInstructs'] = array(); 
+$_SESSION['itemSpclInstructs'] = array();
+$_SESSION['itemIndex']=$_SESSION['itemNames'];
 
 try{
 if(!isset($_SESSION['itemNames'][$_POST["name"]])) {
