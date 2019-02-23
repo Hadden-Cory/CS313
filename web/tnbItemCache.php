@@ -11,29 +11,32 @@ $_SESSION['itemHeights'] = array();
 $_SESSION['itemDepths'] = array();
 $_SESSION['itemSpclInstructs'] = array(); 
 
-
+try{
 if(!isset($_SESSION['itemNames'][$_POST["name"]])) {
     $_SESSION['itemNames'][$_POST["name"]] = $_POST["name"];
 }
-if(!isset($_SESSION['itemDescriptions'][$_POST["itemDescription"]])) {
-    $_SESSION['itemDescriptions'][$_POST["itemDescription"]] = $_POST["itemDescription"];
+if(!isset($_SESSION['itemDescriptions'][$_POST["name"]])) {
+    $_SESSION['itemDescriptions'][$_POST["name"]] = $_POST["itemDescription"];
 }
-if(!isset($_SESSION['itemWeights'][$_POST["weight"]])) {
-    $_SESSION['itemWeights'][$_POST["weight"]] = $_POST["weight"];
+if(!isset($_SESSION['itemWeights'][$_POST["name"]])) {
+    $_SESSION['itemWeights'][$_POST["name"]] = $_POST["weight"];
 }
-if(!isset($_SESSION['itemWidths'][$_POST["width"]])) {
-    $_SESSION['itemWidths'][$_POST["width"]] = $_POST["width"];
+if(!isset($_SESSION['itemWidths'][$_POST["name"]])) {
+    $_SESSION['itemWidths'][$_POST["name"]] = $_POST["width"];
 }
-if(!isset($_SESSION['itemHeights'][$_POST["height"]])) {
-    $_SESSION['itemHeights'][$_POST["height"]] = $_POST["height"];
+if(!isset($_SESSION['itemHeights'][$_POST["name"]])) {
+    $_SESSION['itemHeights'][$_POST["name"]] = $_POST["height"];
 }
-if(!isset($_SESSION['itemDepths'][$_POST["depth"]])) {
-    $_SESSION['itemDepths'][$_POST["depth"]] = $_POST["depth"];
+if(!isset($_SESSION['itemDepths'][$_POST["name"]])) {
+    $_SESSION['itemDepths'][$_POST["name"]] = $_POST["depth"];
 }
-if(!isset($_SESSION['itemSpclInstructs'][$_POST["specialInstructions"]])) {
-    $_SESSION['itemSpclInstructs'][$_POST["specialInstructions"]] = $_POST["specialInstructions"];
+if(!isset($_SESSION['itemSpclInstructs'][$_POST["name"]])) {
+    $_SESSION['itemSpclInstructs'][$_POST["name"]] = $_POST["specialInstructions"];
 }
-
+} catch (Exception $e) {
+            echo 'Error. Details: '.$e->getMessage().'\n';
+            die();
+     }
 
 // $_SESSION['itemCacheIndex'] = 0;
 //     array_push($itemNames,'item'.$_SESSION['itemCacheIndex'], $_POST['name']);

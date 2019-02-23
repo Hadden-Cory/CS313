@@ -36,17 +36,36 @@ session_start();
             <th>Description</th><th>Special Instructions</th>
             <th>Weight</th><th>Width</th>
             <th>Depth</th><th>Height</th></tr><tr>';
-    $index = 0;
-//    foreach ($itemName as $item) {
-      echo "<td>" . $_SESSION['itemNames']['item'.$index] . "</td>";
-      echo "<td>" . $_SESSION['itemDescriptions ']['description'.$index] . "</td>";
-      echo "<td>" . $_SESSION['itemWeights']['weights'.$index] . "</td>";
-      echo "<td>" . $_SESSION['itemWidths']['widths'.$index] . "</td>";
-      echo "<td>" . $_SESSION['itemHeights']['heights'.$index] . "</td>";
-      echo "<td>" . $_SESSION['itemDepths']['depths'.$index] . "</td>";
-      echo "<td>" . $_SESSION['itemSpclInstructs']['instructions'.$index] . "</td></tr>";
-      $index++;
-  //  }
+
+            foreach ($_SESSION['itemNames'] as $item)
+            {
+              echo "<td>" . $item. "</td>";
+              echo "<td>" . $_SESSION['itemDescriptions'][$item]. "</td>";
+              echo "<td>" . $_SESSION['itemWeights'][$item]. "</td>";
+              echo "<td>" . $_SESSION['itemWidths'][$item] . "</td>";
+              echo "<td>" . $_SESSION['itemHeights'][$item] . "</td>";
+              echo "<td>" . $_SESSION['itemDepths'][$item] . "</td>";
+              echo "<td>" . $_SESSION['itemSpclInstructs'][$item] . "</td></tr>";
+            } 
+    
+    
+    
+    
+    
+    
+    
+    
+            //$index = 0;
+// //    foreach ($itemName as $item) {
+//       echo "<td>" . $_SESSION['itemNames']. "</td>";
+//       echo "<td>" . $_SESSION['itemDescriptions ']. "</td>";
+//       echo "<td>" . $_SESSION['itemWeights']. "</td>";
+//       echo "<td>" . $_SESSION['itemWidths']['widths'.$index] . "</td>";
+//       echo "<td>" . $_SESSION['itemHeights']['heights'.$index] . "</td>";
+//       echo "<td>" . $_SESSION['itemDepths']['depths'.$index] . "</td>";
+//       echo "<td>" . $_SESSION['itemSpclInstructs']['instructions'.$index] . "</td></tr>";
+//       $index++;
+//   //  }
 
     ?>
     <a href="tnbItemForm.php"><button>Add Another Item</button></a>
