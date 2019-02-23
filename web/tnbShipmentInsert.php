@@ -11,10 +11,9 @@
     $DropOffDate =$_POST["DropOffDate"];
     $DropOffState =$_POST["DropOffState"];
     $DropOffCity =$_POST["DropOffCity"];
-    $shipperId = 0;
 
-    $shipperId = query($db, "SELECT id_shipper FROM shipper WHERE shipper_name = $username");
-
+    $statment = $db->query("SELECT id_shipper FROM shipper WHERE shipper_name = $username");
+    $shipperId = $statment->fetch(PDO::FETCH_ASSOC);
     echo $shipperId;
 
 //     $statement->prepare($db, "INSERT INTO shipment (shipper_id_shipper, shipment_start_date, shipment_end_date)
