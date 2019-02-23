@@ -8,9 +8,9 @@
     $pickUpDate = $_POST["pickUpDate"];
     $pickUpState =$_POST["pickUpState"];
     $pickUpCity =$_POST["pickUpCity"];
-    $DropOffDate =$_POST["DropOffDate"];
-    $DropOffState =$_POST["DropOffState"];
-    $DropOffCity =$_POST["DropOffCity"];
+    $dropOffDate =$_POST["dropOffDate"];
+    $dropOffState =$_POST["dropOffState"];
+    $dropOffCity =$_POST["dropOffCity"];
     $shipperId = 0;
 
 

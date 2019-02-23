@@ -80,8 +80,8 @@
 
 
         <!-- End of Pick Up, Begin Drop Off -->
-        <label for="DropOffState">Drop Off State</label>
-        <select id="DropOffState" name="DropOffState">
+        <label for="dropOffState">Drop Off State</label>
+        <select id="dropOffState" name="dropOffState">
             <option value="---">---</option>
             <option value="Alabama">Alabama</option>
             <option value="Alaska">Alaska</option>
@@ -134,10 +134,10 @@
             <option value="Wisconsin">Wisconsin</option>
             <option value="Wyoming">Wyoming</option>
         </select>
-        <label for="DropOffCity">Drop Off City</label>
-        <input type="text" name="DropOffCity">
-        <label for="DropOffDate">Latest Possible Drop Off Date</label>
-        <input type="date" name="DropOffDate">
+        <label for="dropOffCity">Drop Off City</label>
+        <input type="text" name="dropOffCity">
+        <label for="dropOffDate">Latest Possible Drop Off Date</label>
+        <input type="date" name="dropOffDate">
         <br> <input type="submit" name="submit" value="Add Items">
 
 <!-- TODO Finish fillin gthis out! -->
