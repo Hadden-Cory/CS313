@@ -46,7 +46,7 @@ $db = get_db();
                 <form name="form" action="<?php echo $current_page; ?>" method="post">
                     <input type="submit" value="Logout">
                 </form>
-                <a href="shipmentForm.php"><button>Enter A Shipment</button></a><br><br>
+                <a href="tnbShipmentForm.php"><button>Enter A Shipment</button></a><br><br>
                 <a href="construction.php"><button>Edit Your Shipments</button></a>
             </div>
             <div class="col-sm-8 col-lg-8"><br><br><br>
