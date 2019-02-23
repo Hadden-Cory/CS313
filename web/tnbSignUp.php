@@ -7,7 +7,7 @@ $db = get_db();
 <html>
 
 <head>
-    <title>ThereNBack.com-Sign UP</title>
+    <title>ThereNBack.com-Sign Up</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="plants.css">
     <link rel="stylesheet" type="text/css" href="tnb.css">
