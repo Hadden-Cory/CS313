@@ -42,7 +42,7 @@ $db = get_db();
     <div id="container" class="center">
         <div class="row h-50">
             <div class="col-sm-2 col-lg-2">
-                <h1>Welcome <?php echo $shipper_name; ?></h1>
+                <h1>Welcome <?php echo htmlspecialchars($shipper_name); ?></h1>
                 <form name="form" action="<?php echo $current_page; ?>" method="post">
                     <input type="submit" value="Logout">
                 </form>
