@@ -14,11 +14,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script src="tnb.js"></script>
 </head>
-  
-<body>  
-<?php
+
+<body>
+    <?php
     include("header.php");
-?>
+    ?>
     <form action="tnbVerifyUser.php" method="POST">
         <label for="shipper-name">Username</label>
         <input type="text" name="shipper_name">
@@ -26,10 +26,10 @@
         <input type="password" name="shipper_password">
         <input type="submit" name="submit" value="Submit">
         <?php
-            if ($_SESSION['lastAttemptFailed']){
+        if ($_SESSION['lastAttemptFailed']) {
             echo "<p id='signInError' class='text-danger'>Login Failed: password or username were incorrect.</p>";
-        ?>
-    } 
+            ?>
+        }
     </form>
     <p>Not a member? Sign up <a href="addingUser.php">here</a></p>
 </body>

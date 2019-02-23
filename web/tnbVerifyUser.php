@@ -1,17 +1,15 @@
 <?php
-session_start();
- require "dbConnect.php";
-//Shared credit for the login systems belongs to Sebastian Calle,
-//Sheldon Smith, and Stefano Nicotra. We (and by "we" I
-//mean I feel like it was mostly them because they are such
-//competent programers) wrote most of it in a team activty.
-//It fit so well into my project that all I did was retype 
-//it out so that I understood and added a few functionality
-// points that I wanted. I have changed very little of this
-// code. So, special thanks to them. Used with permission.
-
+    session_start();
+    require "dbConnect.php";
     
-   
+    //Shared credit for the login systems belongs to Sebastian Calle,
+    //Sheldon Smith, and Stefano Nicotra. We (and by "we" I
+    //mean I feel like it was mostly them because they are such
+    //competent programers) wrote most of it in a team activty.
+    //It fit so well into my project that all I did was retype 
+    //it out so that I understood and added a few functionality
+    // points that I wanted. I have changed very little of this
+    // code. So, special thanks to them. Used with permission.
 
     //Get database store the name password hash sent to us by the sign in page 
     $db = get_db();
@@ -42,5 +40,6 @@ session_start();
         $_SESSION["username"] = null;
         header("Location: tnbSignIn.php");
         exit;
-} 
+}
+?>
  
