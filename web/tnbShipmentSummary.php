@@ -33,9 +33,9 @@ session_start();
       echo "<td>" . $_SESSION['dropOffCity'] . "</td></tr>";
     echo "</table>";
     echo '<br><table id=mainTable><tr><th>Item</th>
-            <th>Description</th><th>Special Instructions</th>
-            <th>Weight</th><th>Width</th>
-            <th>Depth</th><th>Height</th></tr>';
+            <th>Description</th><th>Weight</th><th>Width</th>
+            <th>Height</th><th>Depth</th>
+            <th>Special Instructions</th></tr>';
 
       foreach ($_SESSION['itemNames'] as $item=>$value)
       {
