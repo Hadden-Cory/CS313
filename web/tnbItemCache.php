@@ -10,7 +10,7 @@ $_SESSION['itemWidths'] = array();
 $_SESSION['itemHeights'] = array();
 $_SESSION['itemDepths'] = array();
 $_SESSION['itemSpclInstructs'] = array();
-$_SESSION['itemIndex']=$_SESSION['itemNames'];
+$_SESSION['itemIndex']=$_POST['name'];
 
 try{
 // if(!isset($_SESSION['itemNames'][$_POST["name"]])) {
