@@ -17,7 +17,7 @@
 <body>
     <?php include("header.php");?>
     <!-- Shout out to Carl Nunes on Codepen for doing most of the hard work on this dropdown -->
-    <form action="tnbShipmentInsert.php" method="POST">
+    <form action="tnbShipmentCache.php" method="POST">
         <label for="pickUpState">Pick Up State</label>
         <select id="pickUpState" name="pickUpState">
             <option value="---">---</option>

@@ -17,7 +17,7 @@
 
 <body>
     <?php include("header.php"); ?>
-    <form name="item" method="POST" action="tnbItemInsert.php">
+    <form name="item" method="POST" action="tnbItemCache.php">
         <label for="name">What is your item?</label>
         <input type="text" name="name"><br>
         <label for="itemDescription">If applicatble, add a description.</label>

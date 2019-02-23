@@ -4,12 +4,12 @@ require "dbConnect.php";
 $db = get_db();
 
 $username = $_SESSION["username"];
-$pickUpDate = $_POST["pickUpDate"];
-$pickUpState = $_POST["pickUpState"];
-$pickUpCity = $_POST["pickUpCity"];
-$dropOffDate = $_POST["dropOffDate"];
-$dropOffState = $_POST["dropOffState"];
-$dropOffCity = $_POST["dropOffCity"];
+$pickUpDate = $_SESSION["pickUpDate"];
+$pickUpState = $_SESSION["pickUpState"];
+$pickUpCity = $_SESSION["pickUpCity"];
+$dropOffDate = $_SESSION["dropOffDate"];
+$dropOffState = $_SESSION["dropOffState"];
+$dropOffCity = $_SESSION["dropOffCity"];
 $shipperId = 0;
 $shipmentId = 0;
 
