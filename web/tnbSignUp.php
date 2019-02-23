@@ -27,6 +27,10 @@ $db = db_get();
         <label for="shipper-password">Password</label>
         <input type="password" name="shipper_password" pattern=".{8,}"   required title="8 characters minimum">
         <input type="submit" name="submit" value="Submit">
+        <?php
+        if ($_SESSION['lastAttemptFailed']) {
+            echo "<p id='signInError' class='text-danger'>That User name is not availible, try another.</p>";
+            } ?>
     </form>
 </body>
 
