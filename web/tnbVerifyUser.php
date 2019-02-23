@@ -20,13 +20,13 @@
         $_SESSION["verified"] = TRUE;
         $_SESSION["username"] = $userName;
         $_SESSION['id_shipper'] = $row["id_shipper"];
-        header("Location: welcome.php");
+        header("Location: thereNBack.php");
         exit;   
     }
     else {
         $_SESSION["verified"] = FALSE;
         $_SESSION["username"] = NULL;
-        header("Location: thereNBack.php");
+        header("Location: tnbSignIn.php");
         exit;
     }
 
