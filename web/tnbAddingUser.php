@@ -23,7 +23,7 @@ session_start();
         <label for="shipper-name">Username</label>
         <input type="text" name="shipper_name">
         <label for="shipper-password">Password</label>
-        <input type="password" name="shipper_password">
+        <input type="password" name="shipper_password" pattern=".{8,}"   required title="8 characters minimum">
         <input type="submit" name="submit" value="Submit">
     </form>
 </body>
