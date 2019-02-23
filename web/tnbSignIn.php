@@ -15,7 +15,7 @@
     <script src="tnb.js"></script>
 </head>
   
-<body>
+<body>  
 <?php
     include("header.php");
 ?>
