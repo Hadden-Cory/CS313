@@ -11,11 +11,16 @@ $_SESSION['itemWeights'] = array();
 $_SESSION['itemWidths'] = array();
 $_SESSION['itemHeights'] = array();
 $_SESSION['itemDepths'] = array();
-$_SESSION['itemSpclInstructs'] = array();
+$_SESSION['itemspecialInstructs'] = array();
 $_SESSION['itemIndex']=$_POST['name'];
 
 if(!isset($_SESSION['itemNames'][$_POST["name"]])) {
     $_SESSION['itemNames'][$_POST["name"]] = $_POST["name"];
+    $_SESSION['itemDescriptions'][$_POST["name"]] = $_POST["itemDescription"];
+    $_SESSION['itemWeights'][$_POST["name"]] = $_POST["itemDescription"];
+    $_SESSION['itemHeights'][$_POST["name"]] = $_POST["height"];
+    $_SESSION['itemDepths'][$_POST["name"]] = $_POST["depth"];
+    $_SESSION['itemspecialInstructs'][$_POST["name"]] = $_POST["specialInstructions"];
 }
 // try{
 // // if(!isset($_SESSION['itemNames'][$_POST["name"]])) {

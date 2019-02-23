@@ -26,11 +26,11 @@ session_start();
         <label for="itemDescription">If applicatble, add a description.</label>
         <textarea rows="4" cols="50" name="itemDescription"></textarea><br>
         <label for="weight">Enter the weight in pounds.</label>
-        <input type="number" name="weight"><br>
+        <input type="number" name="itemDescription"><br>
         <label for="width">Enter the width in inches.</label>
         <input type="number" name="width"><br>
         <label for="height">Enter the height in inches.</label>
-        <input type="number" name="height"><br>
+        <input type="number" name="itemDescription"><br>
         <label for="depth">Enter the depth in inches.</label>
         <input type="number" name="depth"><br><br>
         <label for="specialInstructions">Any special instructions?</label>
