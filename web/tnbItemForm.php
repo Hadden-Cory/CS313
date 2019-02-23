@@ -21,7 +21,7 @@
         <label for="name">What is your item?</label>
         <input type="text" name="name">
         <label for="itemDescription">If applicatble, add a description.</label>
-        <input type="textarea" rows="4" cols="50" name="itemDescription"><br><br>
+        <textarea rows="4" cols="50" name="itemDescription"></textarea><br><br>
         <label for="weight">Enter the weight in pounds.</label>
         <input type="number" name="weight"><br>
         <label for="width">Enter the width in inches.</label>
