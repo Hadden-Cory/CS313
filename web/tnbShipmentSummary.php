@@ -25,30 +25,30 @@ session_start();
                 <th>Delivery City</th>
                 <th>Delivery State</th>
             </tr>";
-    echo "<tr><td>" . $_SESSION['pickUpDate'] . "</td>";
-    echo "<td>" . $_SESSION['pickUpState'] . "</td>";
-    echo "<td>" . $_SESSION['pickUpCity'] . "</td>";
-    echo "<td>" . $_SESSION['dropOffDate'] . "</td>";
-    echo "<td>" . $_SESSION['dropOffState'] . "</td>";
-    echo "<td>" . $_SESSION['dropOffCity'] . "</td></tr>";
-
+      echo "<tr><td>" . $_SESSION['pickUpDate'] . "</td>";
+      echo "<td>" . $_SESSION['pickUpState'] . "</td>";
+      echo "<td>" . $_SESSION['pickUpCity'] . "</td>";
+      echo "<td>" . $_SESSION['dropOffDate'] . "</td>";
+      echo "<td>" . $_SESSION['dropOffState'] . "</td>";
+      echo "<td>" . $_SESSION['dropOffCity'] . "</td></tr>";
+    echo "</table>";
     echo '<br><table id=mainTable><tr><th>Item</th>
             <th>Description</th><th>Special Instructions</th>
             <th>Weight</th><th>Width</th>
             <th>Depth</th><th>Height</th></tr><tr>';
 
-            foreach ($_SESSION['itemNames'] as $item=>$value)
-            {
-              echo "<td>" . $value. "</td>";
-              echo "<td>" . $_SESSION['itemDescriptions'][$value]. "</td>";
-              echo "<td>" . $_SESSION['itemWeights'][$value]. "</td>";
-              echo "<td>" . $_SESSION['itemWidths'][$value] . "</td>";
-              echo "<td>" . $_SESSION['itemHeights'][$value] . "</td>";
-              echo "<td>" . $_SESSION['itemDepths'][$value] . "</td>";
-              echo "<td>" . $_SESSION['itemSpclInstructs'][$value] . "</td></tr>";
-            } 
-            echo "</table>";
-    
+      foreach ($_SESSION['itemNames'] as $item=>$value)
+      {
+        echo "<td>" . $value. "</td>";
+        echo "<td>" . $_SESSION['itemDescriptions'][$value]. "</td>";
+        echo "<td>" . $_SESSION['itemWeights'][$value]. "</td>";
+        echo "<td>" . $_SESSION['itemWidths'][$value] . "</td>";
+        echo "<td>" . $_SESSION['itemHeights'][$value] . "</td>";
+        echo "<td>" . $_SESSION['itemDepths'][$value] . "</td>";
+        echo "<td>" . $_SESSION['itemSpclInstructs'][$value] . "</td></tr>";
+      } 
+      echo "</table>";
+
     
     
     
