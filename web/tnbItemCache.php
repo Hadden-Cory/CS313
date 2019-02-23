@@ -12,7 +12,6 @@ if (!isset($_SESSION['itemNames']))
     $_SESSION['itemHeights'] = array();
     $_SESSION['itemDepths'] = array();
     $_SESSION['itemspecialInstructs'] = array();
-    $_SESSION['itemIndex']=$_POST['name'];
 }
 
 try{

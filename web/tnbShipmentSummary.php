@@ -18,26 +18,26 @@ session_start();
     <?php include("header.php");
     echo "<table>
     <tr>
-    <th>Pickup As Early As </th>
-    <th>Pickup State</th>
-    <th>Pickup City</th>
-    <th>Deliver by</th>
-    <th>Delivery State</th>
-    <th>Delivery City</th>
-</tr>";
+      <th>Pickup As Early As </th>
+      <th>Pickup State</th>
+      <th>Pickup City</th>
+      <th>Deliver by</th>
+      <th>Delivery State</th>
+      <th>Delivery City</th>
+    </tr>";
       echo "<tr><td>" . $_SESSION['pickUpDate'] . "</td>";
       echo "<td>" . $_SESSION['pickUpState'] . "</td>";
       echo "<td>" . $_SESSION['pickUpCity'] . "</td>";
       echo "<td>" . $_SESSION['dropOffDate'] . "</td>";
       echo "<td>" . $_SESSION['dropOffState'] . "</td>";
       echo "<td>" . $_SESSION['dropOffCity'] . "</td></tr>";
-    echo "</table>";
-    echo '<br><table id=mainTable><tr><th>Item</th>
-            <th>Description</th><th>Weight</th><th>Width</th>
-            <th>Height</th><th>Depth</th>
-            <th>Special Instructions</th></tr>';
+      echo "</table>";
+      echo '<br><table id=mainTable><tr><th>Item</th>
+              <th>Description</th><th>Weight</th><th>Width</th>
+              <th>Height</th><th>Depth</th>
+              <th>Special Instructions</th></tr>';
 
-      foreach ($_SESSION['itemNames'] as $item)
+      foreach ($_SESSION['itemNames'] as $item => $values)
       {
         echo "<tr><td>" . $_SESSION['itemNames'][$item] . "</td>";
         echo "<td>" . $_SESSION['itemDescriptions'][$item] . "</td>";
