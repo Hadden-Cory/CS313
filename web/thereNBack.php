@@ -42,11 +42,15 @@ $db = get_db();
     <div id="container" class="center">
         <div class="row h-50">
             <div class="col-sm-2 col-lg-2">
-            <a href="shipmentForm.php"><button>Enter A Shipment</button></a><br><br>
-            <a href="construction.php"><button>Edit Your Shipments</button></a>
+                <h1>Welcome <?php echo $shipper_name; ?></h1>
+                <form name="form" action="<?php echo $current_page; ?>" method="post">
+                    <input type="submit" value="Logout">
+                </form>
+                <a href="shipmentForm.php"><button>Enter A Shipment</button></a><br><br>
+                <a href="construction.php"><button>Edit Your Shipments</button></a>
             </div>
             <div class="col-sm-8 col-lg-8"><br><br><br>
-                 <!-- We will be building this table for several lines. The first group is the headings, 
+                <!-- We will be building this table for several lines. The first group is the headings, 
                       followed by a large query and finished with a loop through all the query results-->
                 <table id=mainTable>
                     <tr>
@@ -58,7 +62,7 @@ $db = get_db();
                         <th>Delivery State</th>
                         <th></th>
                     </tr>
-                    
+
                     <?php 
                     $rowCount = 0;  
                     
@@ -101,7 +105,7 @@ $db = get_db();
                     }
                     echo '</table>'; //Make the table stop 
  ?>
-                
+
             </div>
             <div class="col-sm-2 col-lg-2">
             </div>
