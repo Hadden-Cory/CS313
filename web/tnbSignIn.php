@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <html>
 
 <head>
@@ -12,7 +16,12 @@
 </head>
   
 <body>
-<?php include("header.php");?>
+<?php
+    include("header.php");
+    if ($_session['lastAttemptFail']){
+        echo "<p id='signInError'>Login Failed: password or username were incorrect.</p>";
+    }
+?>
     <form action="tnbVerifyUser.php" method="POST">
         <label for="shipper-name">Username</label>
         <input type="text" name="shipper_name">
