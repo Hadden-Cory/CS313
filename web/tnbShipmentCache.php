@@ -1,7 +1,5 @@
 <?php
 session_start();
-require "dbConnect.php";
-$db = get_db();
 
 //Load the shipment data into our session, we will insert
 // it into the database once we have the item information
