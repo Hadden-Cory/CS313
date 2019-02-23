@@ -105,7 +105,6 @@ $db = get_db();
                     }
                     echo '</table>'; //Make the table stop 
  ?>
-
             </div>
             <div class="col-sm-2 col-lg-2">
             </div>
