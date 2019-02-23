@@ -16,7 +16,10 @@
 </head>
 
 <body>
-    <?php include("header.php"); ?>
+    <?php include("header.php"); 
+    echo $_SESSION['itemNames'];
+    ?>
+
     <form name="item" method="POST" action="tnbItemCache.php">
         <label for="name">What is your item?</label>
         <input type="text" name="name"><br>
