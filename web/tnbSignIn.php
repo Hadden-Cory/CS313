@@ -18,7 +18,7 @@
 <body>
 <?php
     include("header.php");
-    if ($_session['lastAttemptFail']){
+    if ($_session['lastAttemptFailed']){
         echo "<p id='signInError'>Login Failed: password or username were incorrect.</p>";
     }
 ?>
