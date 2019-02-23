@@ -43,7 +43,7 @@ session_start();
       echo "<td>" . $_SESSION['itemWeights']['weights'.$index] . "</td>";
       echo "<td>" . $_SESSION['itemWidths']['widths'.$index] . "</td>";
       echo "<td>" . $_SESSION['itemHeights']['heights'.$index] . "</td>";
-      echo "<td>" . $_SESSION['itemDepths']['depths'.$index] . "</td></tr>";
+      echo "<td>" . $_SESSION['itemDepths']['depths'.$index] . "</td>";
       echo "<td>" . $_SESSION['itemSpclInstructs']['instructions'.$index] . "</td></tr>";
       $index++;
   //  }
