@@ -20,7 +20,7 @@
     include("header.php");
     if ($_session['lastAttemptFailed']){
         echo "<p id='signInError'>Login Failed: password or username were incorrect.</p>";
-    }
+    } 
 ?>
     <form action="tnbVerifyUser.php" method="POST">
         <label for="shipper-name">Username</label>
