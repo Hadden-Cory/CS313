@@ -39,6 +39,10 @@ if ($shipmentId != 0) {
     $statement->bindValue(":shipmentIdShipment", $shipmentId, PDO::PARAM_STR);
     $statement->execute();
 
+    foreach ($db->query("SELECT id_shipment FROM shipment WHERE shipper_id_shipper = '$shipperId'") as $row) {
+        $shipmentId = $row['id_shipment'];
+    }
+
     $statement = $db->prepare("INSERT INTO ship_to (ship_to_city, ship_to_state, shipment_id_shipment)
                                 VALUES(:shipToCity, :shipToState, :shipmentIdShipment);");
     $statement->bindValue(":shipToCity", $dropOffCity, PDO::PARAM_STR);
