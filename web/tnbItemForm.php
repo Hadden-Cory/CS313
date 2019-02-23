@@ -18,8 +18,24 @@ session_start();
 <body>
     <?php include("header.php"); 
     echo $_SESSION['pickUpState'];
-    ?>
-
+ 
+    echo "<table>
+            <tr>
+                <th>Pickup As Early As </th>
+                <th>Pickup City</th>
+                <th>Pickup State</th>
+                <th>Deliver by</th>
+                <th>Delivery City</th>
+                <th>Delivery State</th>
+            </tr>";
+      echo "<tr><td>" . $_SESSION['pickUpDate'] . "</td>";
+      echo "<td>" . $_SESSION['pickUpState'] . "</td>";
+      echo "<td>" . $_SESSION['pickUpCity'] . "</td>";
+      echo "<td>" . $_SESSION['dropOffDate'] . "</td>";
+      echo "<td>" . $_SESSION['dropOffState'] . "</td>";
+      echo "<td>" . $_SESSION['dropOffCity'] . "</td></tr>";
+    echo "</table>";   ?>
+    echo '<br><table id=mainTable><tr><th>Item</th>
     <form name="item" method="POST" action="tnbItemCache.php">
         <label for="name">What is your item?</label>
         <input type="text" name="name"><br>
