@@ -27,7 +27,7 @@ if ($shipperId != 0) {
     $statement->execute();
 }
 
-foreach ($db->query("SELECT id_shipment FROM shipment WHERE shipper_id_shipper = '$username'") as $row) {
+foreach ($db->query("SELECT id_shipment FROM shipment WHERE shipper_id_shipper = '$shipperId'") as $row) {
     $shipmentId = $row['id_shipment'];
 }
 
