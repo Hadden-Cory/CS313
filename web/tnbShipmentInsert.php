@@ -14,7 +14,7 @@
     $shipperId = 0;
 
 
-    foreach ($db->query("SELECT id_shipper FROM shipper WHERE shipper_name = $username") as $row) 
+    foreach ($db->query("SELECT id_shipper FROM shipper WHERE shipper_name = '$username'") as $row) 
         {
             $shipperId = $row['id_shipper'];
         }
