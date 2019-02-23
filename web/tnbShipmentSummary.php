@@ -37,7 +37,7 @@ session_start();
             <th>Weight</th><th>Width</th>
             <th>Depth</th><th>Height</th></tr><tr>';
     $index = 0;
-    foreach ($itemName as $item) {
+//    foreach ($itemName as $item) {
       echo "<td>" . $_SESSION['itemNames']['item'.$index] . "</td>";
       echo "<td>" . $_SESSION['itemDescriptions ']['description'.$index] . "</td>";
       echo "<td>" . $_SESSION['itemWeights']['weights'.$index] . "</td>";
@@ -46,7 +46,7 @@ session_start();
       echo "<td>" . $_SESSION['itemDepths']['depths'.$index] . "</td></tr>";
       echo "<td>" . $_SESSION['itemSpclInstructs']['instructions'.$index] . "</td></tr>";
       $index++;
-    }
+  //  }
 
     ?>
     <a href="tnbItemForm.php"><button>Add Another Item</button></a>
