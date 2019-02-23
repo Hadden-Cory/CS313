@@ -21,7 +21,7 @@
     ?>
     <form action="tnbVerifyUser.php" method="POST">
         <label for="shipper-name">Username</label>
-        <input type="text" name="shipper_name">
+        <input type="text" name="shipper_name"><br>
         <label for="shipper-password">Password</label>
         <input type="password" name="shipper_password">
         <input type="submit" name="submit" value="Submit">
