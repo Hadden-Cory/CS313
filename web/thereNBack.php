@@ -68,7 +68,6 @@ $db = get_db();
                     
                     //We're building a table by querying the database for general shipment information and inserting it into a HTML table 
                     //Query
-                    $shipId=array();
                     foreach ($db->query('SELECT
                                             ship.shipment_start_date,
                                             ship.id_shipment,
@@ -89,18 +88,17 @@ $db = get_db();
                                                     //Loop though each row and make us a html table!
                                                     $rowCount++;
                                                     
-                                                    array_push($shipId, $row['id_shipment']);
-                                                    echo '<tr><td>' . $row['shipment_start_date'] . '</td>';
-                                                    echo '<td>' . $row['ship_to_city'] . '</td>';
-                                                    echo '<td>' . $row['ship_to_state'] . '</td>';
-                                                    echo '<td>' . $row['shipment_end_date'] . '</td>';
-                                                    echo '<td>' . $row['pickup_from_city'] . '</td>';
-                                                    echo '<td>' . $row['pickup_from_state'] . '</td>';
+                                                    echo '<tr><td>' . htmlspecialchars($row['shipment_start_date']) . '</td>';
+                                                    echo '<td>' . htmlspecialchars($row['ship_to_city']) . '</td>';
+                                                    echo '<td>' . htmlspecialchars($row['ship_to_state']) . '</td>';
+                                                    echo '<td>' . htmlspecialchars($row['shipment_end_date']) . '</td>';
+                                                    echo '<td>' . htmlspecialchars($row['pickup_from_city']) . '</td>';
+                                                    echo '<td>' . htmlspecialchars($row['pickup_from_state']) . '</td>';
                                                     echo '<td><form name="opt' . $rowCount . '" action="tnbDetails.php" " method="POST">
-                                                                 <input type="text" class="collapse" name="shippmentId" value="'.$row['id_shipment'].'">
+                                                                 <input type="text" class="collapse" name="shippmentId" value="'.htmlspecialchars($row['id_shipment']).'">
                                                                  <input type="submit" onclick="post" value="Load Info"></form>
                                                           </td>';
-                                                    echo "<td>".$row['id_shipment']."</td>";
+                                                    echo "<td>".htmlspecialchars($row['id_shipment'])."</td>";
                                                     echo '</tr>';
                     }
                     echo '</table>'; //Make the table stop 

@@ -63,12 +63,12 @@ $db = get_db();
                                                         where
                                                         ship.id_shipment = '$selectionId'") as $row) {
                                                             //Loop though each row and make us a html table!
-                                                            echo '<tr><td>' . $row['shipment_start_date'] . '</td>';
-                                                            echo '<td>' . $row['ship_to_city'] . '</td>';
-                                                            echo '<td>' . $row['ship_to_state'] . '</td>';
-                                                            echo '<td>' . $row['shipment_end_date'] . '</td>';
-                                                            echo '<td>' . $row['pickup_from_city'] . '</td>';
-                                                            echo '<td>' . $row['pickup_from_state'] . '</td>';
+                                                            echo '<tr><td>' . htmlspecialchars($row['shipment_start_date']) . '</td>';
+                                                            echo '<td>' . htmlspecialchars($row['ship_to_city']) . '</td>';
+                                                            echo '<td>' . htmlspecialchars($row['ship_to_state']) . '</td>';
+                                                            echo '<td>' . htmlspecialchars($row['shipment_end_date']) . '</td>';
+                                                            echo '<td>' . htmlspecialchars($row['pickup_from_city']) . '</td>';
+                                                            echo '<td>' . htmlspecialchars($row['pickup_from_state']) . '</td>';
                                                             echo '</tr>';
                                 }
                                 echo '</table>';
@@ -93,13 +93,13 @@ $db = get_db();
                                         where i.shipment_id_shipment = '$selectionId';"
                                 ) as $row) {
                                     //Loop though each row and make us a html table!
-                                    echo '<tr><td>' . $row['item_name'] . '</td>';
-                                    echo '<td>' . $row['item_description'] . '</td>';
-                                    echo '<td>' . $row['item_spcl_instructs'] . '</td>';
-                                    echo '<td>' . $row['size_weight'] . 'lb</td>';
-                                    echo '<td>' . $row['size_width'] / 12 . 'ft ' . $row['size_width'] % 12 . 'in</td>';
-                                    echo '<td>' . $row['size_depth'] / 12 . 'ft ' . $row['size_depth'] % 12 . 'in</td>';
-                                    echo '<td>' . $row['size_height'] / 12 . 'ft ' . $row['size_height'] % 12 . 'in</td>';
+                                    echo '<tr><td>' . htmlspecialchars($row['item_name']) . '</td>';
+                                    echo '<td>' . htmlspecialchars($row['item_description']) . '</td>';
+                                    echo '<td>' . htmlspecialchars($row['item_spcl_instructs']) . '</td>';
+                                    echo '<td>' . htmlspecialchars($row['size_weight']) . 'lb</td>';
+                                    echo '<td>' . htmlspecialchars($row['size_width']) / 12 . 'ft ' . htmlspecialchars($row['size_width']) % 12 . 'in</td>';
+                                    echo '<td>' . htmlspecialchars($row['size_depth']) / 12 . 'ft ' . htmlspecialchars($row['size_depth']) % 12 . 'in</td>';
+                                    echo '<td>' . htmlspecialchars($row['size_height']) / 12 . 'ft ' . htmlspecialchars($row['size_height']) % 12 . 'in</td>';
                                     echo '</tr>';
                                 }
                                 ?>
