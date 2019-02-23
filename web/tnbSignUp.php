@@ -2,7 +2,7 @@
 session_start();
 require "dbConnect.php";
 $db = db_get();
-?>
+?>  
 
 <html>
 
