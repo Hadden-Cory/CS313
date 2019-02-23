@@ -10,7 +10,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script src="tnb.js"></script>
 </head>
-
+  
 <body>
 <?php include("header.php");?>
     <form action="verifyUser.php" method="POST">
