@@ -41,7 +41,6 @@ session_start();
       {
         echo "<tr><td>" . $_SESSION['itemNames'][$value]. "</td>";
         echo "<td>" . $_SESSION['itemDescriptions'][$value]. "</td>";
-        echo "<td>" . $_SESSION['itemDescriptions'][$value]. "</td>";
         echo "<td>" . $_SESSION['itemWeights'][$value]. "</td>";
         echo "<td>" . $_SESSION['itemWidths'][$value] . "</td>";
         echo "<td>" . $_SESSION['itemHeights'][$value] . "</td>";
