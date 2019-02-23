@@ -12,7 +12,7 @@
     $DropOffState =$_POST["DropOffState"];
     $DropOffCity =$_POST["DropOffCity"];
 
-    $statment = $db->query('SELECT id_shipper FROM shipper WHERE shipper_name = \'$username\';');
+    $statement = $db->query('SELECT id_shipper FROM shipper WHERE shipper_name = \'$username\';');
     $statement->execute();
     $shipperId = $statment->fetch(PDO::FETCH_ASSOC);
     echo "<h1>FETCHED: ".$shipperId."</h1>";
