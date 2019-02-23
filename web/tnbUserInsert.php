@@ -15,14 +15,14 @@ $userName = $_POST["shipper_name"];
 $_SESSION['userNameIsFree'] = TRUE;
 
 foreach ($db->query('SELECT shipper_name FROM shipper') as $row){
-    echo "18";
+
     if($userName == $row['shipper_name']){
         $_SESSION['userNameIsFree'] = FALSE;
-        echo "21";
+
     }
     
     if(!$_SESSION['userNameIsFree']){
-        echo "26";
+
         header("Location: tnbSignUp.php");
         exit;
     }
