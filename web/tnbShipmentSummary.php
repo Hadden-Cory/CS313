@@ -17,14 +17,14 @@ session_start();
 <body>
     <?php include("header.php");
     echo "<table>
-            <tr>
-                <th>Pickup As Early As </th>
-                <th>Pickup City</th>
-                <th>Pickup State</th>
-                <th>Deliver by</th>
-                <th>Delivery City</th>
-                <th>Delivery State</th>
-            </tr>";
+    <tr>
+    <th>Pickup As Early As </th>
+    <th>Pickup State</th>
+    <th>Pickup City</th>
+    <th>Deliver by</th>
+    <th>Delivery State</th>
+    <th>Delivery City</th>
+</tr>";
       echo "<tr><td>" . $_SESSION['pickUpDate'] . "</td>";
       echo "<td>" . $_SESSION['pickUpState'] . "</td>";
       echo "<td>" . $_SESSION['pickUpCity'] . "</td>";
@@ -39,8 +39,8 @@ session_start();
 
       foreach ($_SESSION['itemNames'] as $item=>$value)
       {
-        echo "<tr><td>" . $_SESSION['itemNames'][$value]. "</td>";
-        echo "<td>" . $_SESSION['itemDescriptions'][$value]. "</td>";
+        echo "<tr><td>" . $_SESSION['itemNames'][$item]. "</td>";
+        echo "<td>" . $_SESSION['itemDescriptions'][$item]. "</td>";
         echo "<td>" . $_SESSION['itemWeights'][$value]. "</td>";
         echo "<td>" . $_SESSION['itemWidths'][$value] . "</td>";
         echo "<td>" . $_SESSION['itemHeights'][$value] . "</td>";

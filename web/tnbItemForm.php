@@ -22,11 +22,11 @@ session_start();
     echo "<table>
             <tr>
                 <th>Pickup As Early As </th>
-                <th>Pickup City</th>
                 <th>Pickup State</th>
+                <th>Pickup City</th>
                 <th>Deliver by</th>
-                <th>Delivery City</th>
                 <th>Delivery State</th>
+                <th>Delivery City</th>
             </tr>";
       echo "<tr><td>" . $_SESSION['pickUpDate'] . "</td>";
       echo "<td>" . $_SESSION['pickUpState'] . "</td>";
