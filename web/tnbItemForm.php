@@ -20,8 +20,8 @@
     <form name="item" method="POST" action="tnbItemInsert.php">
         <label for="name">What is your item?</label>
         <input type="text" name="name">
-        <label for="itemDescription">If applicatble, add a description.</label>
-        <textarea rows="4" cols="50" name="itemDescription"></textarea><br><br>
+        <label for="itemDescription">If applicatble, add a description.</label><br>
+        <textarea rows="4" cols="50" name="itemDescription"></textarea><br>
         <label for="weight">Enter the weight in pounds.</label>
         <input type="number" name="weight"><br>
         <label for="width">Enter the width in inches.</label>
@@ -31,7 +31,7 @@
         <label for="depth">Enter the depth in inches.</label>
         <input type="number" name="depth"><br><br>
         <label for="specialInstructions">Any special instructions?</label>
-        <input type="textarea" rows="4" cols="50" name="specialInstructions"><br>
+        <textarea rows="4" cols="50" name="specialInstructions"></textarea><br>
         <input type="submit" name="submit" value="Add Item">
     </form>
 </body>
