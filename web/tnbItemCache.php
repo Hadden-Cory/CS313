@@ -3,6 +3,8 @@ session_start();
 require "dbConnect.php";
 $db = get_db();
 
+echo $_POST['name'];
+
 $_SESSION['itemNames'] = array();
 $_SESSION['itemDescriptions'] = array();
 $_SESSION['itemWeights'] = array();
