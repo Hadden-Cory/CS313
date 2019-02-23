@@ -17,7 +17,8 @@ $_SESSION['itemIndex']=$_POST['name'];
 if(!isset($_SESSION['itemNames'][$_POST["name"]])) {
     $_SESSION['itemNames'][$_POST["name"]] = $_POST["name"];
     $_SESSION['itemDescriptions'][$_POST["name"]] = $_POST["itemDescription"];
-    $_SESSION['itemWeights'][$_POST["name"]] = $_POST["width"];
+    $_SESSION['itemWeights'][$_POST["name"]] = $_POST["weight"];
+    $_SESSION['itemWidths'][$_POST["name"]] = $_POST["widths"];
     $_SESSION['itemHeights'][$_POST["name"]] = $_POST["height"];
     $_SESSION['itemDepths'][$_POST["name"]] = $_POST["depth"];
     $_SESSION['itemspecialInstructs'][$_POST["name"]] = $_POST["specialInstructions"];
