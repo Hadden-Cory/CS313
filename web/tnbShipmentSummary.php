@@ -41,7 +41,7 @@ session_start();
       // {
         echo $_SESSION['itemIndex'];
         echo "<td>" . $_SESSION['itemNames'][$_SESSION['itemIndex']]. "</td>";
-        echo "<td>" . $_SESSION['itemHieghts'][$_SESSION['itemIndex']]. "</td>";
+        echo "<td>" . $_SESSION['itemDescriptions'][$_SESSION['itemIndex']]. "</td>";
         // echo "<td>" . $_SESSION['itemDescriptions'][$value]. "</td>";
         // echo "<td>" . $_SESSION['itemWeights'][$value]. "</td>";
         // echo "<td>" . $_SESSION['itemWidths'][$value] . "</td>";
