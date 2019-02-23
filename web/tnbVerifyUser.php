@@ -1,5 +1,6 @@
 <?php
-
+start_session();
+ require "dbConnect.php";
 //Shared credit for the login systems belongs to Sebastian Calle,
 //Sheldon Smith, and Stefano Nicotra. We (and by "we" I
 //mean I feel like it was mostly them because they are such
@@ -9,8 +10,8 @@
 // points that I wanted. I have changed very little of this
 // code. So, special thanks to them. Used with permission.
 
-    start_session();
-    require "dbConnection.php";
+    
+   
 
     //Get database store the name password hash sent to us by the sign in page 
     $db = get_db();
