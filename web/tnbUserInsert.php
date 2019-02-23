@@ -16,7 +16,7 @@ $_SESSION['userNameIsFree'] = TRUE;
 
 foreach ($db->query('SELECT shipper_name FROM shipper') as $row){
     echo "18";
-    if($userName == $row['shippername']){
+    if($userName == $row['shipper_name']){
         $_SESSION['userNameIsFree'] = FALSE;
         echo "21";
     }
