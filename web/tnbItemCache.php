@@ -21,13 +21,14 @@ $itemSpclInstructs = array();
 //     $itemDepths = array($_POST['depth']);
 //     $itemSpclInstructs=[$_POST['specialInstructions']]); 
 // } else {
-    array_push($itemNames, $_POST['name']);
-    array_push($itemDescriptions, $_POST['itemDescription']);
-    array_push($itemWeights, $_POST['weight']);
-    array_push($itemWidths, $_POST['width']);
-    array_push($itemHeights, $_POST['height']);
-    array_push($itemDepths, $_POST['depth']);
-    array_push($itemSpclInstructs, $_POST['specialInstructions']);
+$_SESSION['itemCacheIndex'] = 0;
+    array_push( $itemNames,'item'.$_SESSION['itemCacheIndex'], $_POST['name']);
+    array_push($itemDescriptions, 'description'.$_SESSION['itemCacheIndex'], $_POST['itemDescription']);
+    array_push($itemWeights, 'weights'.$_SESSION['itemCacheIndex'],$_POST['weight']);
+    array_push($itemWidths, 'widths'.$_SESSION['itemCacheIndex'],$_POST['width']);
+    array_push($itemHeights, 'heights'.$_SESSION['itemCacheIndex'],$_POST['height']);
+    array_push($itemDepths, 'depths'.$_SESSION['itemCacheIndex'],$_POST['depth']);
+    array_push($itemSpclInstructs, 'instructions'.$_SESSION['itemCacheIndex'],$_POST['specialInstructions']);
 // }
 // } catch (Exception $e) {
 //         echo 'Error. Details: '.$e->getMessage().'\n';
