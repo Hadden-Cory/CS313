@@ -13,7 +13,7 @@ $_SESSION['itemSpclInstructs'] = array();
 $_SESSION['itemIndex']=$_SESSION['itemNames'];
 
 try{
-if(!isset($_SESSION['itemNames'][$_POST["name"]])) {
+// if(!isset($_SESSION['itemNames'][$_POST["name"]])) {
     array_push($_SESSION['itemNames'], $_POST["name"], $_POST["name"]);
     array_push($_SESSION['itemDescriptions'], $_POST["name"], $_POST["itemDescription"]);
     array_push($_SESSION['itemWeights'], $_POST["name"], $_POST["weight"]);
@@ -21,7 +21,7 @@ if(!isset($_SESSION['itemNames'][$_POST["name"]])) {
     array_push($_SESSION['itemHeights'], $_POST["name"], $_POST["height"]);
     array_push($_SESSION['itemDepths'], $_POST["name"], $_POST["depth"]);
     array_push($_SESSION['itemSpclInstructs'], $_POST["name"], $_POST["specialInstructions"]);
-}
+//}
 } catch (Exception $e) {
             echo 'Error. Details: '.$e->getMessage().'\n';
             die();
