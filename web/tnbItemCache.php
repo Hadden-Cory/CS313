@@ -26,7 +26,7 @@ if(!isset($_SESSION["itemNames "])){
 }
 //Load the shipment data into our session, we will insert
 // it into the database once we have the item information
-$_SESSION["itemNames "] = $itemNames; 
+$_SESSION["itemNames"] = $itemNames; 
 $_SESSION["itemDescriptions "] = $itemDescriptions; 
 $_SESSION["itemWeights"] = $itemWeights;
 $_SESSION["itemWidths"] = $itemWidths;
