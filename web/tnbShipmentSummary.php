@@ -45,7 +45,7 @@ session_start();
         echo "<td>" . $_SESSION['itemWidths'][$value] . "</td>";
         echo "<td>" . $_SESSION['itemHeights'][$value] . "</td>";
         echo "<td>" . $_SESSION['itemDepths'][$value] . "</td>";
-        echo "<td>" . $_SESSION['itemSpclInstructs'][$value] . "</td></tr>";
+        echo "<td>" . $_SESSION['itemspecialInstructs'][$value] . "</td></tr>";
      } 
       echo "</table>";
 
