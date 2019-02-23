@@ -138,7 +138,7 @@
         <input type="text" name="DropOffCity">
         <label for="DropOffDate">Latest Possible Drop Off Date</label>
         <input type="date" name="DropOffDate">
-        <br> <input type="submit" name="submit" value="Submit">
+        <br> <input type="submit" name="submit" value="Add Items">
 
 <!-- TODO Finish fillin gthis out! -->
     </form>

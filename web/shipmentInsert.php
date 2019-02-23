@@ -1,8 +1,9 @@
 
 <?php
     require "dbConnect.php";
-
     $db = get_db();
+
+    
     $userName = $_POST["shipper_name"];
     $password = $_POST["shipper_password"];
     $passwordHash = password_hash($password, PASSWORD_BCRYPT);
