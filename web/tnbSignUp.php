@@ -21,15 +21,16 @@ $db = get_db();
     <?php
     include("header.php");
     ?>
+    <h1>Join the best thing that ever happened in trucking since the diners were invented</h1>
     <form action="tnbUserInsert.php" method="POST">
         <label for="shipper-name">Username</label>
-        <input type="text" name="shipper_name">
+        <input type="text" name="shipper_name"><br>
         <label for="shipper-password">Password</label>
         <input type="password" name="shipper_password" pattern=".{8,}"   required title="8 characters minimum">
         <input type="submit" name="submit" value="Submit">
         <?php
         if (!$_SESSION['userNameIsFree']) {
-            echo "<p id='signInError' class='text-danger'>That User name is not availible, try another.</p>";
+            echo "<p id='signInError' class='text-danger'>That username is not availible, try another.</p>";
             } ?>
     </form>
 </body>
