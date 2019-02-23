@@ -40,13 +40,14 @@ session_start();
             foreach ($_SESSION['itemNames'] as $item=>$value)
             {
               echo "<td>" . $value. "</td>";
-              echo "<td>" . $_SESSION['itemDescriptions'][$item]. "</td>";
-              echo "<td>" . $_SESSION['itemWeights'][$item]. "</td>";
-              echo "<td>" . $_SESSION['itemWidths'][$item] . "</td>";
-              echo "<td>" . $_SESSION['itemHeights'][$item] . "</td>";
-              echo "<td>" . $_SESSION['itemDepths'][$item] . "</td>";
-              echo "<td>" . $_SESSION['itemSpclInstructs'][$item] . "</td></tr>";
+              echo "<td>" . $_SESSION['itemDescriptions'][$value]. "</td>";
+              echo "<td>" . $_SESSION['itemWeights'][$value]. "</td>";
+              echo "<td>" . $_SESSION['itemWidths'][$value] . "</td>";
+              echo "<td>" . $_SESSION['itemHeights'][$value] . "</td>";
+              echo "<td>" . $_SESSION['itemDepths'][$value] . "</td>";
+              echo "<td>" . $_SESSION['itemSpclInstructs'][$value] . "</td></tr>";
             } 
+            echo "</table>";
     
     
     
