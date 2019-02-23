@@ -6,7 +6,7 @@
     //Sheldon Smith, and Stefano Nicotra. We (and by "we" I
     //mean I feel like it was mostly them because they are such
     //competent programers) wrote most of it in a team activty.
-    //It fit so well into my project that all I did was retype 
+    //It fit so well into my project that all I did was retyped 
     //it out so that I understood and added a few functionality
     // points that I wanted. I have changed very little of this
     // code. So, special thanks to them. Used with permission.
@@ -16,6 +16,7 @@
     $userName = $_POST["shipper_name"];
     $password = $_POST["shipper_password"];
 
+    echo "<h1>Loading</h1>";
     //Sanitize the input
     $statement = $db->prepare("SELECT shipper_password_hash, id_shipper FROM shipper WHERE shipper_name = :cleanUsername;");
     $statement->bindValue(":cleanUsername", $userName, PDO::PARAM_STR);
