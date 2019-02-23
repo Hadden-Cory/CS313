@@ -19,8 +19,8 @@
     <?php include("header.php"); ?>
     <form name="item" method="POST" action="tnbItemInsert.php">
         <label for="name">What is your item?</label>
-        <input type="text" name="name">
-        <label for="itemDescription">If applicatble, add a description.</label><br>
+        <input type="text" name="name"><br>
+        <label for="itemDescription">If applicatble, add a description.</label>
         <textarea rows="4" cols="50" name="itemDescription"></textarea><br>
         <label for="weight">Enter the weight in pounds.</label>
         <input type="number" name="weight"><br>
