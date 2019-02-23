@@ -4,6 +4,7 @@
 <html>
 
 <head>
+
     <title>ThereNBack.com-Shipment Form</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="plants.css">
@@ -15,14 +16,23 @@
 </head>
 
 <body>
-    <?php include("header.php");?>
+    <?php include("header.php"); ?>
     <form name="item" method="POST" action="tnbItemInsert.php">
-    <label for="name">What is your item?</label>
-    <input type="text" name="name">
-    <label for="itemDescription">If applicatble, add a description.</label>
-    <input type="textarea" name="itemDescription"><br>
-    <label for="specialInstructions">Any special instructions?</label>
-    <input type="textarea" name="specialInstructions"><br>
-</form>
+        <label for="name">What is your item?</label>
+        <input type="text" name="name">
+        <label for="weight">Enter the weight in pounds.</label>
+        <input type="number" name="weight">
+        <label for="width">Enter the width in inches.</label>
+        <input type="number" name="width">
+        <label for="height">Enter the height in inches.</label>
+        <input type="number" name="height">
+        <label for="depth">Enter the depth in inches.</label>
+        <input type="number" name="depth">
+        <label for="itemDescription">If applicatble, add a description.</label>
+        <input type="textarea" name="itemDescription"><br>
+        <label for="specialInstructions">Any special instructions?</label>
+        <input type="textarea" name="specialInstructions"><br>
+    </form>
 </body>
-</html>
+
+</html> 
