@@ -21,17 +21,18 @@
         <label for="name">What is your item?</label>
         <input type="text" name="name">
         <label for="itemDescription">If applicatble, add a description.</label>
-        <input type="textarea" rows="4" cols="50" name="itemDescription"><br>
+        <input type="textarea" rows="4" cols="50" name="itemDescription"><br><br>
         <label for="weight">Enter the weight in pounds.</label>
-        <input type="number" name="weight">
+        <input type="number" name="weight"><br>
         <label for="width">Enter the width in inches.</label>
-        <input type="number" name="width">
+        <input type="number" name="width"><br>
         <label for="height">Enter the height in inches.</label>
-        <input type="number" name="height">
+        <input type="number" name="height"><br>
         <label for="depth">Enter the depth in inches.</label>
-        <input type="number" name="depth">
+        <input type="number" name="depth"><br><br>
         <label for="specialInstructions">Any special instructions?</label>
         <input type="textarea" rows="4" cols="50" name="specialInstructions"><br>
+        <input type="submit" name="submit" value="Add Item">
     </form>
 </body>
 
