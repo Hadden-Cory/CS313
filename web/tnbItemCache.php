@@ -5,7 +5,7 @@ $db = get_db();
 
 echo $_POST['name'];
 
-if (isset($_SESSION['itemNames']))
+if (!isset($_SESSION['itemNames']))
 {
     $_SESSION['itemNames'] = array();
     $_SESSION['itemDescriptions'] = array();
