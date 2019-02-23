@@ -17,7 +17,7 @@
 
 <body>
     <?php include("header.php"); 
-    echo $_SESSION['itemNames'];
+    echo $_SESSION['itemNames'][0];
     ?>
 
     <form name="item" method="POST" action="tnbItemCache.php">
