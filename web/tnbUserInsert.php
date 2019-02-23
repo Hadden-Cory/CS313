@@ -1,5 +1,5 @@
 <?php
-    require "bdConnect.php";
+    require "dbConnect.php";
     $db =get_db();
 
     //Shared credit for the login systems belongs to Sebastian Calle,
