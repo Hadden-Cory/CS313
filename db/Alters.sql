@@ -40,4 +40,9 @@ Rename to Ship_to;
 
 ALTER TABLE Ship_to
 RENAME COLUMN id_location TO id_ship_to;
+------------------------------------------------
+ALTER TABLE ship_to  
+DROP COLUMN ship_to_zip;
 
+ALTER TABLE pickup_from  
+DROP COLUMN pickup_from_zip;
