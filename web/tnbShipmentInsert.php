@@ -15,9 +15,10 @@
     $statement = $db->prepare("SELECT id_shipper FROM shipper WHERE shipper_name = '$username';");
     $statement->execute();
     while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-    {$shipperId = $row;
-    
-    }echo "<h1>FETCHED: ".$shipperId."</h1>";
+    {
+        $shipperId = $row['id_shipper'];    
+    }
+    echo "<h1>FETCHED: ".$shipperId."</h1>";
 //     $statement->prepare($db, "INSERT INTO shipment (shipper_id_shipper, shipment_start_date, shipment_end_date)
 //                                      VALUES(:shipperIdShipper, :shipmentStartDate, :shipmentEndDate)");
 //     $statement->bindValue(":shipperIdShipper", $shipperId, PDO::PARAM_STR);
