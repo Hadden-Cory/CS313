@@ -52,7 +52,7 @@ try{
 // $_SESSION["itemDepths"] = $itemDepths;
 // $_SESSION["itemSpclInstructs"] = $itemSpclInstructs;
 //Send us to the next stop.
-header("Location: tnbItemForm.php");
+header("Location: tnbShipmentSummary.php");
 exit;
 
 
