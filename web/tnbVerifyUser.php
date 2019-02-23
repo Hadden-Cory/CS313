@@ -39,7 +39,7 @@
         $_SESSION['lastAttemptFailed'] = TRUE;
         $_SESSION["verified"] = false;
         $_SESSION["username"] = null;
-        header("Location tnbSignIn.php");
+        header("Location: tnbSignIn.php");
         exit;
 } 
  
