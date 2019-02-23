@@ -1,19 +1,36 @@
 
 <?php
-    require "dbConnect.php";
-    $db = get_db();
+     session_start();
+     require "dbConnect.php";
+     $db = get_db();
 
-    
-    $userName = $_POST["shipper_name"];
-    $password = $_POST["shipper_password"];
-    $passwordHash = password_hash($password, PASSWORD_BCRYPT);
-    
-    $statement = $db->prepare("INSERT INTO shipper (shipper_name, shipper_password_hash)
-                               VALUES (:cleanUsername, :cleanPasswordHash)");
-    $statement->bindValue(":cleanUsername", $userName, PDO::PARAM_STR);
-    $statement->bindValue(":cleanPasswordHash", $passwordHash, PDO::PARAM_STR);
+    $username = $_SESSION["username"];
+    $pickUpDate = $_POST["pickUpDate"];
+    $pickUpState =$_POST["pickUpState"];
+    $pickUpCity =$_POST["pickUpCity"];
+    $DropOffDate =$_POST["DropOffDate"];
+    $DropOffState =$_POST["DropOffState"];
+    $DropOffCity =$_POST["DropOffCity"];
+
+    $statement->prepare($db, "SELECT id_shipper FROM shipper WHERE shipper_name = $username) VALUES(:shipperId)");
+    $statement->bindValue(":shipperId", $shipperId, PDO::PARAM_STR);
     $statement->execute();
 
-    header("Location: signIn.php");
-    exit;
+    echo $shipperId;
+
+//     $statement->prepare($db, "INSERT INTO shipment (shipper_id_shipper, shipment_start_date, shipment_end_date)
+//                                      VALUES(:shipperIdShipper, :shipmentStartDate, :shipmentEndDate)");
+//     $statement->bindValue(":shipperIdShipper", $shipperId, PDO::PARAM_STR);
+//     $statement->bindValue(":shipmentStartDate", $pickUpDate, PDO::PARAM_STR);
+//     $statement->bindValue(":shipmentEndDate", $dropOffDate, PDO::PARAM_STR);
+//     $statement->execute();
+
+   
+//    $statement = $db->prepare("INSERT INTO shipment (shipper_name, shipper_password_hash)
+//                                VALUES (:cleanUsername, :cleanPasswordHash)");
+//     $statement->bindValue(":cleanUsername", $username, PDO::PARAM_STR);
+//     $statement->execute();
+
+    // header("Location: tnbItemForm.php");
+    // exit;
 ?>
