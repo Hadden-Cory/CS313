@@ -19,7 +19,7 @@
             $shipperId = $row['id_shipper'];
         }
 
-    $statement->prepare($db, "INSERT INTO shipment (shipper_id_shipper, shipment_start_date, shipment_end_date)
+    $statement=$db->prepare("INSERT INTO shipment (shipper_id_shipper, shipment_start_date, shipment_end_date)
                                 VALUES(:shipperIdShipper, :shipmentStartDate, :shipmentEndDate)");
     $statement->bindValue(":shipperIdShipper", $shipperId, PDO::PARAM_STR);
     $statement->bindValue(":shipmentStartDate", $pickUpDate, PDO::PARAM_STR);
@@ -32,6 +32,6 @@
 //     $statement->bindValue(":cleanUsername", $username, PDO::PARAM_STR);
 //     $statement->execute();
 
-    // header("Location: tnbItemForm.php");
-    // exit;
+     header("Location: thereNBack.php");
+     exit;
 ?>
