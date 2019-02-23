@@ -16,7 +16,6 @@
     $userName = $_POST["shipper_name"];
     $password = $_POST["shipper_password"];
 
-    echo "<h1>Loading</h1>";
     //Sanitize the input
     $statement = $db->prepare("SELECT shipper_password_hash, id_shipper FROM shipper WHERE shipper_name = :cleanUsername;");
     $statement->bindValue(":cleanUsername", $userName, PDO::PARAM_STR);

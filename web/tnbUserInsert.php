@@ -11,7 +11,6 @@
     // points that I wanted. I have changed very little of this
     // code. So, special thanks to them. Used with permission.
 
-    echo "<h1>Loading</h1>";
     $userName = $_POSt["shipper_name"];
     $password = $_POST["shipper_password"];
     $passwordHash = password_hash($password, PASSWORD_BCRYPT);
