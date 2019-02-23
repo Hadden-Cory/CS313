@@ -11,10 +11,9 @@
     $DropOffDate =$_POST["DropOffDate"];
     $DropOffState =$_POST["DropOffState"];
     $DropOffCity =$_POST["DropOffCity"];
+    $shipperId = 0;
 
-    $statement->prepare($db, "SELECT id_shipper FROM shipper WHERE shipper_name = $username) VALUES(:shipperId)");
-    $statement->bindValue(":shipperId", $shipperId, PDO::PARAM_STR);
-    $statement->execute();
+    $shipperId = query($db, "SELECT id_shipper FROM shipper WHERE shipper_name = $username");
 
     echo $shipperId;
 
