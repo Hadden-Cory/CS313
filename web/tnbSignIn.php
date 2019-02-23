@@ -13,7 +13,7 @@
   
 <body>
 <?php include("header.php");?>
-    <form action="verifyUser.php" method="POST">
+    <form action="tnbVerifyUser.php" method="POST">
         <label for="shipper-name">Username</label>
         <input type="text" name="shipper_name">
         <label for="shipper-password">Password</label>

@@ -2,6 +2,7 @@
     session_start();
     require "dbConnect.php";
  
+    //Sheldon and Stefano Wrote nearly all of this code in our group meeting. It was just really reusable. 
    $db = get_db();
     $userName = $_POST["shipper_name"];
     $password = $_POST["shipper_password"];
@@ -25,7 +26,7 @@
     else {
         $_SESSION["verified"] = FALSE;
         $_SESSION["username"] = NULL;
-        header("Location: signIn.php");
+        header("Location: thereNBack.php");
         exit;
     }
 
