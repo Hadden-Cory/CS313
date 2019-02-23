@@ -25,7 +25,7 @@ $db = get_db();
 
         if ($id_shipper == 0 || $_SERVER["REQUEST_METHOD"] == "POST") {
             session_destroy();
-            header("Location: signIn.php");
+            header("Location: tnbSignIn.php");
             die();
         }
 
