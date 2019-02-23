@@ -20,7 +20,7 @@ session_start();
     echo $_SESSION['pickUpState'];
     ?>
 
-    <form name="item" method="POST" action="tnbShipmentCache.php">
+    <form name="item" method="POST" action="tnbItemCache.php">
         <label for="name">What is your item?</label>
         <input type="text" name="name"><br>
         <label for="itemDescription">If applicatble, add a description.</label>
