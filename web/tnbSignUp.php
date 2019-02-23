@@ -21,7 +21,7 @@ $db = get_db();
     <?php
     include("header.php");
     ?>
-    <h1>Join the best thing that ever happened in trucking since the diners were invented</h1>
+    <h1>Join the best thing that ever happened to trucking since the invention of the diner</h1>
     <form action="tnbUserInsert.php" method="POST">
         <label for="shipper-name">Username</label>
         <input type="text" name="shipper_name"><br>
