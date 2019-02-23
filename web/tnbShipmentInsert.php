@@ -57,6 +57,6 @@ if ($shipmentId != 0) {
 }
 
 //Send us to the next stop.
-header("Location: construction.php");
+header("Location: tnbItemForm.php");
 exit;
  
