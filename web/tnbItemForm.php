@@ -32,7 +32,7 @@ session_start();
       echo "<td>" . $_SESSION['dropOffDate'] . "</td>";
       echo "<td>" . $_SESSION['dropOffState'] . "</td>";
       echo "<td>" . $_SESSION['dropOffCity'] . "</td></tr>";
-      echo "</table> '<br><table id=mainTable><tr><th>Item</th>";?>
+      echo "</table>";?>
     <form name="item" method="POST" action="tnbItemCache.php">
         <label for="name">What is your item?</label>
         <input type="text" name="name"><br>

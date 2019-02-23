@@ -15,7 +15,7 @@ if (!isset($_SESSION['itemNames']))
 }
 
 try{
- if(!isset($_SESSION['itemNames'][$_POST["name"]])) {
+ if(!isset($_SESSION['itemNames'][$_POST["name"]]) && $_SESSION['itemNames'][$_POST["name"]] != NULL)  {
     array_push($_SESSION['itemNames'], $_POST["name"], $_POST["name"]);
     array_push($_SESSION['itemDescriptions'], $_POST["name"], $_POST["itemDescription"]);
     array_push($_SESSION['itemWeights'], $_POST["name"], $_POST["weight"]);
