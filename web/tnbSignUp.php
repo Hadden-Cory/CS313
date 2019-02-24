@@ -29,7 +29,7 @@ if ($_SESSION["verified"] == false) {
     ?>
     <div class="row h-50">
         <div class="col-sm-2 col-lg-2">
-            <img class=centered src="hobby.jpg" alt="you controling destiny">
+            <img class=centered src="road.jpg" alt="you controling destiny">
         </div>
         <div class="col-sm-8 col-lg-8 center">
             <a href="thereNBack.php">Cancle</a>
@@ -37,7 +37,7 @@ if ($_SESSION["verified"] == false) {
             <form action="tnbUserInsert.php" method="POST">
 
                 <input type="text" name="shipper_name"><br>
-                <label for="shipper-name">Username</label>
+                <label for="shipper-name">Username</label><br>
                 <input type="password" name="shipper_password" pattern=".{8,}" required
                     title="8 characters minimum"><br>
                 <label for="shipper-password">Password</label><br>
