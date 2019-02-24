@@ -1,6 +1,12 @@
 <?php
 session_start();
 
+if ($_SESSION["verified"] == false) {
+    session_destroy();
+    header("Location: tnbSignIn.php");
+    die();
+}
+
 //Load the shipment data into our session, we will insert
 // it into the database once we have the item information
 $username = $_SESSION["username"];

@@ -13,7 +13,8 @@
     <script src="plants.js"></script>
 </head>
 <body>
-<?php include("header.php");?>
+<?php include("header.php");
+?>
 <div class="row">
 <div class="col-lg-1">
 </div>

@@ -2,6 +2,12 @@
 require "dbConnect.php";
 $db = get_db();
 
+if ($_SESSION["verified"] == false) {
+    session_destroy();
+    header("Location: tnbSignIn.php");
+    die();
+}
+
 //Shared credit for the login systems belongs to Sebastian Calle,
 //Sheldon Smith, and Stefano Nicotra. We (and by "we" I
 //mean I feel like it was mostly them because they are such
