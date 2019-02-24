@@ -25,6 +25,7 @@ $db = get_db();
         die();
     }
 
+    echo"<table>";
     foreach ($db->query("SELECT
                         ship.shipment_start_date,
                         ship.id_shipment,
@@ -44,6 +45,7 @@ $db = get_db();
                             ship_to_city DESC;") as $row) {
         //Loop though each row and make us a html table!
         $rowCount++;
+
 
         echo '<tr><td>' . htmlspecialchars($row['shipment_start_date']) . '</td>';
         echo '<td>' . htmlspecialchars($row['ship_to_city']) . '</td>';
