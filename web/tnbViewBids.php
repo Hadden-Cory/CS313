@@ -25,6 +25,8 @@ $db = get_db();
         header("Location: tnbSignIn.php");
         die();
     }
+    
+    $selectionId = $_POST['shipmentId'];
     ?>
 
              <!-- Bid Table Time -->
