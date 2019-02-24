@@ -22,7 +22,7 @@ if ($_SESSION["verified"] == false) {
 
 <body>
     <?php include("header.php"); 
-    echo "<table>
+    echo "<a href='thereNBack.php'>Cancle</a><table>
             <tr>
                 <th>Pickup As Early As </th>
                 <th>Pickup State</th>
@@ -38,7 +38,7 @@ if ($_SESSION["verified"] == false) {
       echo "<td>" . $_SESSION['dropOffState'] . "</td>";
       echo "<td>" . $_SESSION['dropOffCity'] . "</td></tr>";
       echo "</table>";?>
-      <a href="thereNBack.php">Cancle</a>
+      
     <form name="item" method="POST" action="tnbItemCache.php">
         <label for="name">What is your item?</label>
         <input type="text" name="name" required><br>
@@ -53,7 +53,7 @@ if ($_SESSION["verified"] == false) {
         <label for="depth">Enter the depth in inches.</label>
         <input type="number" name="depth" required><br><br>
         <label for="specialInstructions">Any special instructions? If none type N/A</label>
-        <textarea rows="4" cols="50" name="specialInstructions" required></textarea><br>
+        <textarea rows="4" cols="50" placeholder="N/A" name="specialInstructions" required></textarea><br>
         <input type="submit" name="submit" value="Add Item">
     </form>
 </body>

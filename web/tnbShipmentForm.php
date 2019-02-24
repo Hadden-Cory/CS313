@@ -22,10 +22,11 @@ if ($_SESSION["verified"] == false) {
 <body>
 
     <?php include("header.php");?>
+    <a href='thereNBack.php'>Cancle</a>
     <!-- Shout out to Carl Nunes on Codepen for doing most of the hard work on this dropdown -->
     <form action="tnbShipmentCache.php" method="POST">
         <label for="pickUpState">Pick Up State</label>
-        <select id="pickUpState" name="pickUpState">
+        <select id="pickUpState" name="pickUpState" required>
             <option value="---">---</option>
             <option value="Alabama">Alabama</option>
             <option value="Alaska">Alaska</option>
@@ -80,14 +81,14 @@ if ($_SESSION["verified"] == false) {
         </select>
         <!-- End of Drop Down -->
         <label for="pickUpCity">Pick Up City</label>
-        <input type="text" name="pickUpCity">
+        <input type="text" name="pickUpCity" required>
         <label for="pickUpDate">Earliest Availible Pick Up Date</label>
-        <input type="date" name="pickUpDate"><br>
+        <input type="date" name="pickUpDate" required><br>
 
 
         <!-- End of Pick Up, Begin Drop Off -->
         <label for="dropOffState">Drop Off State</label>
-        <select id="dropOffState" name="dropOffState">
+        <select id="dropOffState" name="dropOffState" required>
             <option value="---">---</option>
             <option value="Alabama">Alabama</option>
             <option value="Alaska">Alaska</option>
@@ -141,9 +142,9 @@ if ($_SESSION["verified"] == false) {
             <option value="Wyoming">Wyoming</option>
         </select>
         <label for="dropOffCity">Drop Off City</label>
-        <input type="text" name="dropOffCity">
+        <input type="text" name="dropOffCity" required>
         <label for="dropOffDate">Latest Possible Drop Off Date</label>
-        <input type="date" name="dropOffDate">
+        <input type="date" name="dropOffDate" required>
         <br> <input type="submit" name="submit" value="Add Items">
 
 <!-- TODO Finish fillin gthis out! -->
