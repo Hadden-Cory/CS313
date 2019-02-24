@@ -30,7 +30,8 @@ $db = get_db();
         }
         catch(PDOException $ex) {
             echo 'Error. Details: $ex';
-            die();?>
+            die();
+        }?>
     
     <div id="container" class="center">
         <div class="row h-50">
