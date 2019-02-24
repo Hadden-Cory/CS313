@@ -27,7 +27,7 @@ $db = get_db();
         </div>
         <div class="col-sm-8 col-lg-8 center">
             
-            <h1>Join the best thing that ever happened to trucking since the invention of the diner</h1>
+            <h2>Join the Best Thing to Happened in Trucking Since the Invention of the Diner</h2>
             <form action="tnbUserInsert.php" method="POST">
 
                 <input type="text" name="shipper_name"><br>
