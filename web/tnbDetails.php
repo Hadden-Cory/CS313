@@ -39,6 +39,7 @@ $db = get_db();
                          <!-- We will be building this table for several lines. The first group is the headings, 
                               followed by a large query and finished with a loop through all the query results-->
                             <table id="mainTable" class="w-100">
+                            <tr><th><h2>Logistics<h2></th><tr>
                                 <tr>
                                     <th>Pickup As Early As </th>
                                     <th>Pickup City</th>
@@ -83,7 +84,8 @@ $db = get_db();
                                                             echo '</tr>';
                                 }
                                 echo '</table>';
-                                echo '<table class="w-100" id=mainTable><tr><th>Item</th>
+                                echo '<table class="w-100" id=mainTable><tr><th><h2>
+                                             Load<h2></th><tr><tr><th>Item</th>
                                             <th>Description</th><th>Special Instructions</th>
                                             <th>Weight</th><th>Width</th>
                                             <th>Depth</th><th>Height</th></tr>';
