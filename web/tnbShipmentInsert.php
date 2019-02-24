@@ -3,13 +3,31 @@ session_start();
 require "dbConnect.php";
 $db = get_db();
 
+//Shipment Table Varibles
 $username = $_SESSION["username"];
+$dropOffDate = $_SESSION["dropOffDate"];
 $pickUpDate = $_SESSION["pickUpDate"];
+
+//Pick Up Table Varibles
 $pickUpState = $_SESSION["pickUpState"];
 $pickUpCity = $_SESSION["pickUpCity"];
-$dropOffDate = $_SESSION["dropOffDate"];
+
+//Drop Off Table Varibles
 $dropOffState = $_SESSION["dropOffState"];
 $dropOffCity = $_SESSION["dropOffCity"];
+
+//Size Table Varibles
+$weight = $_SESSION["itemWeights"];
+$width = $_SESSION["itemWidths"];
+$height = $_SESSION["itemHeights"];
+$depth = $_SESSION["itemDepths"];
+
+//Drop Off Table Varibles
+$itemName = $_SESSION["itemNames"];
+$itemDescription = $_SESSION["itemDescriptions"];
+$itemspecialInstructs = $_SESSION["itemspecialInstructs"];
+
+//$ = $_SESSION[""];
 $shipperId = 0;
 $shipmentId = 0;
 
@@ -52,11 +70,40 @@ if ($shipmentId != 0) {
                                 VALUES(:shipToCity, :shipToState, :shipmentIdShipment);");
     $statement->bindValue(":shipToCity", $dropOffCity, PDO::PARAM_STR);
     $statement->bindValue(":shipToState", $dropOffState, PDO::PARAM_STR);
-    $statement->bindValue(":shipmentIdShipment", $shipmentId, PDO::PARAM_STR);
+    $statement->bindValue(":shipmentIdShipment", $shipmentId, PDO::PARAM_INT);
     $statement->execute();
 }
 
+foreach ($_SESSION['itemNames'] as $item => $values){
+
+if($values != $_SESSION['itemDescriptions'][$item]){
+
+    $statement = $db->prepare("INSERT INTO size (size_weight, size_width, size_height, size_depth)
+    VALUES(:sizeWeight, :sizeWidth, :sizeHeight, :sizeDepth);");
+    $statement->bindValue(":sizeWeight", $weight["$item"], PDO::PARAM_INT);
+    $statement->bindValue(":sizeWidth", $width["$item"], PDO::PARAM_INT);
+    $statement->bindValue(":sizeHeight", $height["$item"], PDO::PARAM_INT);
+    $statement->bindValue(":sizeDepth", $depth["$item"], PDO::PPARAM_INT);
+    $statement->execute();
+    
+    $sizeId = 0;
+    foreach ($db->query("SELECT id_size FROM size") as $row) {
+        $sizeId = $row['id_size'];
+    }
+
+    $statement = $db->prepare("INSERT INTO item (item_name, item_description,
+                                 item_spcl_instructs, size_id_size, shipment_id_shipment)
+                               VALUES(:itemName, :itemDescription, :itemInstructs, :sizeId, :shipmentId);");
+    $statement->bindValue(":itemName", $itemName["$item"], PDO::PARAM_STR);
+    $statement->bindValue(":itemDescription", $itemDescription["$item"], PDO::PARAM_STR);
+    $statement->bindValue(":itemInstructs", $itemspecialInstructs["$item"], PDO::PARAM_STR);
+    $statement->bindValue(":sizeId", $sizeId, PDO::PARAM_INT);
+    $statement->bindValue(":shipmentId", $shipmentId, PDO::PARAM_INT);
+    $statement->execute();
+}
+}
+
 //Send us to the next stop.
-header("Location: tnbItemForm.php");
+header("Location: thereNBack.php");
 exit;
  

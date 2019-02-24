@@ -16,6 +16,8 @@ session_start();
 
 <body>
     <?php include("header.php");
+    
+    //Print the shipment's logistal data
     echo "<table>
     <tr>
       <th>Pickup As Early As </th>
@@ -37,6 +39,7 @@ session_start();
               <th>Height</th><th>Depth</th>
               <th>Special Instructions</th></tr>';
 
+      //Print the shipment's item data
       foreach ($_SESSION['itemNames'] as $item => $values)
       {
         if($values != $_SESSION['itemDescriptions'][$item]){
@@ -51,26 +54,8 @@ session_start();
       } 
       echo "</table>";
 
-    
-    
-    
-    
-    
-    
-    
-            //$index = 0;
-// //    foreach ($itemName as $item) {
-//       echo "<td>" . $_SESSION['itemNames']. "</td>";
-//       echo "<td>" . $_SESSION['itemDescriptions ']. "</td>";
-//       echo "<td>" . $_SESSION['itemWeights']. "</td>";
-//       echo "<td>" . $_SESSION['itemWidths']['widths'.$index] . "</td>";
-//       echo "<td>" . $_SESSION['itemHeights']['heights'.$index] . "</td>";
-//       echo "<td>" . $_SESSION['itemDepths']['depths'.$index] . "</td>";
-//       echo "<td>" . $_SESSION['itemSpclInstructs']['instructions'.$index] . "</td></tr>";
-//       $index++;
-//   //  }
-
     ?>
+    <!-- Redirect us to add more items or to insert them-->
     <a href="tnbItemForm.php"><button>Add Another Item</button></a>
     <a href="tnbShipmentInsert.php"><button>Post Shipment</button></a>
 </body>
