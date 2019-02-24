@@ -23,7 +23,7 @@ $statement->bindValue(":bStart", $startDate, PDO::PARAM_STR);
 $statement->bindValue(":bEnd", $endDate, PDO::PARAM_STR);
 $statement->bindValue(":phone", $phone, PDO::PARAM_STR);
 $statement->bindValue(":spcl", $spclInstructs, PDO::PARAM_STR);
-$statement->bindValue(":shipId", $selectionId, PDO::PARAM_INT);
+$statement->bindValue(":shipId", $shippmentId, PDO::PARAM_STR);
 $statement->execute(); 
 
 header("Location: tbnBidSubmited.php");
