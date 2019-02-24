@@ -27,17 +27,18 @@ if ($_SESSION["verified"] == false) {
             <div class="col-sm-8 col-lg-8"><br><br><br>
                 <?php include("header.php"); ?>
                 <a href='thereNBack.php'>Cancle</a>
-                <form action="tnbBidInsert.php" method="POST">
-                    <label for="price">Charge</label>
+                <form class="center" action="tnbBidInsert.php" method="POST">
+                    
                     <input type="number" name="price" min="0.00" step="any" required><br>
-                    <label for="pickUpDate">Pickup Date</label>
-                    <input type="date" name="pickUpDate" required>
-                    <label for="dropOffDate">Drop off Date</label>
-                    <input type="date" name="dropOffDate" required>
-                    <label for="phone">10-Digit Phone Number</label>
-                    <input type="number" min="1000000000" max="9999999999" step="1" name="phone" required>
-                    <label for="spclInstructs">Special Instructions</label>
-                    <textarea rows="4" cols="50" name="specialInstructions" required>N/A</textarea>
+                    <label for="price">Charge</label><br>
+                    <label for="pickUpDate">Pickup Date</label><br>
+                    <input type="date" name="pickUpDate" required><br>
+                    <label for="dropOffDate">Drop off Date</label><br>
+                    <input type="date" name="dropOffDate" required><br>
+                    <label for="phone">10-Digit Phone Number</label><br>
+                    <input type="number" min="1000000000" max="9999999999" step="1" name="phone" required><br>
+                    <label for="spclInstructs">Special Instructions</label><br>
+                    <textarea rows="4" cols="50" name="specialInstructions" required>N/A</textarea><br>
                     <?php echo'<input type="text" name="shipmentId" value="'.$_POST['shipmentId'].'">';?>
                     <input type="submit" class="btn btn-light" value="Send Offer">
                 </form>
