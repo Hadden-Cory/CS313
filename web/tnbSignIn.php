@@ -27,10 +27,9 @@
             <h1 class="center">ThereNBack.com</h1>
 1>            <h2 class="center">One step away from controling your destiny...</h2><br>
                 <form class="center" action="tnbVerifyUser.php" method="POST">
-                    <label for="shipper-name">Username</label>
-                    <input type="text" name="shipper_name"><br>
-                    <label for="shipper-password"> Password </label>
-                    <input type="password" name="shipper_password">
+                    
+                    <input type="text" name="shipper_name"><br><label for="shipper-name">Username</label><br>
+                    <input type="password" name="shipper_password"><br><label for="shipper-password"> Password </label>
                     <input type="submit" class="btn btn-light" name="submit" value="Submit">
                     <?php
                         if ($_SESSION['lastAttemptFailed']) {
