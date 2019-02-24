@@ -63,7 +63,6 @@ $db = get_db();
                                                     . htmlspecialchars($row['id_shipment']) . '">
                                                     <input type="submit" onclick="post" value="View Bids"></form>
             </td>';
-        echo "<td>" . htmlspecialchars($row['id_shipment']) . "</td>";
         echo '</tr>';
     }
     echo '</table>'; //Make the table stop 

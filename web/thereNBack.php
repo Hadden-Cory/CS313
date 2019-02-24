@@ -84,7 +84,6 @@ $db = get_db();
                                                                  <input type="text" class="collapse" name="shippmentId" value="'.htmlspecialchars($row['id_shipment']).'">
                                                                  <input type="submit" onclick="post" value="Load Info"></form>
                                                           </td>';
-                                                    echo "<td>".htmlspecialchars($row['id_shipment'])."</td>";
                                                     echo '</tr>';
                     }
                     echo '</table>'; //Make the table stop 
