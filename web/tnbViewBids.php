@@ -6,7 +6,7 @@ $db = get_db();
 <html>
 
 <head>
-    <title>ThereNBack.com-Shipment Details</title>
+    <title>ThereNBack.com-Bids</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="plants.css">
     <link rel="stylesheet" type="text/css" href="tnb.css">
@@ -28,7 +28,7 @@ $db = get_db();
     
     $selectionId = $_POST['shipmentId'];
     ?>
-
+<a href="tnbShipmentEdit.php">Back</a>
              <!-- Bid Table Time -->
                 <table>
                     <tr>
