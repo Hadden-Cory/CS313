@@ -25,7 +25,8 @@ $db = get_db();
         die();
     }
 
-    echo"<a href=\"thereNBack.php\">Back</a><table>";
+    echo"<a href=\"thereNBack.php\">Back</a><table class='w-100'><tr><th><h2>
+    Active Shipments</h2></th></tr>";
     foreach ($db->query("SELECT
                         ship.shipment_start_date,
                         ship.id_shipment,
