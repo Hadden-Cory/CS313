@@ -40,19 +40,19 @@ if ($_SESSION["verified"] == false) {
       echo "</table>";?>
     <form name="item" method="POST" action="tnbItemCache.php">
         <label for="name">What is your item?</label>
-        <input type="text" name="name"><br>
+        <input type="text" name="name" required><br>
         <label for="itemDescription">If applicatble, add a description.</label>
-        <textarea rows="4" cols="50" name="itemDescription"></textarea><br>
+        <textarea rows="4" cols="50" name="itemDescription" required></textarea><br>
         <label for="weight">Enter the weight in pounds.</label>
-        <input type="number" name="weight"><br>
+        <input type="number" name="weight" required><br>
         <label for="width">Enter the width in inches.</label>
-        <input type="number" name="width"><br>
+        <input type="number" name="width" required><br>
         <label for="height">Enter the height in inches.</label>
-        <input type="number" name="height"><br>
+        <input type="number" name="height" required><br>
         <label for="depth">Enter the depth in inches.</label>
-        <input type="number" name="depth"><br><br>
-        <label for="specialInstructions">Any special instructions?</label>
-        <textarea rows="4" cols="50" name="specialInstructions"></textarea><br>
+        <input type="number" name="depth" required><br><br>
+        <label for="specialInstructions">Any special instructions? If none type N/A</label>
+        <textarea rows="4" cols="50" name="specialInstructions" required></textarea><br>
         <input type="submit" name="submit" value="Add Item">
     </form>
 </body>
