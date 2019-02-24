@@ -8,7 +8,7 @@ if ($_SESSION["verified"] == false) {
     header("Location: tnbSignIn.php");
     die();
 }
-$shippmentId = $_POST['shippmentId'];
+$shipmentId = $_POST['shipmentId'];
 $price = $_POST['price'];
 $startDate = $_POST['pickUpDate'];
 $endDate = $_POST['dropOffDate'];
@@ -23,7 +23,7 @@ $statement->bindValue(":bStart", $startDate, PDO::PARAM_STR);
 $statement->bindValue(":bEnd", $endDate, PDO::PARAM_STR);
 $statement->bindValue(":phone", $phone, PDO::PARAM_STR);
 $statement->bindValue(":spcl", $spclInstructs, PDO::PARAM_STR);
-$statement->bindValue(":shipId", $shippmentId, PDO::PARAM_STR);
+$statement->bindValue(":shipId", $shipmentId, PDO::PARAM_STR);
 $statement->execute(); 
 
 header("Location: tbnBidSubmited.php");

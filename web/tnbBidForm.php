@@ -34,7 +34,7 @@ if ($_SESSION["verified"] == false) {
         <input type="number" min="1000000000" max="9999999999" step="1" name="pickUpDate" required>
         <label for="spclInstructs">Special Instructions</label>
         <textarea rows="4" cols="50" name="specialInstructions" required>N/A</textarea>
-        <input type="text" name="shipmentId" value="<?php echo $_POST['shipmentId']?>">
+        <?php echo'<input type="text" name="shipmentId" value="'.$_POST['shipmentId'].'">';?>
         <input type="submit" value="Send Offer">
     </form>
 </body>
