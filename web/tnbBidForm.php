@@ -35,7 +35,7 @@ if ($_SESSION["verified"] == false) {
         <label for="spclInstructs">Special Instructions</label>
         <textarea rows="4" cols="50" name="specialInstructions" required>N/A</textarea>
         <?php echo'<input type="text" name="shipmentId" value="'.$_POST['shipmentId'].'">';?>
-        <input type="submit" value="Send Offer">
+        <input type="submit" class="btn btn-light" value="Send Offer">
     </form>
 </body>
 

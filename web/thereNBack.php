@@ -82,7 +82,7 @@ $db = get_db();
                                                     echo '<td>' . htmlspecialchars($row['pickup_from_state']) . '</td>';
                                                     echo '<td><form name="opt' . $rowCount . '" action="tnbDetails.php" " method="POST">
                                                                  <input type="text" class="collapse" name="shippmentId" value="'.htmlspecialchars($row['id_shipment']).'">
-                                                                 <input type="submit" onclick="post" value="Load Info"></form>
+                                                                 <input type="submit" class="btn btn-light" onclick="post" value="Load Info"></form>
                                                           </td>';
                                                     echo '</tr>';
                     }

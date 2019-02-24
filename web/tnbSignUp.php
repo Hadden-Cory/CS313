@@ -34,7 +34,7 @@ if ($_SESSION["verified"] == false) {
         <input type="text" name="shipper_name"><br>
         <label for="shipper-password">Password</label>
         <input type="password" name="shipper_password" pattern=".{8,}"   required title="8 characters minimum">
-        <input type="submit" name="submit" value="Submit">
+        <input type="submit" name="submit" class="btn btn-light" value="Submit">
         <?php
         if (!$_SESSION['userNameIsFree']) {
             echo "<p id='signInError' class='text-danger'>That username is not availible, try another.</p>";

@@ -145,7 +145,7 @@ if ($_SESSION["verified"] == false) {
         <input type="text" name="dropOffCity" required>
         <label for="dropOffDate">Latest Possible Drop Off Date</label>
         <input type="date" name="dropOffDate" required>
-        <br> <input type="submit" name="submit" value="Add Items">
+        <br> <input type="submit" class="btn btn-light" name="submit" value="Add Items">
 
 <!-- TODO Finish fillin gthis out! -->
     </form>

@@ -56,12 +56,12 @@ $db = get_db();
         echo '<td><form name="opt' . $rowCount . '" action="tnbDeleteShipment.php" " method="POST">
                                                     <input type="text" class="collapse" name="shipmentId" value="' 
                                                     . htmlspecialchars($row['id_shipment']) . '">
-                                                    <input type="submit" onclick="post" value="Remove Post"></form>
+                                                    <input type="submit" class="btn btn-light" onclick="post" value="Remove Post"></form>
                                                           </td>';
         echo '<td><form name="opt' . $rowCount . '" action="tnbViewBids.php" " method="POST">
                                                     <input type="text" class="collapse" name="shipmentId" value="' 
                                                     . htmlspecialchars($row['id_shipment']) . '">
-                                                    <input type="submit" onclick="post" value="View Bids"></form>
+                                                    <input type="submit" class="btn btn-light" onclick="post" value="View Bids"></form>
             </td>';
         echo '</tr>';
     }

@@ -54,7 +54,7 @@ if ($_SESSION["verified"] == false) {
         <input type="number" name="depth" required><br><br>
         <label for="specialInstructions">Any special instructions? If none type N/A</label>
         <textarea rows="4" cols="50" name="specialInstructions" required>N/A</textarea><br>
-        <input type="submit" name="submit" value="Add Item">
+        <input type="submit" class="btn btn-light" name="submit" value="Add Item">
     </form>
 </body>
 

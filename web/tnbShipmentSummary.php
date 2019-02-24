@@ -62,8 +62,8 @@ if ($_SESSION["verified"] == false) {
 
     ?>
     <!-- Redirect us to add more items or to insert them-->
-    <a href="tnbItemForm.php"><button>Add Another Item</button></a>
-    <a href="tnbShipmentInsert.php"><button>Post Shipment</button></a>
+    <a href="tnbItemForm.php"><button class="btn btn-light">Add Another Item</button></a>
+    <a href="tnbShipmentInsert.php"><button class="btn btn-light">Post Shipment</button></a>
 </body>
 
 </html>
