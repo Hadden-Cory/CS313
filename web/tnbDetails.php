@@ -18,7 +18,19 @@ $db = get_db();
 
 <body>
 
-    <?php include("header.php"); ?>
+    <?php include("header.php"); 
+        try {
+            $id_shipper = isset($_SESSION['id_shipper']) ? intval($_SESSION['id_shipper']) : 0;
+    
+            if ($id_shipper == 0 || $_SERVER["REQUEST_METHOD"] == "POST") {
+                session_destroy();
+                header("Location: tnbSignIn.php");
+                die();
+            }
+        }
+        catch(PDOException $ex) {
+            echo 'Error. Details: $ex';
+            die();?>
     
     <div id="container" class="center">
         <div class="row h-50">
@@ -44,6 +56,7 @@ $db = get_db();
 
                                 $selectionId =  $_POST["shippmentId"];
     
+
                                 // We're building two tables by querying the database for general shipment information and inserting it into HTML tables 
                                 // Delivery Info Query
                                 foreach ($db->query("SELECT
@@ -96,7 +109,7 @@ $db = get_db();
                                     echo '<td>' . htmlspecialchars($row['item_description']) . '</td>';
                                     echo '<td>' . htmlspecialchars($row['item_spcl_instructs']) . '</td>';
                                     echo '<td>' . htmlspecialchars($row['size_weight']) . 'lb</td>';
-                                    echo '<td>' . htmlspecialchars(number_format($row['size_width']) / 12, 2,'.',',') . 'ft ' . htmlspecialchars($row['size_width']) % 12 . 'in</td>';
+                                    echo '<td>' . htmlspecialchars($row['size_width']) / 12 . 'ft ' . htmlspecialchars($row['size_width']) % 12 . 'in</td>';
                                     echo '<td>' . htmlspecialchars($row['size_depth']) / 12 . 'ft ' . htmlspecialchars($row['size_depth']) % 12 . 'in</td>';
                                     echo '<td>' . htmlspecialchars($row['size_height']) / 12 . 'ft ' . htmlspecialchars($row['size_height']) % 12 . 'in</td>';
                                     echo '</tr>';

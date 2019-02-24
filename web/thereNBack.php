@@ -20,7 +20,6 @@ $db = get_db();
 <body>
     <?php include("header.php");
     try {
-        session_start();
         $id_shipper = isset($_SESSION['id_shipper']) ? intval($_SESSION['id_shipper']) : 0;
 
         if ($id_shipper == 0 || $_SERVER["REQUEST_METHOD"] == "POST") {
