@@ -26,5 +26,5 @@ $statement->bindValue(":spcl", $spclInstructs, PDO::PARAM_STR);
 $statement->bindValue(":shipId", $shipmentId, PDO::PARAM_STR);
 $statement->execute(); 
 
-header("Location: tbnBidSubmited.php");
+header("Location: tnbBidSubmited.php");
 exit;
