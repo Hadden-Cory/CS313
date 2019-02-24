@@ -83,7 +83,7 @@ if($values != $_SESSION['itemDescriptions'][$item]){
     $statement->bindValue(":sizeWeight", $weight["$item"], PDO::PARAM_INT);
     $statement->bindValue(":sizeWidth", $width["$item"], PDO::PARAM_INT);
     $statement->bindValue(":sizeHeight", $height["$item"], PDO::PARAM_INT);
-    $statement->bindValue(":sizeDepth", $depth["$item"], PDO::PPARAM_INT);
+    $statement->bindValue(":sizeDepth", $depth["$item"], PDO::PARAM_INT);
     $statement->execute();
     
     $sizeId = 0;
