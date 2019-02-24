@@ -29,7 +29,7 @@ session_start();
             <form class="center" action="tnbVerifyUser.php" method="POST">
 
                 <input type="text" name="shipper_name"><br><label for="shipper-name">Username</label><br>
-                <input type="password" name="shipper_password"><br><label for="shipper-password"> Password </label>
+                <input type="password" name="shipper_password"><br><label for="shipper-password"> Password </label><br>
                 <input type="submit" class="btn btn-light" name="submit" value="Submit">
                 <?php
                 if ($_SESSION['lastAttemptFailed']) {

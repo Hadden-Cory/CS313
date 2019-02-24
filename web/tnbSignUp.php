@@ -8,7 +8,7 @@ if ($_SESSION["verified"] == false) {
     header("Location: tnbSignIn.php");
     die();
 }
-?>  
+?>
 
 <html>
 
@@ -31,11 +31,13 @@ if ($_SESSION["verified"] == false) {
     <a href="thereNBack.php">Cancle</a>
     <h1>Join the best thing that ever happened to trucking since the invention of the diner</h1>
     <form action="tnbUserInsert.php" method="POST">
-        <label for="shipper-name">Username</label>
+
         <input type="text" name="shipper_name"><br>
-        <label for="shipper-password">Password</label>
-        <input type="password" name="shipper_password" pattern=".{8,}"   required title="8 characters minimum">
-        <input type="submit" name="submit" class="btn btn-light" value="Submit">
+        <label for="shipper-name">Username</label>
+        <input type="password" name="shipper_password" pattern=".{8,}" required title="8 characters minimum"><br>
+        <label for="shipper-password">Password</label><br> 
+        <input type="submit" name="submit" class="btn btn-light"
+            value="Submit">
         <?php
         if (!$_SESSION['userNameIsFree']) {
             echo "<p id='signInError' class='text-danger'>That username is not availible, try another.</p>";
@@ -43,4 +45,4 @@ if ($_SESSION["verified"] == false) {
     </form>
 </body>
 
-</html> 
+</html>
