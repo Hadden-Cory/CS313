@@ -17,7 +17,7 @@ $spclInstructs = $_POST['spclInstructs'];
 
 $statement = $db->prepare("INSERT INTO bid (bid_price, bid_stat_date, bid_end_date,
                                              bid_contact_number, bid_spcl_instruct, shipment_id_shipment)
-                           VALUES (:price, :bStart, :bEnd, :phone, :spcl, shipId)");
+                           VALUES (:price, :bStart, :bEnd, :phone, :spcl, :shipId)");
 $statement->bindValue(":price", $price, PDO::PARAM_STR);
 $statement->bindValue(":bStart", $startDate, PDO::PARAM_STR);
 $statement->bindValue(":bEnd", $endDate, PDO::PARAM_STR);
