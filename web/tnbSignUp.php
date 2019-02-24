@@ -35,14 +35,14 @@ $db = get_db();
                 <input type="password" name="shipper_password" pattern=".{8,}" required
                     title="8 characters minimum"><br>
                 <label for="shipper-password">Password</label><br>
-                <input type="submit" name="submit" class="btn btn-light" value="Submit">
+                <input type="submit" name="submit" class="btn btn-light" value="Submit"></form>
                 <?php
                 if (!$_SESSION['userNameIsFree']) {
                     echo "<p id='signInError' class='text-danger'>That username is not availible, try another.</p>";
                 } ?>
-                <a href="tnbSignIn.php">Cancle</a>  
-            </form>
+            
         </div>
+        <a href="tnbSignIn.php">Cancle</a>
         <div class="col-sm-2 col-lg-2">
         </div>
     </div>
