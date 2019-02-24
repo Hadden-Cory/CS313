@@ -97,7 +97,7 @@ $db = get_db();
                                     echo '<td>' . htmlspecialchars($row['item_description']) . '</td>';
                                     echo '<td>' . htmlspecialchars($row['item_spcl_instructs']) . '</td>';
                                     echo '<td>' . htmlspecialchars($row['size_weight']) . 'lb</td>';
-                                    echo '<td>' . htmlspecialchars($row['size_width']) / 12 . 'ft ' . htmlspecialchars($row['size_width']) % 12 . 'in</td>';
+                                    echo '<td>' . htmlspecialchars(number_format($row['size_width']) / 12, 2,'.',',') . 'ft ' . htmlspecialchars($row['size_width']) % 12 . 'in</td>';
                                     echo '<td>' . htmlspecialchars($row['size_depth']) / 12 . 'ft ' . htmlspecialchars($row['size_depth']) % 12 . 'in</td>';
                                     echo '<td>' . htmlspecialchars($row['size_height']) / 12 . 'ft ' . htmlspecialchars($row['size_height']) % 12 . 'in</td>';
                                     echo '</tr>';

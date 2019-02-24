@@ -103,6 +103,21 @@ if($values != $_SESSION['itemDescriptions'][$item]){
 }
 }
 
+
+$_SESSION["pickUpDate"] = NULL;
+$_SESSION["pickUpState"] = NULL;
+$_SESSION["pickUpCity"] = NULL;
+$_SESSION["dropOffDate"] = NULL;
+$_SESSION["dropOffState"] = NULL;
+$_SESSION["dropOffCity"] = NULL;
+$_SESSION['itemNames'] = NULL;
+$_SESSION['itemDescriptions'] = NULL;
+$_SESSION['itemWeights'] = NULL;
+$_SESSION['itemWidths'] = NULL;
+$_SESSION['itemHeights'] = NULL;
+$_SESSION['itemDepths'] = NULL;
+$_SESSION['itemspecialInstructs'] = NULL;
+
 //Send us to the next stop.
 header("Location: thereNBack.php");
 exit;
