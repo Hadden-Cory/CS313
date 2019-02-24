@@ -39,7 +39,7 @@ if ($_SESSION["verified"] == false) {
       echo "<td>" . $_SESSION['dropOffCity'] . "</td></tr>";
       echo "</table>";?>
       
-    <form name="item" method="POST" action="tnbItemCache.php">
+    <form name="item" method="POST" action="construction.php">
         <label for="name">What is your item?</label>
         <input type="text" name="name" required><br>
         <label for="itemDescription">If applicatble, add a description.</label>
