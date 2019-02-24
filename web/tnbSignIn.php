@@ -24,7 +24,8 @@
             <div class="col-sm-2 col-lg-2">
             </div>
             <div class="col-sm-8 col-lg-8 center"><br><br>
-            <h1>One step away from controling your destiny<br>
+            <h1 class="center">ThereNBack.com</h
+1>            <h2 class="center">One step away from controling your destiny...</h2><br>
                 <form class="center" action="tnbVerifyUser.php" method="POST">
                     <label for="shipper-name">Username</label>
                     <input type="text" name="shipper_name"><br>
