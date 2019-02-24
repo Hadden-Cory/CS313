@@ -11,7 +11,7 @@ if ($_SESSION["verified"] == false) {
 
 $userName = $_POST["shipper_name"];
 $_SESSION['userNameIsFree'] = TRUE;
-
+   
 foreach ($db->query('SELECT shipper_name FROM shipper') as $row){
 
     if($userName == $row['shipper_name']){
