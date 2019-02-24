@@ -30,10 +30,10 @@ $db = get_db();
             <div class="col-sm-2 col-lg-2">
                 <h1>Welcome <?php echo htmlspecialchars($shipper_name); ?></h1>
                 <form name="form" action="<?php echo $current_page; ?>" method="post">
-                    <input type="submit" value="Logout">
+                    <input type="submit" class="btn btn-light" value="Logout">
                 </form>
-                <a href="tnbShipmentForm.php"><button>Enter A Shipment</button></a><br><br>
-                <a href="tnbShipmentEdit.php"><button>View Your Shipments</button></a>
+                <a href="tnbShipmentForm.php"><button class="btn btn-light">Enter A Shipment</button></a><br><br>
+                <a href="tnbShipmentEdit.php"><button class="btn btn-light">View Your Shipments</button></a>
             </div>
             <div class="col-sm-8 col-lg-8"><br><br><br>
                 <!-- We will be building this table for several lines. The first group is the headings, 

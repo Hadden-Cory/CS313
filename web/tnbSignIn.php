@@ -30,9 +30,9 @@
                 <form class="center" action="tnbVerifyUser.php" method="POST">
                     <label for="shipper-name">Username</label>
                     <input type="text" name="shipper_name"><br>
-                    <label for="shipper-password">Password </label>
+                    <label for="shipper-password"> Password </label>
                     <input type="password" name="shipper_password">
-                    <input type="submit" name="submit" value="Submit">
+                    <input type="submit" class="btn btn-light" name="submit" value="Submit">
                     <?php
                         if ($_SESSION['lastAttemptFailed']) {
                             echo "<p id='signInError' class='text-danger'>Login Failed: password or username were incorrect.</p>";
