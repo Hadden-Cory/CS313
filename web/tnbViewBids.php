@@ -29,7 +29,7 @@ $db = get_db();
     
     <div id="container" class="center">
         <div class="row h-50">
-        <a href="thereNBack.php">Back</a>
+        <a href="tnbShipmentEdit.php">Back</a>
             <div class="col-sm-2 col-lg-2">
             </div>
             <div class="col-sm-8 col-lg-8">

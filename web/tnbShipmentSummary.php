@@ -24,7 +24,7 @@ if ($_SESSION["verified"] == false) {
     <?php include("header.php");
     
     //Print the shipment's logistal data
-    echo "<table>
+    echo "<a href=\"thereNBack.php\">Cancle</a><table>
     <tr>
       <th>Pickup As Early As </th>
       <th>Pickup State</th>

@@ -27,6 +27,7 @@ if ($_SESSION["verified"] == false) {
     <?php
     include("header.php");
     ?>
+    <a href="thereNBack.php">Cancle</a>
     <h1>Join the best thing that ever happened to trucking since the invention of the diner</h1>
     <form action="tnbUserInsert.php" method="POST">
         <label for="shipper-name">Username</label>
