@@ -19,7 +19,6 @@
     <?php
     include("header.php");
     ?>
-    <div id="container" class="center">
         <div class="row h-50">
             <div class="col-sm-2 col-lg-2">
             <img class=centered src="destiny.jpg" alt="you controling destiny">
@@ -43,7 +42,6 @@
             <div class="col-sm-2 col-lg-2">
             </div>
         </div>
-    </div>
 
 </body>
 
