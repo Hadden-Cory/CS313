@@ -3,12 +3,6 @@ session_start();
 require "dbConnect.php";
 $db = get_db();
 
-if ($_SESSION["verified"] == false) {
-    session_destroy();
-    header("Location: tnbSignIn.php");
-    die();
-}
-
 $userName = $_POST["shipper_name"];
 $_SESSION['userNameIsFree'] = TRUE;
    
