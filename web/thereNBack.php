@@ -29,7 +29,7 @@ $db = get_db();
         <div class="row h-50">
             <div class="col-sm-2 col-lg-2">
                 <h1>Welcome <?php echo htmlspecialchars($shipper_name); ?></h1>
-                <form name="form" action="<?php echo $current_page; ?>" method="post">
+                <form name="form" action="tnbLogout.php" method="post">
                     <input type="submit" class="btn btn-light" value="Logout">
                 </form>
                 <a href="tnbShipmentForm.php"><button class="btn btn-light">Enter A Shipment</button></a><br><br>
