@@ -27,4 +27,4 @@ $statement = $db->prepare("DELETE FROM bid WHERE id_shipment ='$shipmentId'");
 $statement->execute(); 
 
 header("Location: tnbShipmentEdit.php");
-exit;
+exit; 
