@@ -19,19 +19,13 @@ $db = get_db();
 <body>
 
     <?php include("header.php"); 
-        try {
-            $id_shipper = isset($_SESSION['id_shipper']) ? intval($_SESSION['id_shipper']) : 0;
-    
-            if ($id_shipper == 0 || $_SERVER["REQUEST_METHOD"] == "POST") {
+
+            if ($_SESSION["verified"] == false) {
                 session_destroy();
                 header("Location: tnbSignIn.php");
                 die();
             }
-        }
-        catch(PDOException $ex) {
-            echo 'Error. Details: $ex';
-            die();
-        }?>
+        ?>
     
     <div id="container" class="center">
         <div class="row h-50">
