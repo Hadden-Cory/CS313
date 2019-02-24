@@ -22,6 +22,7 @@
     <div id="container" class="center">
         <div class="row h-50">
             <div class="col-sm-2 col-lg-2">
+            <img class=centered src="destiny.jgp" alt="you controling destiny">
             </div>
             <div class="col-sm-8 col-lg-8 center"><br><br>
             <h1 class="center">ThereNBack.com</h
