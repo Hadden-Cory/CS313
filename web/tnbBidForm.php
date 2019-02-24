@@ -20,23 +20,32 @@ if ($_SESSION["verified"] == false) {
 </head>
 
 <body>
-
-    <?php include("header.php"); ?>
-    <a href='thereNBack.php'>Cancle</a>
-    <form action="tnbBidInsert.php" method="POST">
-        <label for="price">Charge</label>
-        <input type="number" name="price" min="0.00" step="any" required><br>
-        <label for="pickUpDate">Pickup Date</label>
-        <input type="date" name="pickUpDate" required>
-        <label for="dropOffDate">Drop off Date</label>
-        <input type="date" name="dropOffDate" required>
-        <label for="phone">10-Digit Phone Number</label>
-        <input type="number" min="1000000000" max="9999999999" step="1" name="phone" required>
-        <label for="spclInstructs">Special Instructions</label>
-        <textarea rows="4" cols="50" name="specialInstructions" required>N/A</textarea>
-        <?php echo'<input type="text" name="shipmentId" value="'.$_POST['shipmentId'].'">';?>
-        <input type="submit" class="btn btn-light" value="Send Offer">
-    </form>
+    <div id="container" class="center">
+        <div class="row h-50">
+            <div class="col-sm-2 col-lg-2">
+            </div>
+            <div class="col-sm-8 col-lg-8"><br><br><br>
+                <?php include("header.php"); ?>
+                <a href='thereNBack.php'>Cancle</a>
+                <form action="tnbBidInsert.php" method="POST">
+                    <label for="price">Charge</label>
+                    <input type="number" name="price" min="0.00" step="any" required><br>
+                    <label for="pickUpDate">Pickup Date</label>
+                    <input type="date" name="pickUpDate" required>
+                    <label for="dropOffDate">Drop off Date</label>
+                    <input type="date" name="dropOffDate" required>
+                    <label for="phone">10-Digit Phone Number</label>
+                    <input type="number" min="1000000000" max="9999999999" step="1" name="phone" required>
+                    <label for="spclInstructs">Special Instructions</label>
+                    <textarea rows="4" cols="50" name="specialInstructions" required>N/A</textarea>
+                    <?php echo'<input type="text" name="shipmentId" value="'.$_POST['shipmentId'].'">';?>
+                    <input type="submit" class="btn btn-light" value="Send Offer">
+                </form>
+            </div>
+            <div class="col-sm-2 col-lg-2">
+            </div>
+        </div>
+    </div>
 </body>
 
-</html> 
+</html>
