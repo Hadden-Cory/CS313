@@ -46,3 +46,6 @@ DROP COLUMN ship_to_zip;
 
 ALTER TABLE pickup_from  
 DROP COLUMN pickup_from_zip;
+----------------------------------------------------------------------
+ALTER TABLE Bid
+ALTER COLUMN bid_contact_number TYPE VARCHAR(10);
