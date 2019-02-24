@@ -19,3 +19,7 @@ td, th{
 .collaspe{
     visibility: hidden;
 }
+
+input{
+    border-radius: 7px;
+}
