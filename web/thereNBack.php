@@ -20,24 +20,12 @@ $db = get_db();
 <body>
     <?php include("header.php");
     try {
-        $id_shipper = isset($_SESSION['id_shipper']) ? intval($_SESSION['id_shipper']) : 0;
 
-        if ($id_shipper == 0 || $_SERVER["REQUEST_METHOD"] == "POST") {
+        if ($_SESSION["verified"] == false) {
             session_destroy();
             header("Location: tnbSignIn.php");
             die();
-        }
-
-        $shipper_query = $db->prepare('SELECT shipper_name FROM shipper WHERE id_shipper = :id_shipper');
-        $shipper_query->execute(array(':id_shipper' => $id_shipper));
-        $shipper = $shipper_query->fetch();
-
-        $shipper_name = $shipper['shipper_name'];
-    }
-    catch(PDOException $ex) {
-        echo 'Error. Details: $ex';
-        die();
-    }?>
+        }?>
     <div id="container" class="center">
         <div class="row h-50">
             <div class="col-sm-2 col-lg-2">
