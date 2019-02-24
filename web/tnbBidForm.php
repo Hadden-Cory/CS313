@@ -31,7 +31,7 @@ if ($_SESSION["verified"] == false) {
         <label for="dropOffDate">Drop off Date</label>
         <input type="date" name="dropOffDate" required>
         <label for="phone">10-Digit Phone Number</label>
-        <input type="number" min="1000000000" max="9999999999" step="1" name="pickUpDate" required>
+        <input type="number" min="1000000000" max="9999999999" step="1" name="phone" required>
         <label for="spclInstructs">Special Instructions</label>
         <textarea rows="4" cols="50" name="specialInstructions" required>N/A</textarea>
         <?php echo'<input type="text" name="shipmentId" value="'.$_POST['shipmentId'].'">';?>
