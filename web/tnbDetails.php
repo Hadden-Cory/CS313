@@ -76,7 +76,7 @@ $db = get_db();
                                                             echo '<td>' . htmlspecialchars($row['shipment_end_date']) . '</td>';
                                                             echo '<td>' . htmlspecialchars($row['pickup_from_city']) . '</td>';
                                                             echo '<td>' . htmlspecialchars($row['pickup_from_state']) . '</td>';
-                                                            echo '<td><form name="opt' . $rowCount . '" action="tnbDetails.php" " method="POST">
+                                                            echo '<td><form name="opt' . $rowCount . '" action="tnbBidForm.php" " method="POST">
                                                             <input type="text" class="collapse" name="shippmentId" value="'.htmlspecialchars($selectionId).'">
                                                             <input type="submit" onclick="post" value="Make An Offer"></form>
                                                      </td>';
