@@ -27,34 +27,34 @@ $db = get_db();
     }
     ?>
 
+
     <div id="container" class="center">
         <div class="row h-50">
-            <a href="tnbShipmentEdit.php">Back</a>
             <div class="col-sm-2 col-lg-2">
-            </div>
-            <div class="col-sm-8 col-lg-8">
-                <div id="container" class="center">
-                    <div class="row h-50">
-                        <div class="col-sm-2 col-lg-2">
-                            <!-- We will be building this table for several lines. The first group is the headings, 
+                <!-- We will be building this table for several lines. The first group is the headings, 
                               followed by a large query and finished with a loop through all the query results-->
-                            <table id="mainTable">
-                                <tr>
-                                    <th>Pickup As Early As </th>
-                                    <th>Pickup City</th>
-                                    <th>Pickup State</th>
-                                    <th>Deliver by</th>
-                                    <th>Delivery City</th>
-                                    <th>Delivery State</th>
-                                </tr>
-                                <?php
+                <table id="mainTable">
+                    <tr>
+                        <th>
+                            <h2>
+                                Logistics</h2>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Pickup As Early As </th>
+                        <th>Pickup City</th>
+                        <th>Pickup State</th>
+                        <th>Deliver by</th>
+                        <th>Delivery City</th>
+                        <th>Delivery State</th>
+                    </tr>
+                    <?php
 
-                                $selectionId =  $_POST["shippmentId"];
+                    $selectionId =  $_POST["shippmentId"];
 
-
-                                // We're building three tables by querying the database for general shipment information and the bid, inserting it into HTML tables 
-                                // Delivery Info Query
-                                foreach ($db->query("SELECT
+                    // We're building three tables by querying the database for general shipment information and the bid, inserting it into HTML tables 
+                    // Delivery Info Query
+                    foreach ($db->query("SELECT
                                                             ship.shipment_start_date,
                                                             ship.id_shipment,
                                                             pfrom.pickup_from_city,
@@ -70,23 +70,24 @@ $db = get_db();
                                                         where
                                                         ship.id_shipment = '$selectionId'") as $row) {
 
-                                    //Loop though each row and make us a html table!
-                                    echo '<tr><td>' . htmlspecialchars($row['shipment_start_date']) . '</td>';
-                                    echo '<td>' . htmlspecialchars($row['ship_to_city']) . '</td>';
-                                    echo '<td>' . htmlspecialchars($row['ship_to_state']) . '</td>';
-                                    echo '<td>' . htmlspecialchars($row['shipment_end_date']) . '</td>';
-                                    echo '<td>' . htmlspecialchars($row['pickup_from_city']) . '</td>';
-                                    echo '<td>' . htmlspecialchars($row['pickup_from_state']) . '</td>';
-                                    echo '</tr>';
-                                }
-                                echo '</table>';
-                                echo '<table id=mainTable><tr><th>Item</th>
+                        //Loop though each row and make us a html table!
+                        echo '<tr><td>' . htmlspecialchars($row['shipment_start_date']) . '</td>';
+                        echo '<td>' . htmlspecialchars($row['ship_to_city']) . '</td>';
+                        echo '<td>' . htmlspecialchars($row['ship_to_state']) . '</td>';
+                        echo '<td>' . htmlspecialchars($row['shipment_end_date']) . '</td>';
+                        echo '<td>' . htmlspecialchars($row['pickup_from_city']) . '</td>';
+                        echo '<td>' . htmlspecialchars($row['pickup_from_state']) . '</td>';
+                        echo '</tr>';
+                    }
+                    echo '</table>';
+                    echo '<table id=mainTable><tr><th><h2>
+                                Load</h2></th></tr><tr><th>Item</th>
                                             <th>Description</th><th>Special Instructions</th>
                                             <th>Weight</th><th>Width</th>
                                             <th>Depth</th><th>Height</th></tr>';
-                                //Item Query
-                                foreach ($db->query(
-                                    "SELECT
+                    //Item Query
+                    foreach ($db->query(
+                        "SELECT
                                             i.item_name,
                                             i.item_description,
                                             i.item_spcl_instructs,
@@ -99,31 +100,31 @@ $db = get_db();
                                      item as I
                                         inner join size as s on i.size_id_size = s.id_size
                                         where i.shipment_id_shipment = '$selectionId';"
-                                ) as $row) {
-                                    //Loop though each row and make us a html table!
-                                    echo '<tr><td>' . htmlspecialchars($row['item_name']) . '</td>';
-                                    echo '<td>' . htmlspecialchars($row['item_description']) . '</td>';
-                                    echo '<td>' . htmlspecialchars($row['item_spcl_instructs']) . '</td>';
-                                    echo '<td>' . htmlspecialchars($row['size_weight']) . 'lb</td>';
-                                    echo '<td>' . htmlspecialchars($row['size_width']) / 12 . 'ft ' . htmlspecialchars($row['size_width']) % 12 . 'in</td>';
-                                    echo '<td>' . htmlspecialchars($row['size_depth']) / 12 . 'ft ' . htmlspecialchars($row['size_depth']) % 12 . 'in</td>';
-                                    echo '<td>' . htmlspecialchars($row['size_height']) / 12 . 'ft ' . htmlspecialchars($row['size_height']) % 12 . 'in</td>';
-                                    echo '</tr>';
-                                }
-                                ?>
-                            </table>
-                            <!-- Bid Table Time -->
-                            <table>
-                                <tr>
-                                    <th>Price</th>
-                                    <th>Start Date</th>
-                                    <th>End Date</th>
-                                    <th>Phone</th>
-                                    <th>Notes</th>
-                                </tr>
-                                <?php 
-                                //Query bids
-                                foreach ($db->query("SELECT
+                    ) as $row) {
+                        //Loop though each row and make us a html table!
+                        echo '<tr><td>' . htmlspecialchars($row['item_name']) . '</td>';
+                        echo '<td>' . htmlspecialchars($row['item_description']) . '</td>';
+                        echo '<td>' . htmlspecialchars($row['item_spcl_instructs']) . '</td>';
+                        echo '<td>' . htmlspecialchars($row['size_weight']) . 'lb</td>';
+                        echo '<td>' . htmlspecialchars($row['size_width']) / 12 . 'ft ' . htmlspecialchars($row['size_width']) % 12 . 'in</td>';
+                        echo '<td>' . htmlspecialchars($row['size_depth']) / 12 . 'ft ' . htmlspecialchars($row['size_depth']) % 12 . 'in</td>';
+                        echo '<td>' . htmlspecialchars($row['size_height']) / 12 . 'ft ' . htmlspecialchars($row['size_height']) % 12 . 'in</td>';
+                        echo '</tr>';
+                    }
+                    ?>
+                </table>
+                <!-- Bid Table Time -->
+                <table>
+                    <tr>
+                        <th>Price</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                        <th>Phone</th>
+                        <th>Notes</th>
+                    </tr>
+                    <?php 
+                    //Query bids
+                    foreach ($db->query("SELECT
                                                 bid_price,
                                                 bid_stat_date,
                                                 bid_end_date,
@@ -133,14 +134,14 @@ $db = get_db();
                                                  bid 
                                             WHERE 
                                                 shipment_id_shipment = '" . $selectionId . "';") as $row) {
-                                    echo '<tr><td>' . htmlspecialchars($row['bid_price']) . '</td>';
-                                    echo '<td>' . htmlspecialchars($row['bid_stat_date']) . '</td>';
-                                    echo '<td>' . htmlspecialchars($row['bid_end_date']) . '</td>';
-                                    echo '<td>' . htmlspecialchars($row['bid_contact_number']) . '</td>';
-                                    echo '<td>' . htmlspecialchars($row['bid_spcl_instruct']) . '</td></tr>';
-                                }
-                                ?>
-                            </table>
+                        echo '<tr><td>' . htmlspecialchars($row['bid_price']) . '</td>';
+                        echo '<td>' . htmlspecialchars($row['bid_stat_date']) . '</td>';
+                        echo '<td>' . htmlspecialchars($row['bid_end_date']) . '</td>';
+                        echo '<td>' . htmlspecialchars($row['bid_contact_number']) . '</td>';
+                        echo '<td>' . htmlspecialchars($row['bid_spcl_instruct']) . '</td></tr>';
+                    }
+                    ?>
+                </table>
 </body>
 
-</html> 
+</html>
