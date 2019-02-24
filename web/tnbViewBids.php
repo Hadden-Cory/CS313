@@ -38,6 +38,36 @@ $db = get_db();
                         <div class="col-sm-2 col-lg-2">
                             <!-- We will be building this table for several lines. The first group is the headings, 
                               followed by a large query and finished with a loop through all the query results-->
+                                <!-- Bid Table Time -->
+                                <table>
+                                <tr>
+                                    <th>Price</th>
+                                    <th>Start Date</th>
+                                    <th>End Date</th>
+                                    <th>Phone</th>
+                                    <th>Notes</th>
+                                </tr>
+                                <?php 
+                                //Query bids
+                                foreach ($db->query("SELECT
+                                                bid_price,
+                                                bid_stat_date,
+                                                bid_end_date,
+                                                bid_contact_number,
+                                                bid_spcl_instruct
+                                            FROM
+                                                 bid 
+                                            WHERE 
+                                                shipment_id_shipment = '" . $selectionId . "';") as $row) {
+                                    echo '<tr><td>' . htmlspecialchars($row['bid_price']) . '</td>';
+                                    echo '<td>' . htmlspecialchars($row['bid_stat_date']) . '</td>';
+                                    echo '<td>' . htmlspecialchars($row['bid_end_date']) . '</td>';
+                                    echo '<td>' . htmlspecialchars($row['bid_contact_number']) . '</td>';
+                                    echo '<td>' . htmlspecialchars($row['bid_spcl_instruct']) . '</td></tr>';
+                                }
+                                ?>
+                            </table>
+                            
                             <table id="mainTable">
                                 <tr>
                                     <th>Pickup As Early As </th>
@@ -112,35 +142,7 @@ $db = get_db();
                                 }
                                 ?>
                             </table>
-                            <!-- Bid Table Time -->
-                            <table>
-                                <tr>
-                                    <th>Price</th>
-                                    <th>Start Date</th>
-                                    <th>End Date</th>
-                                    <th>Phone</th>
-                                    <th>Notes</th>
-                                </tr>
-                                <?php 
-                                //Query bids
-                                foreach ($db->query("SELECT
-                                                bid_price,
-                                                bid_stat_date,
-                                                bid_end_date,
-                                                bid_contact_number,
-                                                bid_spcl_instruct
-                                            FROM
-                                                 bid 
-                                            WHERE 
-                                                shipment_id_shipment = '" . $selectionId . "';") as $row) {
-                                    echo '<tr><td>' . htmlspecialchars($row['bid_price']) . '</td>';
-                                    echo '<td>' . htmlspecialchars($row['bid_stat_date']) . '</td>';
-                                    echo '<td>' . htmlspecialchars($row['bid_end_date']) . '</td>';
-                                    echo '<td>' . htmlspecialchars($row['bid_contact_number']) . '</td>';
-                                    echo '<td>' . htmlspecialchars($row['bid_spcl_instruct']) . '</td></tr>';
-                                }
-                                ?>
-                            </table>
+
 </body>
 
 </html> 
