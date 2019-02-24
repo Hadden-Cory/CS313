@@ -23,7 +23,7 @@ session_start();
         <div class="col-sm-2 col-lg-2">
             <img class=centered src="destiny.jpg" alt="you controling destiny">
         </div>
-        <div class="col-sm-8 col-lg-8 center"><br><br>
+        <div class="col-sm-8 col-lg-8 center">
             <h1 class="center">ThereNBack.com</h1>
             <h2 class="center">One step away from controling your destiny...</h2><br>
             <form class="center" action="tnbVerifyUser.php" method="POST">

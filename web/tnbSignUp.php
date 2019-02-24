@@ -27,7 +27,7 @@ if ($_SESSION["verified"] == false) {
     <?php
     include("header.php");
     ?>
-    <img class=centered src="destiny.jpg" alt="you controling destiny">
+    <img class=centered src="hobby.jpg" alt="you controling destiny">
     <a href="thereNBack.php">Cancle</a>
     <h1>Join the best thing that ever happened to trucking since the invention of the diner</h1>
     <form action="tnbUserInsert.php" method="POST">
