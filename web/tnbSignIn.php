@@ -1,5 +1,5 @@
 <?php
-    session_start();
+session_start();
 ?>
 
 <html>
@@ -19,29 +19,29 @@
     <?php
     include("header.php");
     ?>
-        <div class="row h-50">
-            <div class="col-sm-2 col-lg-2">
+    <div class="row h-50">
+        <div class="col-sm-2 col-lg-2">
             <img class=centered src="destiny.jpg" alt="you controling destiny">
-            </div>
-            <div class="col-sm-8 col-lg-8 center"><br><br>
-            <h1 class="center">ThereNBack.com</h1>
-1>            <h2 class="center">One step away from controling your destiny...</h2><br>
-                <form class="center" action="tnbVerifyUser.php" method="POST">
-                    
-                    <input type="text" name="shipper_name"><br><label for="shipper-name">Username</label><br>
-                    <input type="password" name="shipper_password"><br><label for="shipper-password"> Password </label>
-                    <input type="submit" class="btn btn-light" name="submit" value="Submit">
-                    <?php
-                        if ($_SESSION['lastAttemptFailed']) {
-                            echo "<p id='signInError' class='text-danger'>Login Failed: password or username were incorrect.</p>";
-                            } ?>
-                </form>
-                <p>Not a member? Sign up <a href="tnbSignUp.php">here</a></p>
-            </div>
-            <div class="col-sm-2 col-lg-2">
-            </div>
         </div>
+        <div class="col-sm-8 col-lg-8 center"><br><br>
+            <h1 class="center">ThereNBack.com</h1>
+            <h2 class="center">One step away from controling your destiny...</h2><br>
+            <form class="center" action="tnbVerifyUser.php" method="POST">
+
+                <input type="text" name="shipper_name"><br><label for="shipper-name">Username</label><br>
+                <input type="password" name="shipper_password"><br><label for="shipper-password"> Password </label>
+                <input type="submit" class="btn btn-light" name="submit" value="Submit">
+                <?php
+                if ($_SESSION['lastAttemptFailed']) {
+                    echo "<p id='signInError' class='text-danger'>Login Failed: password or username were incorrect.</p>";
+                } ?>
+            </form>
+            <p>Not a member? Sign up <a href="tnbSignUp.php">here</a></p>
+        </div>
+        <div class="col-sm-2 col-lg-2">
+        </div>
+    </div>
 
 </body>
 
-</html>
+</html> 
