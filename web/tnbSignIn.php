@@ -23,7 +23,7 @@
         <div class="row h-50">
             <div class="col-sm-2 col-lg-2">
             </div>
-            <div class="col-sm-8 col-lg-8"><br><br><br>
+            <div class="col-sm-8 col-lg-8 center"><br><br><br>
                 <form action="tnbVerifyUser.php" method="POST">
                     <label for="shipper-name">Username</label>
                     <input type="text" name="shipper_name"><br>
@@ -31,13 +31,12 @@
                     <input type="password" name="shipper_password">
                     <input type="submit" name="submit" value="Submit">
                     <?php
-        if ($_SESSION['lastAttemptFailed']) {
-            echo "<p id='signInError' class='text-danger'>Login Failed: password or username were incorrect.</p>";
-            } ?>
+                        if ($_SESSION['lastAttemptFailed']) {
+                            echo "<p id='signInError' class='text-danger'>Login Failed: password or username were incorrect.</p>";
+                            } ?>
                 </form>
                 <p>Not a member? Sign up <a href="tnbSignUp.php">here</a></p>
             </div>
-
             <div class="col-sm-2 col-lg-2">
             </div>
         </div>
