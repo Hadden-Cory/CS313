@@ -31,16 +31,17 @@ if ($_SESSION["verified"] == false) {
                 <form class="center" action="tnbBidInsert.php" method="POST">
 
                     <input type="number" name="price" min="0.00" step="any" required><br>
-                    <label for="price">Charge</label><br>
+                    <label for="price">What Will You Charge?</label><br>
                     
                     <input type="date" name="pickUpDate" required><br>
-                    <label for="pickUpDate">Pickup Date</label><br>
+                    <label for="pickUpDate">When Will You Pickup the Load?</label><br>
                     <input type="date" name="dropOffDate" required><br>
-                    <label for="dropOffDate">Drop off Date</label><br>
+                    <label for="dropOffDate">When Will You Drop It Off?</label><br>
                     
                     <input type="number" min="1000000000" max="9999999999" step="1" name="phone" required><br>
+                    <label for="phone">What's Your Phone Number?</label><br>
                     <textarea rows="4" cols="50" name="specialInstructions" required>N/A</textarea><br>
-                    <label for="spclInstructs">Special Instructions</label><br>
+                    <label for="spclInstructs">Got Anthing Else to Say?</label><br>
                     
                     <?php echo '<input type="text" class="collaspe" name="shipmentId" value="' . $_POST['shipmentId'] . '">'; ?>
                     <input type="submit" class="btn btn-light" value="Send Offer">
