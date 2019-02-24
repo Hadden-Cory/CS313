@@ -26,7 +26,7 @@ $db = get_db();
             <img class=centered src="road.jpg" alt="you controling destiny">
         </div>
         <div class="col-sm-8 col-lg-8 center">
-            <a href="tnbSignIn.php">Cancle</a>
+            
             <h1>Join the best thing that ever happened to trucking since the invention of the diner</h1>
             <form action="tnbUserInsert.php" method="POST">
 
@@ -40,6 +40,7 @@ $db = get_db();
                 if (!$_SESSION['userNameIsFree']) {
                     echo "<p id='signInError' class='text-danger'>That username is not availible, try another.</p>";
                 } ?>
+                <a href="tnbSignIn.php">Cancle</a>
             </form>
         </div>
         <div class="col-sm-2 col-lg-2">
