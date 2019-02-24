@@ -9,15 +9,6 @@ if ($_SESSION["verified"] == false) {
     die();
 }
 
-//Shared credit for the login systems belongs to Sebastian Calle,
-//Sheldon Smith, and Stefano Nicotra. We (and by "we" I
-//mean I feel like it was mostly them because they are such
-//competent programers) wrote most of it in a team activty.
-//It fit so well into my project that all I did was retyped 
-//it out so that I understood and added a few functionality
-// points that I wanted. I have changed very little of this
-// code. So, special thanks to them. Used with permission.
-
 $userName = $_POST["shipper_name"];
 $_SESSION['userNameIsFree'] = TRUE;
 
@@ -33,6 +24,7 @@ foreach ($db->query('SELECT shipper_name FROM shipper') as $row){
         header("Location: tnbSignUp.php");
         exit;
     }
+    
 }
 
 $password = $_POST["shipper_password"];

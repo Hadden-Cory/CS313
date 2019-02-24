@@ -29,7 +29,7 @@ if ($_SESSION["verified"] == false) {
         <label for="pickUpDate">Pickup Date</label>
         <input type="date" name="pickUpDate" required>
         <label for="dropOffDate">Drop off Date</label>
-        <input type="date" name="DropOffDate" required>
+        <input type="date" name="dropOffDate" required>
         <label for="phone">10-Digit Phone Number</label>
         <input type="number" min="1000000000" max="9999999999" step="1" name="pickUpDate" required>
         <label for="spclInstructs">Special Instructions</label>
