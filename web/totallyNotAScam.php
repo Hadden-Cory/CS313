@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <html>
 
 <head>
@@ -14,12 +17,7 @@
 
 <body>
     <?php include("header.php"); 
-    
-    if ($_SESSION["verified"] == false) {
-        session_destroy();
-        header("Location: tnbSignIn.php");
-        die();
-    }?>
+    ?>
     <Section>
         <div class="jumbotron">
             <h1>Welcome to Totally Not A Scam Wonderments For Internet</h1>

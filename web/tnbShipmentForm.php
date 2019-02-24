@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 if ($_SESSION["verified"] == false) {
     session_destroy();
     header("Location: tnbSignIn.php");
