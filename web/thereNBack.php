@@ -33,7 +33,7 @@ $db = get_db();
                     <input type="submit" value="Logout">
                 </form>
                 <a href="tnbShipmentForm.php"><button>Enter A Shipment</button></a><br><br>
-                <a href="construction.php"><button>Edit Your Shipments</button></a>
+                <a href="tnbShipmentEdit.php"><button>View Your Shipments</button></a>
             </div>
             <div class="col-sm-8 col-lg-8"><br><br><br>
                 <!-- We will be building this table for several lines. The first group is the headings, 
