@@ -23,7 +23,7 @@ $statement->execute();
 $statement = $db->prepare("DELETE FROM pickup_from WHERE shipment_id_shipment ='$shipmentId'");
 $statement->execute(); 
 
-$statement = $db->prepare("DELETE FROM bid WHERE id_shipment ='$shipmentId'");
+$statement = $db->prepare("DELETE FROM shipment WHERE id_shipment ='$shipmentId'");
 $statement->execute(); 
 
 header("Location: tnbShipmentEdit.php");
