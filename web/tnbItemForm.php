@@ -21,8 +21,14 @@ if ($_SESSION["verified"] == false) {
 </head>
 
 <body>
-    <?php include("header.php"); 
-    echo "<a href='thereNBack.php'>Cancle</a><table>
+    <?php include("header.php");
+
+    echo "    <div id='container class='center'>
+    <div class='row h-50'>
+        <div class='col-sm-2 col-lg-2'>
+        </div>
+        <div class='col-sm-8 col-lg-8'>
+        <a href='thereNBack.php'>Cancle</a><table>
             <tr>
                 <th>Pickup As Early As </th>
                 <th>Pickup State</th>
@@ -31,31 +37,42 @@ if ($_SESSION["verified"] == false) {
                 <th>Delivery State</th>
                 <th>Delivery City</th>
             </tr>";
-      echo "<tr><td>" . $_SESSION['pickUpDate'] . "</td>";
-      echo "<td>" . $_SESSION['pickUpState'] . "</td>";
-      echo "<td>" . $_SESSION['pickUpCity'] . "</td>";
-      echo "<td>" . $_SESSION['dropOffDate'] . "</td>";
-      echo "<td>" . $_SESSION['dropOffState'] . "</td>";
-      echo "<td>" . $_SESSION['dropOffCity'] . "</td></tr>";
-      echo "</table>";?>
-      
+    echo "<tr><td>" . $_SESSION['pickUpDate'] . "</td>";
+    echo "<td>" . $_SESSION['pickUpState'] . "</td>";
+    echo "<td>" . $_SESSION['pickUpCity'] . "</td>";
+    echo "<td>" . $_SESSION['dropOffDate'] . "</td>";
+    echo "<td>" . $_SESSION['dropOffState'] . "</td>";
+    echo "<td>" . $_SESSION['dropOffCity'] . "</td></tr>";
+    echo "</table>"; ?>
+
     <form name="item" method="POST" action="construction.php">
-        <label for="name">What is your item?</label>
+   
         <input type="text" name="name" required><br>
-        <label for="itemDescription">If applicatble, add a description.</label>
+        <label for="name">What is your item?</label><br>
+        
         <textarea rows="4" cols="50" name="itemDescription" required>N/A</textarea><br>
-        <label for="weight">Enter the weight in pounds.</label>
-        <input type="number" name="weight" required><br>
-        <label for="width">Enter the width in inches.</label>
+        <label for="itemDescription">If applicatble, add a description.</label><br>
+        
+        <input type="number" name="weight" required><br>   
+        <label for="weight">Enter the weight in pounds.</label><br>
         <input type="number" name="width" required><br>
-        <label for="height">Enter the height in inches.</label>
+        <label for="width">Enter the width in inches.</label><br>
+        
         <input type="number" name="height" required><br>
-        <label for="depth">Enter the depth in inches.</label>
-        <input type="number" name="depth" required><br><br>
-        <label for="specialInstructions">Any special instructions? If none type N/A</label>
+        <label for="height">Enter the height in inches.</label><br>
+         <input type="number" name="depth" required><br>
+        <label for="depth">Enter the depth in inches.</label><br>
         <textarea rows="4" cols="50" name="specialInstructions" required>N/A</textarea><br>
+        <label for="specialInstructions">Any special instructions? If none type N/A</label><br>
+        
         <input type="submit" class="btn btn-light" name="submit" value="Add Item">
     </form>
+    </div>
+    <div class="col-sm-2 col-lg-2">
+    </div>
+    </div>
+    </div>
+    </div>
 </body>
 
 </html> 

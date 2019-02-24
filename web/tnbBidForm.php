@@ -20,26 +20,29 @@ if ($_SESSION["verified"] == false) {
 </head>
 
 <body>
+    <?php include("header.php"); ?>
     <div id="container" class="center">
         <div class="row h-50">
             <div class="col-sm-2 col-lg-2">
             </div>
             <div class="col-sm-8 col-lg-8"><br><br><br>
-                <?php include("header.php"); ?>
+
                 <a href='thereNBack.php'>Cancle</a>
                 <form class="center" action="tnbBidInsert.php" method="POST">
-                    
+
                     <input type="number" name="price" min="0.00" step="any" required><br>
                     <label for="price">Charge</label><br>
-                    <label for="pickUpDate">Pickup Date</label><br>
+                    
                     <input type="date" name="pickUpDate" required><br>
-                    <label for="dropOffDate">Drop off Date</label><br>
+                    <label for="pickUpDate">Pickup Date</label><br>
                     <input type="date" name="dropOffDate" required><br>
-                    <label for="phone">10-Digit Phone Number</label><br>
+                    <label for="dropOffDate">Drop off Date</label><br>
+                    
                     <input type="number" min="1000000000" max="9999999999" step="1" name="phone" required><br>
-                    <label for="spclInstructs">Special Instructions</label><br>
                     <textarea rows="4" cols="50" name="specialInstructions" required>N/A</textarea><br>
-                    <?php echo'<input type="text" name="shipmentId" value="'.$_POST['shipmentId'].'">';?>
+                    <label for="spclInstructs">Special Instructions</label><br>
+                    
+                    <?php echo '<input type="text" class="collaspe" name="shipmentId" value="' . $_POST['shipmentId'] . '">'; ?>
                     <input type="submit" class="btn btn-light" value="Send Offer">
                 </form>
             </div>
@@ -49,4 +52,4 @@ if ($_SESSION["verified"] == false) {
     </div>
 </body>
 
-</html>
+</html> 
