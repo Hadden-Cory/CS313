@@ -19,13 +19,12 @@ $db = get_db();
 
 <body>
     <?php include("header.php");
-    try {
-
         if ($_SESSION["verified"] == false) {
             session_destroy();
             header("Location: tnbSignIn.php");
             die();
         }?>
+
     <div id="container" class="center">
         <div class="row h-50">
             <div class="col-sm-2 col-lg-2">
