@@ -34,7 +34,7 @@ $db = get_db();
                     <?php echo htmlspecialchars($_SESSION["username"]); ?>
                 </h1>
                 <h2>
-                 Let's Move A Mountain
+                    Let's Move A Mountain
                 </h2>
             </div>
             <div class="col-sm-2 col-lg-2">
@@ -106,4 +106,4 @@ $db = get_db();
             </div>
         </div>
     </div>
-    <section> 
+    <section>

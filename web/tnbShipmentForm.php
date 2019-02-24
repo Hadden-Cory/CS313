@@ -20,12 +20,13 @@ if ($_SESSION["verified"] == false) {
 </head>
 
 <body>
+<?php include("header.php"); ?>
     <div id="container" class="center">
         <div class="row h-7">
             <div class="col-sm-2 col-lg-2">
             </div>
             <div class="col-sm-8 col-lg-8">
-                <?php include("header.php"); ?>
+                
                 <a href='thereNBack.php'>Cancle</a>
                 <!-- Shout out to Carl Nunes on Codepen for doing most of the hard work on this dropdown -->
                 <form action="tnbShipmentCache.php" method="POST">
