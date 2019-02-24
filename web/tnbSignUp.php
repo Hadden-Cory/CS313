@@ -40,7 +40,7 @@ $db = get_db();
                 if (!$_SESSION['userNameIsFree']) {
                     echo "<p id='signInError' class='text-danger'>That username is not availible, try another.</p>";
                 } ?>
-                <a href="tnbSignIn.php">Cancle</a>
+                <a href="tnbSignIn.php">Cancle</a>  
             </form>
         </div>
         <div class="col-sm-2 col-lg-2">
