@@ -43,7 +43,7 @@ if ($_SESSION["verified"] == false) {
         <label for="name">What is your item?</label>
         <input type="text" name="name" required><br>
         <label for="itemDescription">If applicatble, add a description.</label>
-        <textarea rows="4" cols="50" name="itemDescription" required></textarea><br>
+        <textarea rows="4" cols="50" name="itemDescription" required>N/A</textarea><br>
         <label for="weight">Enter the weight in pounds.</label>
         <input type="number" name="weight" required><br>
         <label for="width">Enter the width in inches.</label>
@@ -53,7 +53,7 @@ if ($_SESSION["verified"] == false) {
         <label for="depth">Enter the depth in inches.</label>
         <input type="number" name="depth" required><br><br>
         <label for="specialInstructions">Any special instructions? If none type N/A</label>
-        <textarea rows="4" cols="50" placeholder="N/A" name="specialInstructions" required></textarea><br>
+        <textarea rows="4" cols="50" name="specialInstructions" required>N/A</textarea><br>
         <input type="submit" name="submit" value="Add Item">
     </form>
 </body>
