@@ -26,7 +26,7 @@ $db = get_db();
     } ?>
 
     <div id="container" class="center">
-        <div class="row h-10">
+        <div class="row h-7">
             <div class="col-sm-2 col-lg-2">
             </div>
             <div class="col-sm-8 col-lg-8">
