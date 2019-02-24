@@ -43,8 +43,7 @@ $db = get_db();
                                 <?php
 
                                 $selectionId =  $_POST["shippmentId"];
-                                echo $selectionId;
-
+    
                                 // We're building two tables by querying the database for general shipment information and inserting it into HTML tables 
                                 // Delivery Info Query
                                 foreach ($db->query("SELECT
