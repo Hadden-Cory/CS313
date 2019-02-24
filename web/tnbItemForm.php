@@ -45,7 +45,7 @@ if ($_SESSION["verified"] == false) {
     echo "<td>" . $_SESSION['dropOffCity'] . "</td></tr>";
     echo "</table>"; ?>
 
-    <form name="item" method="POST" action="tnbShipmentSummary.php">
+    <form name="item" method="POST" action="tnbItemCache.php">
    
         <input type="text" name="name" required><br>
         <label for="name">What is your item?</label><br>
