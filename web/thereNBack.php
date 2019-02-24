@@ -46,7 +46,7 @@ $db = get_db();
                 <form name="form" action="tnbLogout.php" method="post">
                     <input type="submit" class="btn btn-light w-100" value="Logout">
                 </form>
-                <a href="tnbShipmentForm.php"><button class="btn btn-light w-100">Enter A Shipment</button></a><br><br><br>
+                <a href="tnbShipmentForm.php"><button class="btn btn-light w-100">Enter A Shipment</button></a><br><br>
                 <a href="tnbShipmentEdit.php"><button class="btn btn-light w-100">View Your Shipments</button></a>
             </div>
             <div class="col-sm-8 col-lg-8"><br><br><br>
