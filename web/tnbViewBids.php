@@ -134,7 +134,7 @@ $db = get_db();
                                             WHERE 
                                                 shipment_id_shipment = '" . $selectionId . "';") as $row) {
                                     echo '<tr><td>' . htmlspecialchars($row['bid_price']) . '</td>';
-                                    echo '<td>' . htmlspecialchars($row['bid_start_date']) . '</td>';
+                                    echo '<td>' . htmlspecialchars($row['bid_stat_date']) . '</td>';
                                     echo '<td>' . htmlspecialchars($row['bid_end_date']) . '</td>';
                                     echo '<td>' . htmlspecialchars($row['bid_contact_number']) . '</td>';
                                     echo '<td>' . htmlspecialchars($row['bid_spcl_instruct']) . '</td></tr>';
